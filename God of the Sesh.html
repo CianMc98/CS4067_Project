@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play God of the Sesh.</tw-noscript></noscript></tw-story>
-<tw-storydata name="God of the Sesh" startnode="5" creator="Twine" creator-version="2.3.13" ifid="B4E8339A-E1D4-4E09-B21E-74A7EA3815DC" zoom="0.6" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
+<tw-storydata name="God of the Sesh" startnode="5" creator="Twine" creator-version="2.3.13" ifid="B4E8339A-E1D4-4E09-B21E-74A7EA3815DC" zoom="0.25" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
 	display: none;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Chapter 0" tags="" position="567,241" size="100,100">Today is a day like no other in Drinklympus. It’s the millennium anniversary since you, became God of the Sesh and ushered in a new golden age of drinking. And what kind of Sesh God would you be if you did not celebrate such an occasion?
 
@@ -19,14 +19,14 @@ It’s truly been the sesh of all seshes!
 
 Today is the final day of the festivities, but it is also the most important day. Today is the day you tell Drinklympus your plans for the next millennium. You’re confident that the next thousands years will also be years of prosperity on Drinklympus.
 
-[[Continue|Chapter 1]]</tw-passagedata><tw-passagedata pid="2" name="Chapter 1" tags="" position="563.6666666666667,503.00000000000006" size="100,100">You’re wandering around the party, making small talk with the party-goers as is your duty as the party host when you see someone skulking by the entrance doors. It’s Corona; one of the higher ranking Lager gods who’s probably one of the next contenders to be promoted to Lager General. You’re surprised to see her by herself; she’s usually inseparable from her best friend Lime.  
+[[Continue|Chapter 1]]</tw-passagedata><tw-passagedata pid="2" name="Chapter 1" tags="" position="563,503" size="100,100">You’re wandering around the party, making small talk with the party-goers as is your duty as the party host when you see someone skulking by the entrance doors. It’s Corona; one of the higher ranking Lager gods who’s probably one of the next contenders to be promoted to Lager General. You’re surprised to see her by herself; she’s usually inseparable from her best friend Lime.  
 
 “Corona,” you say as you approach her with a cordial smile. You then ask:
 
 “Strange to see you all alone! Where’s Lime?”
 
 [[Drinklympus]] 
-</tw-passagedata><tw-passagedata pid="3" name="Chardonnay" tags="" position="181.99999999999991,604.6666666666666" size="100,100">[&quot;Why hello cutie, long time no see,&quot; Chardonnay purrs with a wink before taking a long sip from her wine glass. The words that had been on the tip of your tongue suddenly vanish at the unexpected term of endearment and you find yourself swallowing heavily. 
+</tw-passagedata><tw-passagedata pid="3" name="Chardonnay" tags="" position="181,604" size="100,100">[&quot;Why hello cutie, long time no see,&quot; Chardonnay purrs with a wink before taking a long sip from her wine glass. The words that had been on the tip of your tongue suddenly vanish at the unexpected term of endearment and you find yourself swallowing heavily. 
 
 &quot;H-Hey Chardonnay,&quot; you eventually manage to stammer, all the while berating yourself internally for getting flustered. You&#39;d really think a millenia would be enough time to get used to her flirtations, but she always manages to get under your skin.
 
@@ -74,14 +74,1087 @@ You&#39;re alarmed for a brief moment by what her suggestive tone is implying, b
 [[New Game |Chapter 0]]
 {(if: $Saves contains &quot;Slot A&quot;)[
   (link: &quot;Load game&quot;)[(load-game:&quot;Slot A&quot;)]
-]}</tw-passagedata><tw-passagedata pid="6" name="Drinklympus" tags="" position="560,840.8333333333334" size="100,100">{(link:&quot;Save Game&quot;)[
+]}</tw-passagedata><tw-passagedata pid="6" name="Drinklympus" tags="" position="560,840" size="100,100">{(link:&quot;Save Game&quot;)[
   (if:(save-game:&quot;Slot A&quot;))[
     Game saved!
   ](else: )[
     Sorry, I couldn&#39;t save your game.
   ]
 ]}
-[[Chardonnay]] </tw-passagedata></tw-storydata>
+[[Chardonnay]] </tw-passagedata><tw-passagedata pid="7" name="Player Battle Menu" tags="" position="4384,741" size="100,100">(if: $playerBlinded is 0)[
+What will the player do?
+
+[[Attack]]
+[[Gun]]
+[[Defend]]
+[[Item]]]
+(else:)[
+The blayer has been blinded for the turn!
+(set: $playerBlinded to 0)
+
+(if: $hishoInParty is 1)[
+[[Hisho Battle Menu]]]
+(else-if: $lycanInParty is 1)[
+[[Lycan Battle Menu]]]
+(else-if: $rogueInParty is 1)[
+[[Rogue Battle Menu]]]
+(else:)[
+[[Enemy Turn|Enemy Battle Menu]]]]
+
+</tw-passagedata><tw-passagedata pid="8" name="Attack" tags="" position="4068,1016" size="100,100">(if: $enemyDefending is 0)[
+(set: $enemyHealth to $enemyHealth - 50)
+
+You dealt 50 damage to the enemy!
+
+$enemyName Health: $enemyHealth/$maxEnemyHealth]
+(else-if: $enemyDefending is 1)[
+(set: $enemyHealth to $enemyHealth - 25)
+
+You dealt 25 damage to the enemy!
+
+$enemyName Health: $enemyHealth/$maxEnemyHealth
+(set: $enemyDefending to 0)]
+
+(if: $enemyHealth &lt; 1)[
+(go-to: &quot;Battle Won&quot;)]
+
+(if: $playerPoisioned is 1)[
+(set: $playerHealth to $playerHealth - 30)
+You felt the affects of the poisioning!
+
+Player Health = $playerHealth/400]
+
+(if: $playerHealth &lt; 1)[
+(go-to: &quot;Battle Lost&quot;)]
+
+(if: $hishoInParty is 1)[
+[[Hisho Battle Menu]]]
+(else-if: $lycanInParty is 1)[
+[[Lycan Battle Menu]]]
+(else-if: $rogueInParty is 1)[
+[[Rogue Battle Menu]]]
+(else:)[
+[[Enemy Turn|Enemy Battle Menu]]]
+</tw-passagedata><tw-passagedata pid="9" name="Gun" tags="" position="4248,1015" size="100,100">(set: $playerAmmo to $playerAmmo - 1)
+(if: $enemyDefending is 0)[
+(set: $enemyHealth to $enemyHealth - 100)
+You dealt 100 damage!
+
+$enemyName Health: $enemyHealth/$maxEnemyHealth]
+
+(else-if: $enemyDefending is 1)[
+(set: $enemyHealth to $enemyHealth - 50)
+You dealt 50 damage!
+
+$enemyName Health: $enemyHealth/$maxEnemyHealth
+(set: $enemyDefending to 0)]
+
+(if: $enemyHealth &lt; 1)[
+(go-to: &quot;Battle Won&quot;)]
+
+(if: $playerPoisioned is 1)[
+(set: $playerHealth to $playerHealth - 30)
+You felt the affects of the poisioning
+
+Player Health = $playerHealth/400]
+
+(if: $playerHealth &lt; 1)[
+(go-to: &quot;Battle Lost&quot;)]
+
+(if: $hishoInParty is 1)[
+[[Hisho Battle Menu]]]
+(else-if: $lycanInParty is 1)[
+[[Lycan Battle Menu]]]
+(else-if: $rogueInParty is 1)[
+[[Rogue Battle Menu]]]
+(else:)[
+[[Enemy Turn|Enemy Battle Menu]] ]</tw-passagedata><tw-passagedata pid="10" name="Defend" tags="" position="4398,1017" size="100,100">(set: $playerDefending to 1)
+You braced yourself for an attack!
+
+(if: $playerPoisioned is 1)[
+(set: $playerHealth to $playerHealth - 30)
+You felt the affects of the poisioning
+
+Player Health = $playerHealth/400]
+
+(if: $playerHealth &lt; 1)[
+(go-to: &quot;Battle Lost&quot;)]
+
+(if: $hishoInParty is 1)[
+[[Hisho Battle Menu]]]
+(else-if: $lycanInParty is 1)[
+[[Lycan Battle Menu]]]
+(else-if: $rogueInParty is 1)[
+[[Rogue Battle Menu]]]
+(else:)[
+[[Enemy Turn|Enemy Battle Menu]] ]</tw-passagedata><tw-passagedata pid="11" name="Item" tags="" position="4551,1017" size="100,100">(go-to: &quot;Which Item&quot;)
+</tw-passagedata><tw-passagedata pid="12" name="Heal" tags="" position="3960,1435" size="100,100">Who would you like to heal?
+
+Player Health: $playerHealth/400
+Hisho Health: $hishoHealth/350
+Lycan Health: $lycanHealth/500
+Rogue Health: $rogueHealth/450
+
+[[Heal Player|Heal Player]]
+[[Heal Herself]]
+(if: $lycanInParty is 1)[
+[[Heal Lycan]]]
+(if: $rogueInParty is 1)[
+[[Heal Rogue]]]
+[[Heal Team]]
+
+
+</tw-passagedata><tw-passagedata pid="13" name="Charge" tags="" position="4628,1452" size="100,100">(if: $enemyDefending is 0)[
+(set: $enemyHealth to $enemyHealth - 120)
+(set: $lycanHealth to $lycanHealth - 30)
+
+Lycan charged the enemy dealt 120 damage to the enemy but was dealt 30 damage to himself in turn!
+
+Lycan Health: $lycanHealth/500
+$enemyName Health:$enemyHealth/$maxEnemyHealth]
+(else-if: $enemyDefending is 1)[
+(set: $enemyHealth to $enemyHealth - 60)
+(set: $lycanHealth to $lycanHealth - 30)
+
+Lycan charged the enemy dealt 60 damage to the enemy but was dealt 30 damage to himself in turn!
+
+Lycan Health: $lycanHealth/500
+$enemyName Health:$enemyHealth/$maxEnemyHealth]
+
+(if: $enemyHealth &lt; 1)[
+(go-to: &quot;Battle Won&quot;)]
+
+(if: $lycanPoisioned is 1)[
+(set: $lycanHealth to $lycanHealth - 30)
+Lycan felt the affects of the poisioning!
+
+Lycan Health = $lycanHealth/400]
+
+(if: $lycanHealth &lt; 1)[
+Lycan has been knocked out!
+(set: $lycanInParty to 0)]
+
+(if: $rogueInParty is 1)[
+[[Rogue Battle Menu]]]
+(else:)[
+[[Enemy Turn|Enemy Battle Menu]]]</tw-passagedata><tw-passagedata pid="14" name="Poison" tags="" position="5298,1426" size="100,100">(set: $enemyPoisioned to 1)
+
+Rogue poisioned $enemyName!
+
+[[Enemy Turn|Enemy Battle Menu]]</tw-passagedata><tw-passagedata pid="15" name="Hisho Battle Menu" tags="" position="3966,1277" size="100,100">(if: $hishoBlinded is 0)[
+What will Hisho do?
+
+[[Attack|Hisho Attack]]
+[[Heal]]
+[[Defend|Hisho Defend]]]
+(else:)[
+Hisho has been blinded for the turn!
+
+(set: $hishoBlinded to 0)
+(if: $lycanInParty is 1)[
+[[Lycan Battle Menu]]]
+(else-if: $rogueInParty is 1)[
+[[Rogue Battle Menu]]]
+(else:)[
+[[Enemy Turn|Enemy Battle Menu]]]]</tw-passagedata><tw-passagedata pid="16" name="Rogue Battle Menu" tags="" position="5292,1270" size="100,100">(if: $rogueBlinded is 0)[
+What will Rogue do?
+
+[[Attack|Rogue Attack]]
+[[Poison]]
+[[Defend|Rogue Defend]]]
+
+(else:)[
+Rogue has been blinded for the turn!
+
+(set: $rogueBlinded to 0)
+[[Enemy Turn|Enemy Battle Menu]]]
+</tw-passagedata><tw-passagedata pid="17" name="Lycan Battle Menu" tags="" position="4624,1293" size="100,100">(if: $lycanBlinded is 0)[
+What will Lycan do?
+
+[[Attack|Lycan Attack]]
+[[Charge]]
+[[Defend|Lycan Defend]]]
+(else:)[
+Lycan has been blinded for the turn!
+
+(set: $lycanBlinded to 0)
+(if: $rogueInParty is 1)[
+[[Rogue Battle Menu]]]
+(else:)[
+[[Enemy Turn|Enemy Battle Menu]]]]</tw-passagedata><tw-passagedata pid="18" name="Rogue Attack" tags="" position="5145,1423" size="100,100">(if: $enemyDefending is 0)[
+(set: $enemyHealth to $enemyHealth - 40)
+
+Rogue dealt 40 damage to the enemy!
+
+$enemyName Health: $enemyHealth/$maxEnemyHealth]
+(else-if: $enemyDefending is 1)[
+(set: $enemyHealth to $enemyHealth - 20)
+
+Rogue dealt 20 damage to the enemy!
+
+$enemyName Health: $enemyHealth/$maxEnemyHealth
+(set: $enemyDefending to 0)]
+
+(if: $enemyHealth &lt; 1)[
+(go-to: &quot;Battle Won&quot;)]
+
+[[Enemy Turn|Enemy Battle Menu]]</tw-passagedata><tw-passagedata pid="19" name="Rogue Defend" tags="" position="5478,1424" size="100,100">(set: $rogueDefending to 1)
+Rogue braced himself for an attack!
+
+[[Enemy Turn|Enemy Battle Menu]]</tw-passagedata><tw-passagedata pid="20" name="Lycan Attack" tags="" position="4481,1455" size="100,100">(if: $enemyDefending is 0)[
+(set: $enemyHealth to $enemyHealth - 55)
+
+Lycan dealt 55 damage to the enemy!
+
+$enemyName Health: $enemyHealth/$maxEnemyHealth]
+(else-if: $enemyDefending is 1)[
+(set: $enemyHealth to $enemyHealth - 27)
+
+Lycan dealt 27 damage to the enemy!
+
+$enemyName Health: $enemyHealth/$maxEnemyHealth
+(set: $enemyDefending to 0)]
+
+(if: $enemyHealth &lt; 1)[
+(go-to: &quot;Battle Won&quot;)]
+
+(if: $lycanPoisioned is 1)[
+(set: $lycanHealth to $lycanHealth - 30)
+Lycan felt the affects of the poisioning!
+
+Lycan Health = $lycanHealth/500]
+
+(if: $lycanHealth &lt; 1)[
+Lycan has been knocked out!
+(set: $lycanInParty to 0)]
+
+(if: $rogueInParty is 1)[
+[[Rogue Battle Menu]]]
+(else:)[
+[[Enemy Turn|Enemy Battle Menu]]]</tw-passagedata><tw-passagedata pid="21" name="Lycan Defend" tags="" position="4806,1446" size="100,100">(set: $lycanDefending to 1)
+Lycan braced himself for an attack!
+
+(if: $lycanPoisioned is 1)[
+(set: $lycanHealth to $lycanHealth - 30)
+Lycan felt the affects of the poisioning!
+
+Lycan Health = $lycanHealth/500]
+
+(if: $lycanHealth &lt; 1)[
+Lycan has been knocked out!
+(set: $lycanInParty to 0)]
+
+(if: $rogueInParty is 1)[
+[[Rogue Battle Menu]]]
+(else:)[
+[[Enemy Turn|Enemy Battle Menu]]]</tw-passagedata><tw-passagedata pid="22" name="Hisho Attack" tags="" position="3824,1432" size="100,100">(if: $enemyDefending is 0)[
+(set: $enemyHealth to $enemyHealth - 45)
+
+Hisho dealt 45 damage to the enemy!
+
+$enemyName Health: $enemyHealth/$maxEnemyHealth]
+(else-if: $enemyDefending is 1)[
+(set: $enemyHealth to $enemyHealth - 22)
+
+Hisho dealt 22 damage to the enemy!
+
+$enemyName Health: $enemyHealth/$maxEnemyHealth
+(set: $enemyDefending to 0)]
+
+(if: $enemyHealth &lt; 1)[
+(go-to: &quot;Battle Won&quot;)]
+
+(if: $hishoPoisioned is 1)[
+(set: $hishoHealth to $hishoHealth - 30)
+Hisho felt the affects of the poisioning!
+
+Hisho Health = $hishoHealth/350]
+
+(if: $hishoHealth &lt; 1)[
+Hisho has been knocked out!
+(set: $hishoInParty to 0)]
+
+(if: $lycanInParty is 1)[
+[[Lycan Battle Menu]]]
+(else-if: $rogueInParty is 1)[
+[[Rogue Battle Menu]]]
+(else:)[
+[[Enemy Turn|Enemy Battle Menu]]]</tw-passagedata><tw-passagedata pid="23" name="Hisho Defend" tags="" position="4116,1438" size="100,100">(set: $hishoDefending to 1)
+Hisho braced herself for an attack!
+
+(if: $hishoPoisioned is 1)[
+(set: $hishoHealth to $hishoHealth - 30)
+Hisho felt the affects of the poisioning!
+
+Hisho Health = $hishoHealth/350]
+
+(if: $hishoHealth &lt; 1)[
+Hisho has been knocked out!
+(set: $hishoInParty to 0)]
+
+(if: $lycanInParty is 1)[
+[[Lycan Battle Menu]]]
+(else-if: $rogueInParty is 1)[
+[[Rogue Battle Menu]]]
+(else:)[
+[[Enemy Turn|Enemy Battle Menu]]]</tw-passagedata><tw-passagedata pid="24" name="Enemy Battle Menu" tags="" position="3505,1196" size="100,100">(put: (random: 1,3) into $move)
+(put: (random: 1,$partySize) into $target)
+(if: $move is 1)[
+(go-to: &quot;Enemy Attack&quot;)]
+(else-if: $move is 2)[
+(go-to: &quot;Enemy Defend&quot;)]
+(else-if: $move is 3)[
+(if: $enemySpecial is 1)[
+(go-to: &quot;Team Attack Time&quot;)]
+(else-if: $enemySpecial is 2)[
+(go-to: &quot;Poison Time&quot;)]
+(else-if: $enemySpecial is 3)[
+(go-to: &quot;Charge Time&quot;)]
+(else-if: $enemySpecial is 4)[
+(go-to: &quot;Blinding Time&quot;)]]
+
+
+</tw-passagedata><tw-passagedata pid="25" name="Which Item" tags="" position="5201,695" size="100,100">What item do you wish to use?
+
+{(if: $grenades &gt; 0)[
+[[Use Grenades]]]}
+{(if: $poisonEnemy &gt; 0)[
+[[Poison the Enemy]]]}
+{(if: $healPoison &gt; 0)[
+[[Cure Poison]]]}
+{(if: $healSingle &gt; 0)[
+[[Heal a Teammate]]]}
+{(if: $healTeam &gt; 0)[
+[[Heal the Party]]]}
+</tw-passagedata><tw-passagedata pid="26" name="Heal Player" tags="" position="3713,1612" size="100,100">(set: $playerHealth to $playerHealth + 150)
+(if: $playerHealth &gt; 400)[
+(set: $playerHealth to 400)]
+Hisho healed you!
+
+Player Health: $playerHealth/400
+
+(if: $hishoPoisioned is 1)[
+(set: $hishoHealth to $hishoHealth - 30)
+Hisho felt the affects of the poisioning!
+
+Hisho Health = $hishoHealth/350]
+
+(if: $hishoHealth &lt; 1)[
+Hisho has been knocked out!
+(set: $hishoInParty to 0)]
+
+(if: $lycanInParty is 1)[
+[[Lycan Battle Menu]]]
+(else-if: $rogueInParty is 1)[
+[[Rogue Battle Menu]]]
+(else:)[
+[[Enemy Turn|Enemy Battle Menu]]]</tw-passagedata><tw-passagedata pid="27" name="Heal Lycan" tags="" position="3857,1608" size="100,100">(set: $lycanHealth to $lycanHealth + 150)
+(if: $lycanHealth &gt; 500)[
+(set: $lycanHealth to 500)]
+Hisho healed Lycan!
+
+Lycan Health: $lycanHealth/500
+
+(if: $hishoPoisioned is 1)[
+(set: $hishoHealth to $hishoHealth - 30)
+Hisho felt the affects of the poisioning!
+
+Hisho Health = $hishoHealth/350]
+
+(if: $hishoHealth &lt; 1)[
+Hisho has been knocked out!
+(set: $hishoInParty to 0)]
+
+(if: $lycanInParty is 1)[
+[[Lycan Battle Menu]]]
+(else-if: $rogueInParty is 1)[
+[[Rogue Battle Menu]]]
+(else:)[
+[[Enemy Turn|Enemy Battle Menu]]]</tw-passagedata><tw-passagedata pid="28" name="Heal Rogue" tags="" position="4099,1608" size="100,100">(set: $rogueHealth to $rogueHealth + 150)
+(if: $rogueHealth &gt; 450)[
+(set: $rogueHealth to 450)]
+Hisho healed Rogue!
+
+Rogue  Health: $rogueHealth/450
+
+(if: $hishoPoisioned is 1)[
+(set: $hishoHealth to $hishoHealth - 30)
+Hisho felt the affects of the poisioning!
+
+Hisho Health = $hishoHealth/350]
+
+(if: $hishoHealth &lt; 1)[
+Hisho has been knocked out!
+(set: $hishoInParty to 0)]
+
+(if: $lycanInParty is 1)[
+[[Lycan Battle Menu]]]
+(else-if: $rogueInParty is 1)[
+[[Rogue Battle Menu]]]
+(else:)[
+[[Enemy Turn|Enemy Battle Menu]]]</tw-passagedata><tw-passagedata pid="29" name="Heal Team" tags="" position="4224,1611" size="100,100">(set: $playerHealth to $playerHealth + 100)
+(if: $playerHealth &gt; 400)[
+(set: $playerHealth to 400)]
+
+(set: $hishoHealth to $hishoHealth + 100)
+(if: $hishoHealth &gt; 350)[
+(set: $hishoHealth to 350)]
+
+(set: $lycanHealth to $lycanHealth + 100)
+(if: $lycanHealth &gt; 500)[
+(set: $lycanHealth to 500)]
+
+(set: $rogueHealth to $rogueHealth + 100)
+(if: $rogueHealth &gt; 450)[
+(set: $rogueHealth to 450)]
+Hisho healed the party!
+
+Player Health: $playerHealth/400
+Hisho Health: $hishoHealth/350
+(if: $lycanInParty is 1)[
+Lycan Health: $lycanHealth/500]
+(if: $rogueInParty is 1)[
+Rogue Health: $rogueHealth/450]
+
+(if: $hishoPoisioned is 1)[
+(set: $hishoHealth to $hishoHealth - 30)
+Hisho felt the affects of the poisioning!
+
+Hisho Health = $hishoHealth/350]
+
+(if: $hishoHealth &lt; 1)[
+Hisho has been knocked out!
+(set: $hishoInParty to 0)]
+
+(if: $lycanInParty is 1)[
+[[Lycan Battle Menu]]]
+(else-if: $rogueInParty is 1)[
+[[Rogue Battle Menu]]]
+(else:)[
+[[Enemy Turn|Enemy Battle Menu]]]</tw-passagedata><tw-passagedata pid="30" name="Heal Herself" tags="" position="3967,1604" size="100,100">(set: $hishoHealth to $hishoHealth + 150)
+(if: $hishoHealth &gt; 350)[
+(set: $hishoHealth to 350)]
+Hisho healed herself!
+
+Hisho Health: $hishoHealth/350
+
+(if: $hishoPoisioned is 1)[
+(set: $hishoHealth to $hishoHealth - 30)
+Hisho felt the affects of the poisioning!
+
+Hisho Health = $hishoHealth/350]
+
+(if: $hishoHealth &lt; 1)[
+Hisho has been knocked out!
+(set: $hishoInParty to 0)]
+
+(if: $lycanInParty is 1)[
+[[Lycan Battle Menu]]]
+(else-if: $rogueInParty is 1)[
+[[Rogue Battle Menu]]]
+(else:)[
+[[Enemy Turn|Enemy Battle Menu]]]</tw-passagedata><tw-passagedata pid="31" name="Enemy Attack" tags="" position="3358,1033" size="100,100">(if: $target is 1)[
+(go-to: &quot;Attack Player&quot;)]
+(else-if: $target is 2)[
+(if: $hishoInPart is 1)[
+(go-to: &quot;Attack Hisho&quot;)]
+(else-if: $lycanInParty is 1)[
+(go-to: &quot;Attack Lycan&quot;)]
+(else-if: $rogueInParty is 1)[
+(go-to: &quot;Attack Rogue&quot;)]
+(else:)[
+[[Next Turn|Player Battle Menu]]]]
+(else-if: $target is 3)[
+(if: $lycanInParty is 1)[
+(go-to: &quot;Attack Lycan&quot;)]
+(else-if: $rogueInParty is 1)[
+(go-to: &quot;Attack Rogue&quot;)]
+(else:)[
+[[Next Turn|Player Battle Menu]]]]
+(if: $target is 4)[
+(go-to: &quot;Attack Rogue&quot;)]
+</tw-passagedata><tw-passagedata pid="32" name="Enemy Defend" tags="" position="3507,1035" size="100,100">(set: $enemyDefending to 1)
+$enemyName braced themself for an attack!
+
+(if: $enemyPoisioned is 1)[
+(set: $enemyHealth to $enemyHealth - 30)
+$enemyName felt the affects of the poisioning
+
+$enemyName Health = $enemyHealth/$maxEnemyHealth]
+
+(if: $enemyHealth &lt; 1)[
+(go-to: &quot;Battle Won&quot;)]
+
+[[Next Turn|Player Battle Menu]] </tw-passagedata><tw-passagedata pid="33" name="Team Attack Time" tags="" position="3662,1028" size="100,100">(set: $playerHealth to $playerHealth - 100)
+(set: $hishoHealth to $hishoHealth - 100)
+(set: $lycanHealth to $lycanHealth - 100)
+(set: $rogueHealth to $rogueHealth - 100)
+
+Wing dealt 100 damage to each party member
+
+Player Health: $playerHealth/300
+Hisho Health: $hishoHealth/250
+Lycan Health: $lycanHealth/400
+Rogue Health: $rogueHealth/350
+
+(if: $enemyPoisioned is 1)[
+(set: $enemyHealth to $enemyHealth - 30)
+$enemyName felt the affects of the poisioning
+
+$enemyName Health = $enemyHealth/$maxEnemyHealth]
+
+(if: $enemyHealth &lt; 1)[
+(go-to: &quot;Battle Won&quot;)]
+
+(if: $playerHealth &lt; 1)[
+(go-to: &quot;Battle Lost&quot;)]
+(if: $hishoHealth &lt; 1)[
+Hisho has been knocked out!
+(set: $hishoInParty to 0)]
+(if: $lycanHealth &lt; 1)[
+Lycan has been knocked out!
+(set: $lycanInParty to 0)]
+(if: $rogueHealth &lt; 1)[
+Rogue has been knocked out!
+(set: $rogueInParty to 0)]
+
+[[Next Turn|Player Battle Menu]]
+</tw-passagedata><tw-passagedata pid="34" name="Charge Time" tags="" position="3691,857" size="100,100">&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Battle Menu\Lycan Battle Menu.png&quot; alt=&quot;Lycan Battle Menu&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;
+(if: $target is 1)[
+(set: $enemyHealth to $enemyHealth - 80)
+(set: $playerHealth to $playerHealth - 150)
+
+Lycan charged dealing you 100 damage but was dealt 80 damage to himself in turn!
+
+PLayer Health: $playerHealth/400
+$enemyName Health:$enemyHealth/$maxEnemyHealth]
+
+(else-if: $target is 2)[
+(if: $hishoInPart is 1)[
+(set: $enemyHealth to $enemyHealth - 80)
+(set: $hishoHealth to $hishoHealth - 150)
+
+Lycan charged dealing Hisho 100 damage but was dealt 80 damage to himself in turn!
+
+PLayer Health: $hishoHealth/350
+$enemyName Health:$enemyHealth/$maxEnemyHealth]
+
+(else-if: $rogueInParty is 1)[
+(set: $enemyHealth to $enemyHealth - 80)
+(set: $rogueHealth to $rogueHealth - 150)
+
+Lycan charged dealing Hisho 100 damage but was dealt 80 damage to himself in turn!
+
+PLayer Health: $rogueHealth/450
+$enemyName Health:$enemyHealth/$maxEnemyHealth]]
+
+(else-if: $target is 3)[
+(set: $enemyHealth to $enemyHealth - 80)
+(set: $rogueHealth to $rogueHealth - 150)
+
+Lycan charged dealing Hisho 100 damage but was dealt 80 damage to himself in turn!
+
+PLayer Health: $rogueHealth/450
+$enemyName Health:$enemyHealth/$maxEnemyHealth]
+
+(if: $playerHealth &lt; 1)[
+(go-to: &quot;Battle Lost&quot;)]
+(if: $hishoHealth &lt; 1)[
+Hisho has been knocked out!
+(set: $hishoInParty to 0)]
+(if: $rogueHealth &lt; 1)[
+Rogue has been knocked out!
+(set: $rogueInParty to 0)]
+
+(if: $enemyPoisioned is 1)[
+(set: $enemyHealth to $enemyHealth - 30)
+$enemyName felt the affects of the poisioning
+
+$enemyName Health = $enemyHealth/$maxEnemyHealth]
+
+(if: $enemyHealth &lt; 1)[
+(go-to: &quot;Battle Won&quot;)]
+
+[[Next Turn|Player Battle Menu]] 
+
+</tw-passagedata><tw-passagedata pid="35" name="Poison Time" tags="" position="3526,855" size="100,100">&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Battle Menu\Rogue Battle Menu.png&quot; alt=&quot;Rogue Battle Menu&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;
+(if: $target is 1)[
+(set: $playerPoisioned to 1)
+Rogue poisoned you!
+
+[[Next Turn|Player Battle Menu]]]
+(else-if: $target is 2)[
+(if: $hishoInPart is 1)[
+(set: $hishoPoisioned to 1)
+Rogue poisoned Hisho!
+
+[[Next Turn|Player Battle Menu]]]
+(else-if: $lycanInParty is 1)[
+(set: $lycanPoisioned to 1)
+Rogue poisoned Lycan!
+
+[[Next Turn|Player Battle Menu]]]
+(else:)[
+[[Next Turn|Player Battle Menu]]]]
+(else-if: $target is 3)[
+(set: $lycanPoisioned to 1)
+Rogue poisoned Lycan!
+
+[[Next Turn|Player Battle Menu]]]
+(else:)[
+[[Next Turn|Player Battle Menu]]]]</tw-passagedata><tw-passagedata pid="36" name="Blind Time" tags="" position="3376,854" size="100,100">&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Battle Menu\Siren Battle Menu.png&quot; alt=&quot;Siren Battle Menu&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;
+(if: $target is 1)[
+(set: $playerBlinded to 1)
+(set: $playerHealth to $playerHealth - 100)
+Siren blinded and dealt you 100 damage
+
+Player Heatlh: $playerHealth/400]
+(else-if: $target is 2)[
+(if: $hishoInPart is 1)[
+(set: $hishoBlinded to 1)
+(set: $hishoHealth to $hishoHealth - 100)
+Siren blinded and dealt Hisho 100 damage
+
+Hisho Heatlh: $playerHealth/350]
+(else-if: $lycanInParty is 1)[
+(set: $lycanBlinded to 1)
+(set: $lycanHealth to $lycanHealth - 100)
+Siren blinded and dealt Lycan 100 damage
+
+Lycan Heatlh: $lycanHealth/500]
+(else-if: $rogueInParty is 1)[
+(set: $rogueBlinded to 1)
+(set: $rogueHealth to $rogueHealth - 100)
+Siren blinded and dealt Rogue 100 damage
+
+Rogue Heatlh: $rogueHealth/450]]
+(else-if: $target is 3)[
+(if: $lycanInParty is 1)[
+(set: $lycanBlinded to 1)
+(set: $lycanHealth to $lycanHealth - 100)
+Siren blinded and dealt Lycan 100 damage
+
+Lycan Heatlh: $lycanHealth/500]
+(else-if: $rogueInParty is 1)[
+(set: $rogueBlinded to 1)
+(set: $rogueHealth to $rogueHealth - 100)
+Siren blinded and dealt Rogue 100 damage
+
+Rogue Heatlh: $rogueHealth/450]]
+(if: $target is 4)[
+(set: $rogueBlinded to 1)
+(set: $rogueHealth to $rogueHealth - 100)
+Siren blinded and dealt Rogue 100 damage
+
+Rogue Heatlh: $rogueHealth/450]
+
+(if: $playerHealth &lt; 1)[
+(go-to: &quot;Battle Lost&quot;)]
+(if: $hishoHealth &lt; 1)[
+Hisho has been knocked out!
+(set: $hishoInParty to 0)]
+(if: $lycanHealth &lt; 1)[
+Lycan has been knocked out!
+(set: $lycanInParty to 0)]
+(if: $rogueHealth &lt; 1)[
+Rogue has been knocked out!
+(set: $rogueInParty to 0)]
+
+(if: $enemyPoisioned is 1)[
+(set: $enemyHealth to $enemyHealth - 30)
+$enemyName felt the affects of the poisioning
+
+$enemyName Health = $enemyHealth/$maxEnemyHealth]
+
+(if: $enemyHealth &lt; 1)[
+(go-to: &quot;Battle Won&quot;)]
+
+[[Next Turn|Player Battle Menu]] </tw-passagedata><tw-passagedata pid="37" name="Attack Player" tags="" position="3383,1402" size="100,100">{(if: $enemySpecial is 1)[
+&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Battle Menu\Wing Battle Menu.png&quot; alt=&quot;Wing Battle Menu&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;]
+(else-if: $enemySpecial is 2)[
+&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Battle Menu\Rogue Battle Menu.png&quot; alt=&quot;Rogue Battle Menu&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;]
+(else-if: $enemySpecial is 3)[
+&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Battle Menu\Lycan Battle Menu.png&quot; alt=&quot;Lycan Battle Menu&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;]
+(else-if: $enemySpecial is 4)[
+&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Battle Menu\Siren Battle Menu.png&quot; alt=&quot;Siren Battle Menu&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;]}
+(if: $playerDefending is 1)[
+(set: $alteredDamage to $attackDamage / 2)]
+(else:)[
+(set: $alteredDamage to $attackDamage)]
+(set: $playerHealth to $playerHealth - $alteredDamage)
+$enemyName attacks you and deals you $alteredDamage damage!
+
+Player Health: $playerHealth/400
+(set: $playerDefending to 0)
+(if: $playerHealth &lt; 1)[
+(go-to: &quot;Battle Lost&quot;)]
+
+(if: $enemyPoisioned is 1)[
+(set: $enemyHealth to $enemyHealth - 30)
+$enemyName felt the affects of the poisioning
+
+$enemyName Health = $enemyHealth/$maxEnemyHealth]
+
+(if: $enemyHealth &lt; 1)[
+(go-to: &quot;Battle Won&quot;)]
+
+[[Next Turn|Player Battle Menu]] </tw-passagedata><tw-passagedata pid="38" name="Attack Hisho" tags="" position="3387,1526" size="100,100">{(if: $enemySpecial is 1)[
+&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Battle Menu\Wing Battle Menu.png&quot; alt=&quot;Wing Battle Menu&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;]
+(else-if: $enemySpecial is 2)[
+&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Battle Menu\Rogue Battle Menu.png&quot; alt=&quot;Rogue Battle Menu&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;]
+(else-if: $enemySpecial is 3)[
+&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Battle Menu\Lycan Battle Menu.png&quot; alt=&quot;Lycan Battle Menu&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;]
+(else-if: $enemySpecial is 4)[
+&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Battle Menu\Siren Battle Menu.png&quot; alt=&quot;Siren Battle Menu&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;]}
+(if: $playerDefending is 1)[
+(set: $alteredDamage to $attackDamage / 2)]
+(else:)[
+(set: $alteredDamage to $attackDamage)]
+(set: $hishoHealth to $hishoHealth - $alteredDamage)
+$enemyName attacks Hisho and deals her $alteredDamage damage!
+
+Hisho Health: $hishoHealth/350
+(set:$hishoDefending to 0)
+
+(if: $hishoHealth &lt; 1)[
+Hisho has been knocked out!
+(set: $hishoInParty to 0)]
+
+(if: $enemyPoisioned is 1)[
+(set: $enemyHealth to $enemyHealth - 30)
+$enemyName felt the affects of the poisioning
+
+$enemyName Health = $enemyHealth/$maxEnemyHealth]
+
+(if: $enemyHealth &lt; 1)[
+(go-to: &quot;Battle Won&quot;)]
+
+[[Next Turn|Player Battle Menu]] </tw-passagedata><tw-passagedata pid="39" name="Attack Lycan" tags="" position="3513,1400" size="100,100">{(if: $enemySpecial is 1)[
+&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Battle Menu\Wing Battle Menu.png&quot; alt=&quot;Wing Battle Menu&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;]
+(else-if: $enemySpecial is 2)[
+&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Battle Menu\Rogue Battle Menu.png&quot; alt=&quot;Rogue Battle Menu&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;]
+(else-if: $enemySpecial is 4)[
+&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Battle Menu\Siren Battle Menu.png&quot; alt=&quot;Siren Battle Menu&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;]}
+(if: $playerDefending is 1)[
+(set: $alteredDamage to $attackDamage / 2)]
+(else:)[
+(set: $alteredDamage to $attackDamage)]
+(set: $lycanHealth to $lycanHealth - $alteredDamage)
+$enemyName attacks Lycan and deals him $alteredDamage damage!
+
+Lycan Health: $lycanHealth/500
+
+(set: $lycanDefending to 0)
+
+(if: $lycanHealth &lt; 1)[
+Lycan has been knocked out!
+(set: $lycanInParty to 0)]
+
+(if: $enemyPoisioned is 1)[
+(set: $enemyHealth to $enemyHealth - 30)
+$enemyName felt the affects of the poisioning
+
+$enemyName Health = $enemyHealth/$maxEnemyHealth]
+
+(if: $enemyHealth &lt; 1)[
+(go-to: &quot;Battle Won&quot;)]
+
+[[Next Turn|Player Battle Menu]] </tw-passagedata><tw-passagedata pid="40" name="Attack Rogue" tags="" position="3510,1525" size="100,100">{(if: $enemySpecial is 1)[
+&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Battle Menu\Wing Battle Menu.png&quot; alt=&quot;Wing Battle Menu&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;]
+(else-if: $enemySpecial is 3)[
+&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Battle Menu\Lycan Battle Menu.png&quot; alt=&quot;Lycan Battle Menu&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;]
+(else-if: $enemySpecial is 4)[
+&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Battle Menu\Siren Battle Menu.png&quot; alt=&quot;Siren Battle Menu&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;]}
+(if: $playerDefending is 1)[
+(set: $alteredDamage to $attackDamage / 2)]
+(else:)[
+(set: $alteredDamage to $attackDamage)]
+(set: $rogueHealth to $rogueHealth - $alteredDamage)
+$enemyName attacks Rogue and deals him $alteredDamage damage!
+
+Rogue Health: $rogueHealth/450
+(set: $rogueDefending to 0)
+(if: $rogueHealth &lt; 1)[
+Rogue has been knocked out!
+(set: $rogueInParty to 0)]
+
+(if: $enemyPoisioned is 1)[
+(set: $enemyHealth to $enemyHealth - 30)
+$enemyName felt the affects of the poisioning
+
+$enemyName Health = $enemyHealth/$maxEnemyHealth]
+
+(if: $enemyHealth &lt; 1)[
+(go-to: &quot;Battle Won&quot;)]
+
+[[Next Turn|Player Battle Menu]] </tw-passagedata><tw-passagedata pid="41" name="Battle Won" tags="" position="3200,1138" size="100,100">Victory!
+
+You defeat $enemyName.
+
+(if: $battleNum is 1)[
+(go-to: &quot;After Battle 1&quot;) ]
+(else-if: $battleNum is 2)[
+(go-to: &quot;After Battle 2&quot;) ]
+(else-if: $battleNum is 3)[
+(go-to: &quot;After Battle 2&quot;) ]
+(else-if: $battleNum is 4)[
+(go-to: &quot;After Battle 4&quot;) ]
+(else-if: $battleNum is 5)[
+(go-to: &quot;After Battle 5&quot;) ]
+(else-if: $battleNum is 6)[
+(go-to: &quot;After Battle 6&quot;) ]
+(else-if: $battleNum is 7)[
+(go-to: &quot;After Battle 7&quot;) ]
+(else-if: $battleNum is 8)[
+(go-to: &quot;After Battle 8&quot;) ]
+(else-if: $battleNum is 9)[
+(go-to: &quot;After Battle 9&quot;) ]
+(else-if: $battleNum is 10)[
+(go-to: &quot;After Battle 10&quot;) ]</tw-passagedata><tw-passagedata pid="42" name="After Battle 1" tags="" position="2428.666666666667,987.3333333333333" size="100,100">&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Route 1 Map\Map 4.png&quot; alt=&quot;Map&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;
+Congratulations! You defeated the Wing faction. You&#39;re now one step closer to taking over the world.
+
+[[Continue|Event 3 Recruit Rogue]]</tw-passagedata><tw-passagedata pid="43" name="Battle Lost" tags="" position="3197,1266" size="100,100">You have been defeaten
+
+Would you like to try again?
+[[Yes|Load Save]]
+[[No|Don&#39;t Load Save]]</tw-passagedata><tw-passagedata pid="44" name="After Battle 2" tags="" position="2610.666666666667,991.3333333333333" size="100,100">&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Route 1 Map\Map 8.png&quot; alt=&quot;Map&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;
+Congratulations! You defeated the Siren faction!
+
+[[Ending 2]]
+</tw-passagedata><tw-passagedata pid="45" name="After Battle 3" tags="" position="2802.6666666666665,988.3333333333333" size="100,100">&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Route 2 Map\Map 3.png&quot; alt=&quot;Map&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;
+Congratulations! You defeated the Wing faction. You&#39;re now one step closer to taking over the world.
+
+[[Continue|Reach Loot Room 3]]</tw-passagedata><tw-passagedata pid="46" name="After Battle 4" tags="" position="2433,1116.9999999999998" size="100,100">&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Route 2 Map\Map 6.png&quot; alt=&quot;Map&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;
+Congratulations! You defeated the Rogue faction!
+
+[[Continue|Enter Save Room 3]]</tw-passagedata><tw-passagedata pid="47" name="After Battle 5" tags="" position="2634.666666666667,1132.9999999999998" size="100,100">&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Route 2 Map\Map 6.png&quot; alt=&quot;Map&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;
+Congratulations! You defeated the Lycan faction!
+
+[[Continue|Enter Save Room 3]]</tw-passagedata><tw-passagedata pid="48" name="After Battle 6" tags="" position="2821,1123.3333333333333" size="100,100">&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Route 2 Map\Map 8.png&quot; alt=&quot;Map&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;
+Congratulations! You defeated the Siren faction!
+
+(if: $route is 1)[
+[[Ending 3a]]]
+(else:)[
+[[Ending 3b]]]</tw-passagedata><tw-passagedata pid="49" name="After Battle 7" tags="" position="2447.3333333333335,1262" size="100,100">&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Route 3 Map\Map 3.png&quot; alt=&quot;Map&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;
+Congratulations! You defeated the Wing faction.
+
+[[Continue|Run in with Rogue 2]]</tw-passagedata><tw-passagedata pid="50" name="After Battle 8" tags="" position="2630,1265.3333333333335" size="100,100">&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Route 3 Map\Map 4.png&quot; alt=&quot;Map&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;
+Congratulations! You defeated the Rogue faction!
+
+[[Continue|Run in with Lycan 2]]</tw-passagedata><tw-passagedata pid="51" name="After Battle 9" tags="" position="2829.6666666666665,1278.6666666666665" size="100,100">&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Route 3 Map\Map 5.png&quot; alt=&quot;Map&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;
+Congratulations! You defeated the Lycan faction!
+
+[[Continue|Enter Save Room 5]]</tw-passagedata><tw-passagedata pid="52" name="After Battle 10" tags="" position="2636.6666666666665,1421.6666666666665" size="100,100">&lt;img src=&quot;c:\Users\Vincent_2\Documents\Twine\Stories\images\Route 3 Map\Map 7.png&quot; alt=&quot;Map&quot; height=&quot;300&quot; width=&quot;600&quot; /&gt;
+Congratulations! You defeated the Siren faction!
+[[Ending 4]]</tw-passagedata><tw-passagedata pid="53" name="Use Grenades" tags="" position="5704,774" size="100,100">(if: $enemyDefending is 0)[
+(set: $enemyHealth to $enemyHealth - 70)
+
+You used a grenade and dealt 70 damage to the enemy!
+
+$enemyName Health: $enemyHealth/$maxEnemyHealth]
+(else-if: $enemyDefending is 1)[
+(set: $enemyHealth to $enemyHealth - 35)
+
+You used a grenade and dealt 35 damage to the enemy!
+
+$enemyName Health: $enemyHealth/$maxEnemyHealth
+(set: $enemyDefending to 0)]}
+
+(if: $enemyHealth &lt; 1)[
+(go-to: &quot;Battle Won&quot;)]
+
+(if: $playerPoisioned is 1)[
+(set: $playerHealth to $playerHealth - 30)
+You felt the affects of the poisioning!
+
+Player Health = $playerHealth/400]
+
+(if: $playerHealth &lt; 1)[
+(go-to: &quot;Battle Lost&quot;)]
+
+{(if: $hishoInParty is 1)[
+[[Hisho Battle Menu]]]
+(else-if: $lycanInParty is 1)[
+[[Lycan Battle Menu]]]
+(else-if: $rogueInParty is 1)[
+[[Rogue Battle Menu]]]
+(else:)[
+[[Enemy Turn|Enemy Battle Menu]] ]}</tw-passagedata><tw-passagedata pid="54" name="Poison the Enemy" tags="" position="5824,774" size="100,100">(if: $enemySpecial is 2)[
+Rogue is immune to poison!]
+(else:)[
+(set: $enemyPoisoned to 1)
+You used a poison on the enemy!]
+
+(if: $playerPoisioned is 1)[
+(set: $playerHealth to $playerHealth - 30)
+You felt the affects of the poisioning!
+
+Player Health = $playerHealth/400]
+
+(if: $playerHealth &lt; 1)[
+(go-to: &quot;Battle Lost&quot;)]
+
+{(if: $hishoInParty is 1)[
+[[Hisho Battle Menu]]]
+(else-if: $lycanInParty is 1)[
+[[Lycan Battle Menu]]]
+(else-if: $rogueInParty is 1)[
+[[Rogue Battle Menu]]]
+(else:)[
+[[Enemy Turn|Enemy Battle Menu]] ]}</tw-passagedata><tw-passagedata pid="55" name="Cure Poison" tags="" position="5948,774" size="100,100">{(set: $playerPoisoned to 0)
+(set: $hishoPoisoned to 0)
+(set: $lycanPoisoned to 0)}
+You healed the party!
+
+{(if: $hishoInParty is 1)[
+[[Hisho Battle Menu]]]
+(else-if: $lycanInParty is 1)[
+[[Lycan Battle Menu]]]
+(else-if: $rogueInParty is 1)[
+[[Rogue Battle Menu]]]
+(else:)[
+[[Enemy Turn|Enemy Battle Menu]] ]}</tw-passagedata><tw-passagedata pid="56" name="Heal a Teammate" tags="" position="6064,774" size="100,100">[[Heal Yourself]]
+(if: $hishoInParty is 1)[
+[[Heal Hisho]]]
+(if: $lycanInParty is 1)[
+[[Heal Lycan|Heal Lycan with Item]]]
+(if: $rogueInParty is 1)[
+[[Heal Rogue|Heal Rogue with Item]]]</tw-passagedata><tw-passagedata pid="57" name="Heal the Party" tags="" position="6184,774" size="100,100">(set: $playerHealth to $playerHealth + 50)
+(if: $playerHealth &gt; 400)[
+(set: $playerHealth to 400)]
+
+(set: $hishoHealth to $hishoHealth + 50)
+(if: $hishoHealth &gt; 350)[
+(set: $hishoHealth to 350)]
+
+(set: $lycanHealth to $lycanHealth + 50)
+(if: $lycanHealth &gt; 500)[
+(set: $lycanHealth to 500)]
+
+(set: $rogueHealth to $rogueHealth + 50)
+(if: $rogueHealth &gt; 450)[
+(set: $rogueHealth to 450)]
+You healed the party!
+
+Player Health: $playerHealth/400
+(if: $hishoInParty is 1)[
+Hisho Health: $hishoHealth/350]
+(if: $lycanInParty is 1)[
+Lycan Health: $lycanHealth/500]
+(if: $rogueInParty is 1)[
+Rogue Health: $rogueHealth/450]
+
+(if: $playerPoisioned is 1)[
+(set: $playerHealth to $playerHealth - 30)
+You felt the affects of the poisioning!
+
+Player Health = $playerHealth/400]
+
+(if: $playerHealth &lt; 1)[
+(go-to: &quot;Battle Lost&quot;)]
+
+{(if: $hishoInParty is 1)[
+[[Hisho Battle Menu]]]
+(else-if: $lycanInParty is 1)[
+[[Lycan Battle Menu]]]
+(else-if: $rogueInParty is 1)[
+[[Rogue Battle Menu]]]
+(else:)[
+[[Enemy Turn|Enemy Battle Menu]] ]}</tw-passagedata><tw-passagedata pid="58" name="Heal Yourself" tags="" position="5799,1050" size="100,100">{(set: $lycanHealth to $lycanHealth + 100)
+(if: $lycanHealth &gt; 500)[
+(set: $lycanHealth to 500)]}
+You healed Lycan!
+
+Lycan Health: $lycanHealth/500
+
+
+(if: $playerPoisioned is 1)[
+(set: $playerHealth to $playerHealth - 30)
+You felt the affects of the poisioning!
+
+Player Health = $playerHealth/400]
+
+(if: $playerHealth &lt; 1)[
+(go-to: &quot;Battle Lost&quot;)]
+
+{(if: $hishoInParty is 1)[
+[[Hisho Battle Menu]]]
+(else-if: $lycanInParty is 1)[
+[[Lycan Battle Menu]]]
+(else-if: $rogueInParty is 1)[
+[[Rogue Battle Menu]]]
+(else:)[
+[[Enemy Turn|Enemy Battle Menu]] ]}</tw-passagedata><tw-passagedata pid="59" name="Heal Hisho" tags="" position="5961,1058" size="100,100">{(set: $playerHealth to $playerHealth + 100)
+(if: $playerHealth &gt; 400)[
+(set: $playerHealth to 400)]}
+You healed the yourself!
+
+Player Health: $playerHealth/400
+
+(if: $playerPoisioned is 1)[
+(set: $playerHealth to $playerHealth - 30)
+You felt the affects of the poisioning!
+
+Player Health = $playerHealth/400]
+
+(if: $playerHealth &lt; 1)[
+(go-to: &quot;Battle Lost&quot;)]
+{(if: $hishoInParty is 1)[
+[[Hisho Battle Menu]]]
+(else-if: $lycanInParty is 1)[
+[[Lycan Battle Menu]]]
+(else-if: $rogueInParty is 1)[
+[[Rogue Battle Menu]]]
+(else:)[
+[[Enemy Turn|Enemy Battle Menu]] ]}</tw-passagedata><tw-passagedata pid="60" name="Heal Lycan with Item" tags="" position="6151,1054" size="100,100">{(set: $rogueHealth to $rogueHealth + 100)
+(if: $rogueHealth &gt; 450)[
+(set: $rogueHealth to 450)]}
+You healed Rogue!
+
+Rogue Health: $rogueHealth/450
+
+
+(if: $playerPoisioned is 1)[
+(set: $playerHealth to $playerHealth - 30)
+You felt the affects of the poisioning!
+
+Player Health = $playerHealth/400]
+
+(if: $playerHealth &lt; 1)[
+(go-to: &quot;Battle Lost&quot;)]
+
+{(if: $hishoInParty is 1)[
+[[Hisho Battle Menu]]]
+(else-if: $lycanInParty is 1)[
+[[Lycan Battle Menu]]]
+(else-if: $rogueInParty is 1)[
+[[Rogue Battle Menu]]]
+(else:)[
+[[Enemy Turn|Enemy Battle Menu]] ]}</tw-passagedata><tw-passagedata pid="61" name="Heal Rogue with Item" tags="" position="6345,1068" size="100,100">{(set: $hishoHealth to $hishoHealth + 100)
+(if: $hishoHealth &gt; 500)[
+(set: $hishoHealth to 500)]}
+You healed Hisho!
+
+Hisho Health: $hishoHealth/350
+
+
+(if: $playerPoisioned is 1)[
+(set: $playerHealth to $playerHealth - 30)
+You felt the affects of the poisioning!
+
+Player Health = $playerHealth/400]
+
+(if: $playerHealth &lt; 1)[
+(go-to: &quot;Battle Lost&quot;)]
+{(if: $hishoInParty is 1)[
+[[Hisho Battle Menu]]]
+(else-if: $lycanInParty is 1)[
+[[Lycan Battle Menu]]]
+(else-if: $rogueInParty is 1)[
+[[Rogue Battle Menu]]]
+(else:)[
+[[Enemy Turn|Enemy Battle Menu]] ]}</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
