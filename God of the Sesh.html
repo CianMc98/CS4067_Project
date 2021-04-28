@@ -15,7 +15,7 @@
 
 .center {
   text-align: center;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="A1 Chp0" tags="" position="1397,297" size="100,100">Today is a day like no other in Drinklympus. It’s the millennium anniversary since you, [[$name|Set Up Character]], became God of the Sesh and ushered in a new golden age of drinking. And what kind of Sesh God would you be if you did not celebrate such an occasion?
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="A1 Chp0" tags="" position="1400.3333333333333,393.6666666666667" size="100,100">Today is a day like no other in Drinklympus. It’s the millennium anniversary since you, [[$name|Set Up Character]], became God of the Sesh and ushered in a new golden age of drinking. And what kind of Sesh God would you be if you did not celebrate such an occasion?
 
 For the past month you have been partying day in, day out with your fellow gods in the lead up to the anniversary; you’ve chug-jugged with Galalad, invented new cocktails with Smirnoff that would floor even the hardiest of mortals, and probably have drank a lake worth of the finest wine made from Chardonnay’s very own vineyards on Drinklympus.
 
@@ -26,14 +26,14 @@ Today is the final day of the festivities, but it is also the most important day
 [[Continue|A1 Chp1]]
 
 {(if: $pronoun_1 is &quot;she&quot;)[(set: $gender_noun to &quot;woman&quot;)(set: $pronoun_2 to &quot;her&quot;)]
-(else-if: $pronoun_1 is &quot;they&quot;)[(set: $gender_noun to &quot;person&quot;)(set: $pronoun_2 to &quot;them&quot;)]}</tw-passagedata><tw-passagedata pid="2" name="A1 Chp1" tags="" position="1401,501" size="100,100">You’re wandering around the party, making small talk with the party-goers as is your duty as the party host when you see someone skulking by the entrance doors. It’s Corona; one of the higher ranking Lager gods who’s probably one of the next contenders to be promoted to Lager General. You’re surprised to see her by herself; she’s usually inseparable from her best friend Lime.  
+(else-if: $pronoun_1 is &quot;they&quot;)[(set: $gender_noun to &quot;person&quot;)(set: $pronoun_2 to &quot;them&quot;)]}</tw-passagedata><tw-passagedata pid="2" name="A1 Chp1" tags="" position="1404.3333333333333,597.6666666666666" size="100,100">You’re wandering around the party, making small talk with the party-goers as is your duty as the party host when you see someone skulking by the entrance doors. It’s Corona; one of the higher ranking Lager gods who’s probably one of the next contenders to be promoted to Lager General. You’re surprised to see her by herself; she’s usually inseparable from her best friend Lime.  
 
 “Corona,” you say as you approach her with a cordial smile. You then ask:
 
 “Strange to see you all alone! Where’s Lime?”
 
 [[Drinklympus]] 
-</tw-passagedata><tw-passagedata pid="3" name="Chardonnay Controller" tags="" position="764,196" size="100,100">You walk up to Chardonnay who&#39;s lounging by the wine waterfall, a large glass of wine in hand.
+</tw-passagedata><tw-passagedata pid="3" name="Chardonnay Controller" tags="" position="767.3333333333334,292.6666666666667" size="100,100">You walk up to Chardonnay who&#39;s lounging by the wine waterfall, a large glass of wine in hand.
 
 {(unless: (history:) contains &quot;Chardonnay Controller&quot;)[
 	(display: &quot;Chardonnay Start&quot;)
@@ -51,10 +51,12 @@ Today is the final day of the festivities, but it is also the most important day
 		(set: $chardonnay_random_passages to 0)
 	]
 ]
-(else:)[(display: &quot;Chardonnay End&quot;)]} </tw-passagedata><tw-passagedata pid="4" name="startup" tags="startup" position="1205,105" size="100,100">(set: $chardonnay_random_passages to (shuffled: 1,2,3))
+(else:)[(display: &quot;Chardonnay End&quot;)]} </tw-passagedata><tw-passagedata pid="4" name="startup" tags="startup" position="1225,205.00000000000003" size="100,100">(set: $chardonnay_random_passages to (shuffled: 1,2,3))
 (set: $chardonnay_checks to 0)
 (set: $jagerbull_random_passages to (shuffled: 1,2))
 (set: $jagerbull_checks to 0)
+(set: $smirnoff_random_passages to (shuffled: 1,2,3))
+(set: $smirnoffl_checks to 0)
 (set: $Saves to &quot;&quot;)
 (set: $name to &quot;Astra&quot;)
 (set: $gender_noun to &quot;man&quot;)
@@ -71,20 +73,20 @@ Today is the final day of the festivities, but it is also the most important day
 (set: $deaths to 0)
 (set: $move to 0)
 (set: $specialUsed to false)
-(set: $playerSpiked to 0)
-(set: $enemySpiked to 0)
+(set: $playerPoisoned to 0)
+(set: $enemyPoisoned to 0)
 (set: $enemyName to &quot;Druids&quot;)
 (set: $bulmersFought to false)
 (set: $galahadFought to false)
 (set: $tequilaFought to false)
 (set: $druidsFought to false)
-</tw-passagedata><tw-passagedata pid="5" name="Menu" tags="menu" position="1403,104" size="100,100">&lt;h1&gt;God of the Sesh&lt;/h1&gt;
+</tw-passagedata><tw-passagedata pid="5" name="Menu" tags="menu" position="1406.3333333333333,200.66666666666669" size="100,100">&lt;h1&gt;God of the Sesh&lt;/h1&gt;
 &lt;h2&gt;&lt;i&gt;Oh how the mighty do fall...&lt;/i&gt;&lt;/h2&gt;
 
 [[New Game |A1 Chp0]]
 {(if: $Saves contains &quot;Slot A&quot;)[
   (link: &quot;Load game&quot;)[(load-game:&quot;Slot A&quot;)]
-]}</tw-passagedata><tw-passagedata pid="6" name="Drinklympus" tags="" position="1133,603" size="100,100">{(link:&quot;Save Game&quot;)[
+]}</tw-passagedata><tw-passagedata pid="6" name="Drinklympus" tags="" position="1136.3333333333333,699.6666666666666" size="100,100">{(link:&quot;Save Game&quot;)[
   (if:(save-game:&quot;Slot A&quot;))[
     Game saved!
   ](else: )[
@@ -97,7 +99,8 @@ Today is the final day of the festivities, but it is also the most important day
 
 #Rest of teh act 1
 
-[[Post Drinklympus]]</tw-passagedata><tw-passagedata pid="7" name="Player Battle Menu" tags="" position="2514,432" size="100,100">(if: $playerBlinded is 0)[
+[[Post Drinklympus]]</tw-passagedata><tw-passagedata pid="7" name="Player Battle Menu" tags="" position="2517.3333333333335,528.6666666666666" size="100,100">Player Tolerance: $playerTolerance/$maxPlayerTolerance
+(if: $playerBlinded is 0)[
 What will the player do?
 
 [[Drink]]
@@ -106,14 +109,12 @@ What will the player do?
 The blayer has been blinded for the turn, you cannot use any items!
 (set: $playerBlinded to 0)
 
-[[Drink]]]
-
-</tw-passagedata><tw-passagedata pid="8" name="Drink" tags="" position="2719,519" size="100,100">(set: $playerTolerance to $playerTolerance - 50)
+[[Drink]]]</tw-passagedata><tw-passagedata pid="8" name="Drink" tags="" position="2722.3333333333335,615.6666666666666" size="100,100">(set: $playerTolerance to $playerTolerance - 50)
 You drink and take 50 damage!
 
 Player Tolerance: $playerTolerance/$maxPlayerTolerance
 
-(if: $playerSpiked is 1)[
+(if: $playerPoisoned is 1)[
 (set: $playerTolerance to $playerTolerance - 30)
 You are feeling the effects of the vodka!
 
@@ -123,7 +124,7 @@ Player Tolerance: $playerTolerance/$maxPlayerTolerance
 (go-to: &quot;Battle Lost&quot;)]
 
 [[Next Turn|Enemy Battle Menu]] 
-</tw-passagedata><tw-passagedata pid="9" name="Enemy Battle Menu" tags="" position="2533,680" size="100,100">(if: $specialUsed is false)[
+</tw-passagedata><tw-passagedata pid="9" name="Enemy Battle Menu" tags="" position="2514.666666666667,765" size="100,100">(if: $specialUsed is false)[
 (put: (random: 1,2) into $move)]
 (else-if: $specialUsed is true)[
 (put: 1 into $move)]
@@ -138,73 +139,65 @@ Player Tolerance: $playerTolerance/$maxPlayerTolerance
 (else-if: $enemyType is 3)[
 (go-to: &quot;Galahad Attack&quot;)]
 (else-if: $enemyType is 4)[
-(go-to: &quot;Tequila Attack&quot;)]]
+(go-to: &quot;Tequila Attack&quot;)]]</tw-passagedata><tw-passagedata pid="10" name="Item" tags="" position="2989.3333333333335,596.6666666666666" size="100,100">(text-style:&quot;bold&quot;)[What item do you wish to use?]
 
+{(if: $enemyPoisoned is 0 and $vodka &gt; 0)[[Vodka Challange]] Vodka: $vodka}
+{(if: $water &gt; 0 )[[Drink Water]] Water: $water}
+{(if: $tayto &gt; 0)[[Eat Packet of Tayto]] Tayto: $tayto}
 
-</tw-passagedata><tw-passagedata pid="10" name="Item" tags="" position="2986,500" size="100,100">(text-style:&quot;bold&quot;)[What item do you wish to use?]
+[[Back|Player Battle Menu]]</tw-passagedata><tw-passagedata pid="11" name="Druids Attack" tags="" position="2438.3333333333335,237.66666666666669" size="100,100">Whatever we want them to do
 
-{(if: $enemySpiked is 0 and $vodka &gt; 0)[[Spike the Enemy]]}
-{(if: $water &gt; 0 )[[Drink Water]]}
-{(if: $tayto &gt; 0)[[Eat Packet of Tayto]]}
-</tw-passagedata><tw-passagedata pid="11" name="Druids Attack" tags="" position="2435,141" size="100,100">Whatever we want them to do
-
-(if: $enemySpiked is 1)[
+(if: $enemyPoisoned is 1)[
 (set: $enemyTolerance to $enemyTolerance - 30)
 $enemyName felt the affects of the vodka
-
-$enemyName Tolerance = $enemyTolerance/$maxEnemyTolerance]
-
 (if: $enemyTolerance &lt; 1)[
 (go-to: &quot;Battle Won&quot;)]
 
-[[Next Turn|Player Battle Menu]] </tw-passagedata><tw-passagedata pid="12" name="Bulmers Attack" tags="" position="2840,142" size="100,100">Whatever we want them to do
+$enemyName Tolerance: $enemyTolerance/$maxEnemyTolerance]
 
-(if: $enemySpiked is 1)[
+[[Next Turn|Player Battle Menu]] </tw-passagedata><tw-passagedata pid="12" name="Bulmers Attack" tags="" position="2843.3333333333335,238.66666666666669" size="100,100">Whatever we want them to do
+
+(if: $enemyPoisoned is 1)[
 (set: $enemyTolerance to $enemyTolerance - 30)
 $enemyName felt the affects of the vodka
-
-$enemyName Tolerance = $enemyTolerance/$maxEnemyTolerance]
-
 (if: $enemyTolerance &lt; 1)[
 (go-to: &quot;Battle Won&quot;)]
 
-[[Next Turn|Player Battle Menu]] </tw-passagedata><tw-passagedata pid="13" name="Galahad Attack" tags="" position="2707,143" size="100,100">Whatever we want them to do
+$enemyName Tolerance: $enemyTolerance/$maxEnemyTolerance]
 
-(if: $enemySpiked is 1)[
+[[Next Turn|Player Battle Menu]] </tw-passagedata><tw-passagedata pid="13" name="Galahad Attack" tags="" position="2710.3333333333335,239.66666666666669" size="100,100">Whatever we want them to do
+
+(if: $enemyPoisoned is 1)[
 (set: $enemyTolerance to $enemyTolerance - 30)
 $enemyName felt the affects of the vodka
-
-$enemyName Tolerance = $enemyTolerance/$maxEnemyTolerance]
-
 (if: $enemyTolerance &lt; 1)[
 (go-to: &quot;Battle Won&quot;)]
 
-[[Next Turn|Player Battle Menu]] </tw-passagedata><tw-passagedata pid="14" name="Tequila Attack" tags="" position="2565,144" size="100,100">(set: $playerBlinded to 1)
+$enemyName Tolerance: $enemyTolerance/$maxEnemyTolerance]
+
+[[Next Turn|Player Battle Menu]] </tw-passagedata><tw-passagedata pid="14" name="Tequila Attack" tags="" position="2568.3333333333335,240.66666666666669" size="100,100">(set: $playerBlinded to 1)
 (set: $playerTolerance to $playerTolerance - 100)
 Tequilla throws Salt in your eyes, blinding you and dealing 100 damage
 
-Salt: What the Sobrell, why did you throw me?
+Salt: &quot;What the Sobrell, why did you throw me?&quot;
 
 Player Tolerance: $playerTolerance/$maxPlayerTolerance]
 
 (if: $playerTolerance &lt; 1)[
 (go-to: &quot;Battle Lost&quot;)]
 
-[[Next Turn|Player Battle Menu]] </tw-passagedata><tw-passagedata pid="15" name="Enemy Drink" tags="" position="2302,143" size="100,100">(set: $enemyTolerance to $enemyTolerance - 50)
+[[Next Turn|Player Battle Menu]] </tw-passagedata><tw-passagedata pid="15" name="Enemy Drink" tags="" position="2305.3333333333335,239.66666666666669" size="100,100">(set: $enemyTolerance to $enemyTolerance - 50)
 $enemyName drinks and takes 50 damage!
 
-$enemyName Tolerance: $enemyTolerance/$maxEnemyTolerance
-
-(if: $enemySpiked is 1)[
+(if: $enemyPoisoned is 1)[
 (set: $enemyTolerance to $enemyTolerance - 30)
-They are feeling the effects of the vodka!
-
-$enemyName Tolerance: $enemyTolerance/$maxEnemyTolerance]
-
+They are feeling the effects of the vodka.
 (if: $enemyTolerance &lt; 1)[
 (go-to: &quot;Battle Won&quot;)]
 
-[[Next Turn|Player Battle Menu]] </tw-passagedata><tw-passagedata pid="16" name="Battle Won" tags="" position="1841,1198" size="100,100">Victory!
+$enemyName Tolerance: $enemyTolerance/$maxEnemyTolerance]
+
+[[Next Turn|Player Battle Menu]] </tw-passagedata><tw-passagedata pid="16" name="Battle Won" tags="" position="1844.3333333333333,1294.6666666666667" size="100,100">Victory!
 
 You defeat $enemyName.
 
@@ -216,7 +209,7 @@ You defeat $enemyName.
 (go-to: &quot;After Galahad&quot;) ]
 (else-if: $enemyType is 4)[
 (go-to: &quot;After Tequila&quot;) ]
-</tw-passagedata><tw-passagedata pid="17" name="After Druids" tags="" position="1836,1011" size="100,100">
+</tw-passagedata><tw-passagedata pid="17" name="After Druids" tags="" position="1839.3333333333333,1107.6666666666667" size="100,100">
 Congratulations! You defeated Druids. You may now pass into drinklympus
 (set: $druidsFought to true)
 
@@ -226,12 +219,12 @@ Your tolerance has imporved!
 
 Player Tolerance: $playerTolerance/$maxPlayerTolerance
 
-[[Continue|Post Drinklympus]]</tw-passagedata><tw-passagedata pid="18" name="Battle Lost" tags="" position="1608,1192" size="100,100">You have been defeated(if: $deaths is 3)[ too many times, your rep among the drink gods is ruined.
+[[Continue|Post Drinklympus]]</tw-passagedata><tw-passagedata pid="18" name="Battle Lost" tags="" position="1611.3333333333333,1288.6666666666667" size="100,100">You have been defeated(if: $deaths is 3)[ too many times, your rep among the drink gods is ruined.
 [[End|End Game]]]
 (else:)[
 (set: $playerTolerancxe to $maxPlayerTolerance)
 (set: $deaths to $deaths + 1)
-[[Continue|Sobrell]]]</tw-passagedata><tw-passagedata pid="19" name="After Bulmers" tags="" position="1966,1012" size="100,100">
+[[Continue|Sobrell]]]</tw-passagedata><tw-passagedata pid="19" name="After Bulmers" tags="" position="1969.3333333333333,1108.6666666666667" size="100,100">
 Congratulations! You defeated the Bulmers!
 (set: $bulmersFought to true)
 
@@ -241,7 +234,7 @@ Your tolerance has imporved!
 
 Player Tolerance: $playerTolerance/$maxPlayerTolerance
 
-[[Continue|Post Drinklympus]]</tw-passagedata><tw-passagedata pid="20" name="After Galahad" tags="" position="2093,1013" size="100,100">
+[[Continue|Post Drinklympus]]</tw-passagedata><tw-passagedata pid="20" name="After Galahad" tags="" position="2096.3333333333335,1109.6666666666667" size="100,100">
 Congratulations! You defeated the Galahad.
 (set: $galahadFought to true)
 
@@ -251,7 +244,7 @@ Your tolerance has imporved!
 
 Player Tolerance: $playerTolerance/$maxPlayerTolerance
 
-[[Continue|Post Drinklympus]]</tw-passagedata><tw-passagedata pid="21" name="After Tequila" tags="" position="1711,1011" size="100,100">Congratulations! You defeated the Tequila!
+[[Continue|Post Drinklympus]]</tw-passagedata><tw-passagedata pid="21" name="After Tequila" tags="" position="1714.3333333333333,1107.6666666666667" size="100,100">Congratulations! You defeated the Tequila!
 (set: $tequilaFought to true)
 
 Your tolerance has imporved!
@@ -259,7 +252,7 @@ Your tolerance has imporved!
 (set: $playerTolerance to $maxPlayerTolerance)
 
 Player Tolerance: $playerTolerance/$maxPlayerTolerance
-[[Continue|Post Drinklympus]]</tw-passagedata><tw-passagedata pid="22" name="Eat Packet of Tayto" tags="" position="2989,628" size="100,100">You pull out a packet of crisps and feverishly dig in.
+[[Continue|Post Drinklympus]]</tw-passagedata><tw-passagedata pid="22" name="Eat Packet of Tayto" tags="" position="2992.3333333333335,724.6666666666666" size="100,100">You pull out a packet of crisps and feverishly dig in.
 
 {(set: $playerTolerance to $playerTolerance + 100)
 (set: $tayto to $tayto - 1)
@@ -269,7 +262,7 @@ You feel refreshed!
 
 Player Tolerance: $playerTolerance/$maxPlayerTolerance
 
-(if: $playerSpiked is 1)[
+(if: $playerPoisoned is 1)[
 (set: $playerTolerance to $playerTolerance - 30)
 You not as young as you once were!
 
@@ -278,12 +271,12 @@ Player Tolerance = $playerTolerance/$maxPlayerTolerance]
 (if: $playerTolerance &lt; 1)[
 (go-to: &quot;Battle Lost&quot;)]
 
-[[Enemy Turn|Enemy Battle Menu]]</tw-passagedata><tw-passagedata pid="23" name="Set Up Character" tags="" position="1601,102" size="100,100">&lt;p class=&quot;center&quot;&gt;Raise your glasses to the glorious God of the Sesh
+[[Enemy Turn|Enemy Battle Menu]]</tw-passagedata><tw-passagedata pid="23" name="Set Up Character" tags="" position="1604.3333333333333,198.66666666666669" size="100,100">&lt;p class=&quot;center&quot;&gt;Raise your glasses to the glorious God of the Sesh
 
 (input-box:2bind $name,&quot;====XX====&quot;,1,&quot;Astra&quot;)
 May (cycling-link: bind $pronoun_1, &quot;he&quot;,&quot;she&quot;,&quot;they&quot;) drink on forever!
 
-[[Continue|A1 Chp0]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="24" name="Chardonnay Start" tags="" position="669,0" size="100,100">&quot;Why hello cutie, long time no see,&quot; Chardonnay purrs with a wink before taking a long sip from her wine glass. The words that had been on the tip of your tongue suddenly vanish at the unexpected term of endearment and you find yourself swallowing heavily. 
+[[Continue|A1 Chp0]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="24" name="Chardonnay Start" tags="" position="672.3333333333334,96.66666666666667" size="100,100">&quot;Why hello cutie, long time no see,&quot; Chardonnay purrs with a wink before taking a long sip from her wine glass. The words that had been on the tip of your tongue suddenly vanish at the unexpected term of endearment and you find yourself swallowing heavily. 
 
 &quot;H-Hey Chardonnay,&quot; you eventually manage to stammer, all the while berating yourself internally for getting flustered. You&#39;d really think a millenia would be enough time to get used to her flirtations, but she always manages to get under your skin.
 
@@ -297,17 +290,15 @@ You&#39;re alarmed for a brief moment by what her suggestive tone is implying, b
 &quot;A $gender_noun after my own heart,&quot; she replies with a theatrical sigh, but her eyes seem more distant now. Is she upset with you for forgetting, you wonder.]
 ]]&lt;c1_o2|
 
-[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="25" name="Chardonnay R1" tags="" position="566,85" size="100,100">r1
+[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="25" name="Chardonnay R1" tags="" position="569.3333333333334,181.66666666666669" size="100,100">r1
 
-[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="26" name="Chardonnay R2" tags="" position="566,193" size="100,100">r2
+[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="26" name="Chardonnay R2" tags="" position="569.3333333333334,289.6666666666667" size="100,100">r2
 
-[[Continue |Drinklympus]] </tw-passagedata><tw-passagedata pid="27" name="Chardonnay R3" tags="" position="564,298" size="100,100">r3
+[[Continue |Drinklympus]] </tw-passagedata><tw-passagedata pid="27" name="Chardonnay R3" tags="" position="567.3333333333334,394.6666666666667" size="100,100">r3
 
-[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="28" name="Chardonnay End" tags="" position="671,395" size="100,100">end
+[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="28" name="Chardonnay End" tags="" position="674.3333333333334,491.6666666666667" size="100,100">end
 
-[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="29" name="Jager and Red Bull Controller" tags="" position="102,518" size="100,100">Sup Brah, you hear from behing you in chorus.
-
-{(unless: (history:) contains &quot;Jager and Red Bull Controller&quot;)[
+[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="29" name="Jager and Red Bull Controller" tags="" position="272,514.6666666666666" size="100,100">{(unless: (history:) contains &quot;Jager and Red Bull Controller&quot;)[
 	(display: &quot;Jager and Red Bull Start&quot;)
 ]
 (else-if: $jagerbull_random_passages is not 0 )[
@@ -323,7 +314,7 @@ You&#39;re alarmed for a brief moment by what her suggestive tone is implying, b
 		(set: $jagerbull_random_passages to 0)
 	]
 ]
-(else:)[(display: &quot;Jager and Red Bull End&quot;)]} </tw-passagedata><tw-passagedata pid="30" name="Jager and Red Bull Start" tags="" position="22,353" size="100,100">&quot;Some boolox here&quot;
+(else:)[(display: &quot;Jager and Red Bull End&quot;)]} </tw-passagedata><tw-passagedata pid="30" name="Jager and Red Bull Start" tags="" position="157.00000000000003,343" size="100,100">&quot;Sup Brah&quot;, you hear from behing you in chorus.
 
 [(link-reveal: &quot;Some boolex&quot;)[(replace: ?c1_o2)[](set: $jagerbull_checks to it +1)
 &lt;br&gt;Some response boolox]]&lt;c1_o1|
@@ -331,33 +322,29 @@ You&#39;re alarmed for a brief moment by what her suggestive tone is implying, b
 Some response boolox]
 ]]&lt;c1_o2|
 
-[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="31" name="Jager and Red Bull R1" tags="" position="0,470" size="100,100">r1
+[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="31" name="Jager and Red Bull R1" tags="" position="135.00000000000003,460" size="100,100">r1
 
-[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="32" name="Jager and Red Bull R2" tags="" position="0,588" size="100,100">r2
+[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="32" name="Jager and Red Bull R2" tags="" position="135.00000000000003,578" size="100,100">r2
 
-[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="33" name="Jager and Red Bull End" tags="" position="11,703" size="100,100">end
+[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="33" name="Jager and Red Bull End" tags="" position="146.00000000000003,693" size="100,100">end
 
-[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="34" name="Spike the Enemy" tags="" position="2984,748" size="100,100">You spike their drink with vodka.
+[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="34" name="Vodka Challange" tags="" position="2987.3333333333335,844.6666666666666" size="100,100">&quot;If your so worthy of being a drink god why dont you give this a try&quot;, as you place a shot of Smirnoff&#39;s new vodka in front of $enemyName.
 (set: $vodka to $vodka - 1)
-(if: $enemyType is 4)[
-Spirit God is immune to vodka!]
-(else:)[
-(set: $enemySpiked to 1)
-Their face wringles at the taste. Super Effective!]
-(if: $playerSpiked is 1)[
-(set: $playerTolerance to $playerTolerance - 30)
+(if: $enemyType is 4)[The Spirit God is immune to vodka!]
+(else:)[(set: $enemyPoisoned to 1) Their face wringles at the taste. Super Effective!]
+(if: $playerPoisoned is 1)[(set: $playerTolerance to $playerTolerance - 30)
 You feel a little worse for wear!
 
 Player Tolerance = $playerTolerance/$maxPlayerTolerance]
 (if: $playerTolerance &lt; 1)[
 (go-to: &quot;Battle Lost&quot;)]
 
-[[Enemy Turn|Enemy Battle Menu]]</tw-passagedata><tw-passagedata pid="35" name="Drink Water" tags="" position="2984,864" size="100,100">{(set: $playerSpiked to 0)}
+[[Enemy Turn|Enemy Battle Menu]]</tw-passagedata><tw-passagedata pid="35" name="Drink Water" tags="" position="2987.3333333333335,960.6666666666666" size="100,100">{(set: $playerPoisoned to 0)}
 You slam back a bottle of water.
 
 (set: $water to $water -1)
 
-[[Enemy Turn|Enemy Battle Menu]]</tw-passagedata><tw-passagedata pid="36" name="Post Drinklympus" tags="" position="1893,804" size="100,100">{(link:&quot;Save Game&quot;)[
+[[Enemy Turn|Enemy Battle Menu]]</tw-passagedata><tw-passagedata pid="36" name="Post Drinklympus" tags="" position="1896.3333333333333,900.6666666666666" size="100,100">{(link:&quot;Save Game&quot;)[
   (if:(save-game:&quot;Slot A&quot;))[
     Game saved!
   ](else: )[
@@ -365,49 +352,49 @@ You slam back a bottle of water.
   ]
 ]}
 
-Who will you confront?
+&#39;&#39;Who will you confront?&#39;&#39;
 (if: $bulmersFought is false)[[[Bulmers|Bulmers Battle]]]
 (if: $galahadFought is false)[[[Galahad|Galahad Battle]]]
 (if: $tequilaFought is false)[[[Tequila|Tequila Battle]]]
-(if: $druidsFought is false)[[[Druids|Druids Battle]]]</tw-passagedata><tw-passagedata pid="37" name="Sobrell" tags="" position="1397,1194" size="100,100">Double-click this passage to edit it.
+(if: $druidsFought is false)[[[Druids|Druids Battle]]]</tw-passagedata><tw-passagedata pid="37" name="Sobrell" tags="" position="1400.3333333333333,1290.6666666666667" size="100,100">Double-click this passage to edit it.
 
-[[Post Drinklympus]]</tw-passagedata><tw-passagedata pid="38" name="End Game" tags="" position="1391,1347" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="39" name="Druids Battle" tags="" position="2245,332" size="100,100">Fight with druids Begins
+[[Post Drinklympus]]</tw-passagedata><tw-passagedata pid="38" name="End Game" tags="" position="1394.3333333333333,1443.6666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="39" name="Druids Battle" tags="" position="2248.3333333333335,428.6666666666667" size="100,100">Fight with Druids Begins
 (set: $enemyType to 1)
 (set: $enemyMaxTolerance to 50)
 (set: $enemyTolerance to 50)
-(set: $playerSpiked to 0)
-(set: $enemySpiked to 0)
+(set: $playerPoisoned to 0)
+(set: $enemyPoisoned to 0)
 (set: $enemyName to &quot;Druids&quot;)
 (set: $specialUsed to false)
 
-[[Drink Off!|Player Battle Menu]]</tw-passagedata><tw-passagedata pid="40" name="Bulmers Battle" tags="" position="2241,457" size="100,100">Fight with Bulmers begins.
+[[Drink Off!|Player Battle Menu]]</tw-passagedata><tw-passagedata pid="40" name="Bulmers Battle" tags="" position="2244.3333333333335,553.6666666666666" size="100,100">Fight with Bulmers begins.
 (set: $enemyType to 2)
 (set: $enemyMaxTolerance to 200)
 (set: $enemyTolerance to 200)
-(set: $playerSpiked to 0)
-(set: $enemySpiked to 0)
+(set: $playerPoisoned to 0)
+(set: $enemyPoisoned to 0)
 (set: $enemyName to &quot;Bulmers&quot;)
 (set: $specialUsed to false)
 
-[[Drink Off!|Player Battle Menu]]</tw-passagedata><tw-passagedata pid="41" name="Tequila Battle" tags="" position="2240,722" size="100,100">Fight with Tequila begins.
+[[Drink Off!|Player Battle Menu]]</tw-passagedata><tw-passagedata pid="41" name="Tequila Battle" tags="" position="2243.3333333333335,818.6666666666666" size="100,100">Fight with Tequila begins.
 (set: $enemyType to 4)
 (set: $enemyMaxTolerance to 200)
 (set: $enemyTolerance to 200)
-(set: $playerSpiked to 0)
-(set: $enemySpiked to 0)
+(set: $playerPoisoned to 0)
+(set: $enemyPoisoned to 0)
 (set: $enemyName to &quot;Tequila&quot;)
 (set: $specialUsed to false)
 
-[[Drink Off!|Player Battle Menu]]</tw-passagedata><tw-passagedata pid="42" name="Galahad Battle" tags="" position="2241,587" size="100,100">Fight with Galahad begins.
+[[Drink Off!|Player Battle Menu]]</tw-passagedata><tw-passagedata pid="42" name="Galahad Battle" tags="" position="2244.3333333333335,683.6666666666666" size="100,100">Fight with Galahad begins.
 (set: $enemyType to 3)
 (set: $enemyMaxTolerance to 200)
 (set: $enemyTolerance to 200)
-(set: $playerSpiked to 0)
-(set: $enemySpiked to 0)
+(set: $playerPoisoned to 0)
+(set: $enemyPoisoned to 0)
 (set: $enemyName to &quot;Galahad&quot;)
 (set: $specialUsed to false)
 
-[[Drink Off!|Player Battle Menu]]</tw-passagedata><tw-passagedata pid="43" name="Smirnoff Start" tags="" position="341,770" size="100,100">&quot;H-h-h-heeeeey! Wheeeere d&#39;ya think yeeeeer goin?&quot; a drunken old man slurrs as he takes a swig out of a bottle wrapped in a brown-paper bag. The man stumbles forward and grabs the pool outside this shady club. You find yourself caught off guard and carefully take a step back from him and give a friendly reply.
+[[Drink Off!|Player Battle Menu]]</tw-passagedata><tw-passagedata pid="43" name="Smirnoff Start" tags="" position="344.3333333333333,866.6666666666666" size="100,100">&quot;H-h-h-heeeeey! Wheeeere d&#39;ya think yeeeeer goin?&quot; a drunken old man slurrs as he takes a swig out of a bottle wrapped in a brown-paper bag. The man stumbles forward and grabs the pool outside this shady club. You find yourself caught off guard and carefully take a step back from him and give a friendly reply.
 
 He stumbled closer, his pupils were dilated and he was sweating profusely. &quot;Whaaaat do they call yoooouuu?&quot; he blurted out as he stumbled to the ground. Without hesistation you help the drunken mess up from the ground and rest him against the wall outside the bar.   
 
@@ -423,23 +410,19 @@ He stumbled closer, his pupils were dilated and he was sweating profusely. &quot
 &quot;Ahh Alright shur, Dont be shy if ya see me round thesee parts&quot; he replies with an exaggerated bow as some vodka spills from his hip-flask.]
 ]]&lt;c1_o2|
 
-[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="44" name="Smirnoff r1" tags="" position="265,925" size="100,100">&quot;Welll if it isnt $name, fancy seeing you here.&quot; Smirnoff says in a happier manner than usual. You&#39;re curiousity gets the better of you and you ask why he is in such a good mood. 
+[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="44" name="Smirnoff r1" tags="" position="268.3333333333333,1021.6666666666666" size="100,100">&quot;Welll if it isnt $name, fancy seeing you here.&quot; Smirnoff says in a happier manner than usual. You&#39;re curiousity gets the better of you and you ask why he is in such a good mood. 
 
+[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="45" name="Smirnoff r3" tags="" position="266.3333333333333,1239.6666666666667" size="100,100">r3
 
+[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="46" name="Smirnoff End" tags="" position="373.3333333333333,1292.6666666666667" size="100,100">end
 
-[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="45" name="Smirnoff r3" tags="" position="263,1143" size="100,100">r3
+[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="47" name="Smirnoff r2" tags="" position="264.3333333333333,1126.6666666666667" size="100,100">r2
 
-[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="46" name="Smirnoff End" tags="" position="370,1196" size="100,100">end
-
-[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="47" name="Smirnoff r2" tags="" position="261,1030" size="100,100">r2
-
-[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="48" name="Smirnoff Controller" tags="" position="470,970" size="100,100">Sup Brah, you hear from behing you in chorus.
-
-{(unless: (history:) contains &quot;Smirnoff Controller&quot;)[
+[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="48" name="Smirnoff Controller" tags="" position="473.3333333333333,1066.6666666666667" size="100,100">{(unless: (history:) contains &quot;Smirnoff Controller&quot;)[
 	(display: &quot;Smirnoff Start&quot;)
 ]
 (else-if: $smirnoff_random_passages is not 0 )[
-	(set: _random to $chardonnay_random_passages&#39;s 1st)
+	(set: _random to $smirnoff_random_passages&#39;s 1st)
 	(if: _random is 1)		[(display: &quot;Smirnoff r1&quot;)]
 	(else-if: _random is 2)	[(display: &quot;Smirnoff r2&quot;)]
 	(else-if: _random is 3)	[(display: &quot;Smirnoff r3&quot;)]
