@@ -94,7 +94,8 @@ Today is the final day of the festivities, but it is also the most important day
 ]
 (else:)[(display: &quot;Chardonnay End&quot;)]
 (group: &#39;playing&#39;, &#39;stop&#39;)
-(track: &#39;chardonnay-theme&#39;, &#39;play&#39;)} </tw-passagedata><tw-passagedata pid="4" name="startup" tags="startup" position="1205,107" size="100,100">(set: $chardonnay_random_passages to (shuffled: 1,2,3))
+(track: &#39;chardonnay-theme&#39;, &#39;play&#39;)} 
+(link: &quot;Continue&quot;)[(group: &#39;playing&#39;, &#39;stop&#39;)(go-to: &quot;Drinklympus&quot;)]</tw-passagedata><tw-passagedata pid="4" name="startup" tags="startup" position="1205,107" size="100,100">(set: $chardonnay_random_passages to (shuffled: 1,2,3))
 (set: $chardonnay_checks to 0)
 (set: $Saves to &quot;&quot;)
 (set: $name to &quot;Astra&quot;)
@@ -1204,17 +1205,9 @@ You&#39;re alarmed for a brief moment by what her suggestive tone is implying, b
 &lt;br&gt;She regards you silently for a long moment and you&#39;re sweating bullets until a small but pleased smile grows on her face.]]&lt;c1_o1|
 [(link: &quot;\&quot;Gorgeous\&quot;, you say with a wink.&quot;)[(replace: ?c1_o1)[&quot;Gorgeous&quot;, you say with a wink.&quot;&lt;br&gt;
 &quot;A $gender_noun after my own heart,&quot; she replies with a theatrical sigh, but her eyes seem more distant now. Is she upset with you for forgetting, you wonder.]
-]]&lt;c1_o2|
+]]&lt;c1_o2|</tw-passagedata><tw-passagedata pid="64" name="Chardonnay R1" tags="" position="401,494" size="100,100">r1 </tw-passagedata><tw-passagedata pid="65" name="Chardonnay R2" tags="" position="401,602" size="100,100">r2
 
-[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="64" name="Chardonnay R1" tags="" position="401,494" size="100,100">r1
-
-[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="65" name="Chardonnay R2" tags="" position="401,602" size="100,100">r2
-
-[[Continue |Drinklympus]] </tw-passagedata><tw-passagedata pid="66" name="Chardonnay R3" tags="" position="399,707" size="100,100">r3
-
-[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="67" name="Chardonnay End" tags="" position="506,804" size="100,100">end
-
-[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="68" name="hal.tracks" tags="" position="995,99.16666666666663" size="100,100">tense-song: ./assets/audio/under-pressure-michael-kobrin-105bpm-3781.mp3
+[[Continue |Drinklympus]] </tw-passagedata><tw-passagedata pid="66" name="Chardonnay R3" tags="" position="399,707" size="100,100">r3</tw-passagedata><tw-passagedata pid="67" name="Chardonnay End" tags="" position="506,804" size="100,100">end</tw-passagedata><tw-passagedata pid="68" name="hal.tracks" tags="" position="995,99.16666666666663" size="100,100">tense-song: ./assets/audio/under-pressure-michael-kobrin-105bpm-3781.mp3
 harp-music: ./assets/audio/awakening-chill-out-music-1295.mp3
 chardonnay-theme: ./assets/audio/bensound-sexy.mp3</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
