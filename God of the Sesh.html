@@ -9,12 +9,25 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play God of the Sesh.</tw-noscript></noscript></tw-story>
-<tw-storydata name="God of the Sesh" startnode="52" creator="Twine" creator-version="2.3.13" ifid="B4E8339A-E1D4-4E09-B21E-74A7EA3815DC" zoom="0.6" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
+<tw-storydata name="God of the Sesh" startnode="50" creator="Twine" creator-version="2.3.13" ifid="B4E8339A-E1D4-4E09-B21E-74A7EA3815DC" zoom="0.6" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
 	display: none;
 }
 
 .center {
   text-align: center;
+}
+
+.portrait-img-left {
+  height: 300px;
+  width: 300px;
+}
+
+.portrait-img-center {
+  height: 300px;
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 tw-story[tags~="menu"] {
@@ -58,7 +71,7 @@ tw-story[tags~="vodka"] {color: #000000;}
 tw-story[tags~="vodka"] tw-link {color: #000000;}
 tw-story[tags~="vodka"] tw-link:hover {color: #ab8a2a;}
 
-tw-story[tags~="orchard"] {background-color: #006400;}
+tw-story[tags~="orchard"] {background-color: #118011;}
 tw-story[tags~="orchard"] {color: #000000;}
 tw-story[tags~="orchard"] tw-link {color: #000000;}
 tw-story[tags~="orchard"] tw-link:hover {color: #ab8a2a;}
@@ -78,8 +91,9 @@ tw-story[tags~="bulmers"] {color: #000000;}
 tw-story[tags~="bulmers"] tw-link {color: #4682B4;}
 tw-story[tags~="bulmers"] tw-link:hover {color: #ab8a2a;}
 
-tw-story[tags~="sienna"] {background-color: #1f0f00;}
-tw-story[tags~="sienna"] {color: #000000;}
+/*druids*/
+tw-story[tags~="sienna"] {background-color: #4f2803;}
+tw-story[tags~="sienna"] {color: #FFFFFF;}
 tw-story[tags~="sienna"] tw-link {color: #4682B4;}
 tw-story[tags~="sienna"] tw-link:hover {color: #ab8a2a;}
 
@@ -101,6 +115,14 @@ tw-story[tags~="galahad-bg"] {background-color: #3275a8;}
 tw-story[tags~="galahad-bg"] tw-link {color: #171717;}
 tw-story[tags~="galahad-bg"] tw-link:hover {color: #8fb2cc;}
 
+tw-story[tags~="corona-bg"] {background-color: #090f69;}
+tw-story[tags~="corona-bg"] tw-link {color: #dfbd5d;}
+tw-story[tags~="corona-bg"] tw-link:hover {color: #ab8a2a;}
+
+tw-story[tags~="karen-bg"] {background-color: #494a63;}
+tw-story[tags~="karen-bg"] tw-link {color: #171717;}
+tw-story[tags~="karen-bg"] tw-link:hover {color: #302f2f;}
+
 /**
  * Harlowe Audio Library (HAL), by Chapel, v2.2.1
  * for Harlowe 2.1.0 and higher
@@ -113,7 +135,7 @@ tw-story[tags~="galahad-bg"] tw-link:hover {color: #8fb2cc;}
  * Released under the Unlicense, and dedicated to the public domain.
 **/
 ;!function(e){(jQuery.browser=jQuery.browser||{}).mobile=/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(e)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(e.substr(0,4))}(navigator.userAgent||navigator.vendor||window.opera),function(){"use strict";window.Fast={filter:function(e,t){for(var o=e.length,n=[],a=0;a<o;a++)t(e[a],a,e)&&n.push(e[a]);return n},forEach:function(e,t){for(var o=e.length,n=0;n<o;n++)t(e[n],n,e)},map:function(e,t){for(var o=e.length,n=new Array(o),a=0;a<o;a++)n[a]=t(e[a],a,e);return n},find:function(e,t){for(var o=e.length,n=0;n<o;n++)if(t(e[n],n,e))return e[n]},findIndex:function(e,t){for(var o=e.length,n=0;n<o;n++)if(t(e[n],n,e))return n;return-1},some:function(e,t){for(var o=e.length,n=0;n<o;n++)if(t(e[n],n,e))return!0;return!1}}}(),window.Chapel=window.Chapel||{},window.Chapel.options={preload:!0,loadDelay:0,muteOnBlur:!0,startingVol:.5,persistPrefs:!0,globalA:!0,showControls:!0,sidebarStartClosed:!0,volumeDisplay:!1,trackLoadLimit:500,totalLoadLimit:8e3,debug:!1},window.Chapel.debug=function(){Chapel.options.debug&&console.log.apply(null,arguments)},function(){"use strict";var n=$("tw-storydata"),o=/(.+?):(.+)/,t=/[\r\n]+/,a=/^["']/,r=/["']$/;function e(e){return Fast.map(Fast.filter(e.split(t),function(e){return e&&e.trim()&&e.includes(":")}),function(e){return e.trim()})}function i(e){return e.trim().replace(a,"").replace(r,"").trim()}function s(e){var t=e.match(o);return t instanceof Array?{key:i(t[1]),value:i(t[2])}:e}var u,l,c,p=n.find('tw-passagedata[name="hal.tracks"]'),d=null;p.length&&(u=e(p.text()),l=[],c=[],Fast.forEach(u,function(e){var t,o=s(e);"string"==typeof o&&c.push(o),l.push([o.key,(t=o.value,Fast.map(t.split(","),i))])}),c.length&&console.error("Some track definitions could not be parsed:\n"+c.join("\n")+"\nPlease check these definitions and try again."),d=new Map(l));var m,h,f=n.find('tw-passagedata[name="hal.config"]'),g=null;function y(e){var t=n.attr("format-version");if(e)return t;var o=t.split(".")[0],o=Number(o);return Number.isNaN(o)&&(o=3),o<1&&(o=3),o}f.length&&(m=e(f.text()),h={},Fast.forEach(Fast.map(m,function(e){return s(e)}),function(e){h[e.key]=e.value}),g=h),g&&Fast.forEach(Object.keys(g),function(e){var t=e,o=h[e],n=typeof Chapel.options[e];"boolean"==n?"true"===o?Chapel.options[t]=!0:"false"===o&&(Chapel.options[t]=!1):"number"==n?(o=Number(o),Number.isNaN(o)||(Chapel.options[t]=o)):"string"==n&&o&&(Chapel.options[t]=o)});var w=require("macros");if(window.Chapel=window.Chapel||{},window.Chapel.Macros={add:function(n){n&&"object"==typeof n&&Fast.forEach(Object.keys(n),function(e){var t,o;o=n[t=e],w.add(t,function(){var e=[].slice.call(arguments).slice(1),t=o.apply(null,e);return"string"==typeof t||"boolean"==typeof t||"number"==typeof t?t:""},w.TypeSignature.zeroOrMore(w.TypeSignature.Any))})}},window.Chapel.Get={version:y(),isHarlowe3OrLater:3<=y(),storyTitle:n.attr("name"),IFID:n.attr("ifid"),fromPassage:d},Chapel.debug("Harlowe Version -> ",y(!0)),Chapel.debug("Harlowe Major Version -> ",Chapel.Get.version),Chapel.debug("Story Title -> ",Chapel.Get.storyTitle),Chapel.debug("Story IFID -> ",Chapel.Get.IFID),Chapel.Get.version<2)throw new Error("The Harlowe Audio Library is only designed to work with Harlowe 2 and 3; you appear to be using Harlowe 1 or an otherwise invalid story format.","get.js -> initialization",176);Chapel.options.storagekey="%%hal-"+Chapel.Get.IFID+"-{"+Chapel.Get.storyTitle+"}",Chapel.debug("Storage Key -> ",Chapel.options.storagekey)}(),function(){"use strict";var t=Chapel.options,e=function(e,t){if(window.localStorage)try{e=""+e,"string"!=typeof t&&(t=JSON.stringify(t)),window.localStorage.setItem(e,t)}catch(e){console.error(e)}},o=function(e){if(window.localStorage)try{return e=""+e,window.localStorage.getItem(e)}catch(e){console.error(e)}},n=function(e){if(window.localStorage)try{e=""+e,window.localStorage.removeItem(e)}catch(e){console.error(e)}},a={loaded:[],classes:{},master:{volume:t.startingVol,mute:!1},groups:{playing:[],looping:[],custom:{}},mute:function(e){a.master.mute=!!e,$(document).trigger({type:":master-mute",mute:!!e})},isMuted:function(){return!!a.master.mute},volume:function(e){e=Number(e),Number.isNaN(e)||(1<e?e=1:e<0&&(e=0),a.master.volume=e),$(document).trigger({type:":master-volume",volume:e})},getVolume:function(){return a.master.volume},stopAll:function(){a.classes.Track&&Fast.forEach(a.classes.Track.list,function(e){e.stop()})},audioPlaying:function(){return!!a.groups.playing.length},savePrefs:function(){e(t.storagekey,a.master)},loadPrefs:function(){var e=o(t.storagekey);e&&"object"==typeof e&&e.hasOwnProperty("volume")&&"number"==typeof e.volume&&e.hasOwnProperty("mute")&&"boolean"==typeof e.volume&&(delete a.master,a.master=e)},clearPrefs:function(){n(t.storagekey)}},r={track:[":available",":loaded",":play",":stop",":mute",":volume"],master:[":master-mute",":master-volume"]};var i=r.track.concat(r.master);function s(e,t){if(!e||"string"!=typeof e||!e.trim())return null;var o=Fast.filter(Fast.map(e.split(" "),function(e){return":"!==(e=e.split(".")[0])[0]&&(e=":"+e),e+".userland"}),function(e){return t?i.includes(e):r.track.includes(e)}).join(" ");return o&&o.trim()?o:null}a.data={parseEvent:s,bail:function(e){throw new Error(e,"audio.js -> bail()",140)}},a.on=function(e,t){t&&"function"==typeof t?(e=s(e,!0))&&$(document).on(e,t):console.error("Chapel.Audio.on() -> invalid callback")},a.one=function(e,t){t&&"function"==typeof t?(e=s(e,!0))&&$(document).one(e,t):console.error("Chapel.Audio.one() -> invalid callback")},a.off=function(e){(e=s(e,!0))&&$(document).off(e)},t.persistPrefs&&($(document).on(":master-mute",a.savePrefs),$(document).on(":master-volume",a.savePrefs)),$(document).on(":play",function(e){e.track.addToGroup("playing")}),$(document).on(":stop",function(e){e.track.removeFromGroup("playing")}),t.muteOnBlur&&$(window).on("blur",function(){a.isMuted()||(a.mute(!0),$(window).one("focus",function(){a.mute(!1)}))}),a.parseEvent=s,window.Chapel=window.Chapel||{},window.Chapel.Audio=a}(),function(){"use strict";var r=Chapel.Audio,o=r.data.pareEvent,a=r.data.bail,i=Chapel.options,t=$(document.createElement("div")).attr("id","audio-container").css("display","none").appendTo(document.body),s={aac:"audio/aac",caf:"audio/x-caf","x-caf":"audio/x-caf",mp3:'audio/mpeg; codecs="mp3"',mpeg:'audio/mpeg; codecs="mp3"',m4a:"audio/mp4",mp4:"audio/mp4","x-m4a":"audio/mp4","x-mp4":"audio/mp4",oga:"audio/ogg",ogg:"audio/ogg",opus:'audio/ogg; codecs="opus"',wav:"audio/wav",wave:"audio/wav",weba:"audio/webm",webm:"audio/webm"};function u(e,t,o){this instanceof u||a("Track: called without `new` operator"),e||a("Track: no id specified"),"string"!=typeof e&&a("Track: track id is not a string"),t&&(!Array.isArray(t)||t.length)||a("Track: no sources specified"),o?t=[].slice.call(arguments).slice(1):"string"==typeof t&&(t=[t]);var n=$(document.createElement("audio"));Fast.forEach(t,function(e){var t,o;$(document.createElement("source")).attr({src:e,type:(t=e.split("."),(o=t[t.length-1]).includes("?")&&(o=o.split("?")[0]),o=o.toLowerCase().trim(),Object.keys(s).includes(o)||a('Track: unsupported file type "'+o+'"'),s[o])}).appendTo(n)}),n.attr({"data-track":"id","data-volume":1,"data-mute":!1}).one("canplaythrough.hal",function(){r.loaded.push(e)}),i.preload&&n.attr("preload","auto"),n[0].volume=+r.master.volume,this.id=e,this.$el=n,this.unwrap=n[0],this.sources=t}Object.assign(u,{list:[],is:function(e){return e instanceof u},has:function(t){return Fast.some(u.list,function(e){return e.id===t})},emit:function(e,t){$(document).trigger({type:e,track:t}),t.emit(e)},add:function(e,t,o){o&&(t=[].slice.call(arguments).slice(1));var n=new u(e,t);return u.list.push(n),n.$el.on("canplay",function(){u.emit(":available",n)}),n.$el.on("canplaythrough",function(){u.emit(":loaded",n)}),n.attach(),n},renew:function(){Fast.forEach(u.list,function(e){e.mute(e.isMuted()),e.volume(e.getVolume())})},getIdx:function(t){return Fast.findIndex(u.list,function(e){return e.id===t})},get:function(t){var e=Fast.find(u.list,function(e){return e.id===t});if(!e)throw new ReferenceError('There is no track with the id "'+t+'". Please check your spelling and capitalization.',"track.js -> Track.get()",155);return e},removeFromDOM:function(e){"string"==typeof e&&(e=u.get(e)),e&&u.is(e)?e.unattach():t.remove()},_runOnMultiple:function(e,t,o){e instanceof Array&&u.prototype.hasOwnProperty(t)&&Fast.forEach(u.list,function(e){u.is(e)||(e=u.get(e)||null),e&&e[t].apply(e,o&&o instanceof Array?o:[])})}}),Object.assign(u.prototype,{constructor:u,emit:function(e){this.$el.trigger({type:e,track:this})},clone:function(){return new u(this.id,this.sources)},isAttached:function(){return $.contains(t[0],this.unwrap)},attach:function(){return this.isAttached()||this.$el.appendTo(t),this},unattach:function(){return this.isAttached()&&this.$el.remove(),this},isPlaying:function(){return!this.unwrap.paused},play:function(){var e=this;return this.unwrap.play(),u.emit(":play",this),this.$el.on("ended",function(){e.unwrap.loop||(e.unwrap.currentTime=0,u.emit(":stop",e))}),this},playWhenPossible:function(){var t=this;return this.unwrap.play().then(function(){u.emit(":play",t),t.$el.on("ended",function(){t.unwrap.loop||(t.unwrap.currentTime=0,u.emit(":stop",t))})},function(e){$(document).one("click mousedown keydown touchstart",function(){t.play()})}).catch(function(e){console.error(e)}),this},forcePlay:function(){var e=this,t=$(document.createElement("a")).css("display","none").appendTo(document.body).on("click",function(){e.play()});setTimeout(function(){t.trigger("click")},safeAudioStart)},pause:function(){return this.unwrap.pause(),u.emit(":pause",this),this},stop:function(){return this.unwrap.pause(),this.unwrap.currentTime=0,u.emit(":stop",this),this},mute:function(e){return e=!!e,this.$el.attr("data-mute",e),r.master.mute?this.unwrap.muted=!0:this.unwrap.muted=e,u.emit(":mute",this),this},isMuted:function(){var e=this.$el.attr("data-mute");return"boolean"==typeof e?e:"false"!==e},toggleMute:function(){return this.mute(!this.isMuted()),this},volume:function(e){return e=Number(e),Number.isNaN(e)||(1<e?e=1:e<0&&(e=0),this.$el.attr("data-volume",e),this.unwrap.volume=e*r.master.volume),u.emit(":volume",this),this},getVolume:function(){return Number(this.$el.attr("data-volume"))},addToGroup:function(e,t){var o=this,n=t?r.groups.custom[e]:r.groups[e];return Fast.some(n,function(e){return o.id===e.id})||n.push(this),this},removeFromGroup:function(e,t){var o=this,n=t?r.groups.custom[e]:r.groups[e],a=Fast.findIndex(n,function(e){return e.id&&e.id===o.id});return n.splice(a,1),this},loop:function(e){return this.unwrap.loop=!!e,this.unwrap.loop?this.addToGroup("looping"):this.removeFromGroup("looping"),this},isLooping:function(){return!!this.unwrap.loop},toggleLoop:function(){return this.loop(!this.isLooping()),this},seek:function(e){return e<0?e=this.unwrap.duration-e:e>this.unwrap.duration&&(e=this.unwrap.duration),this.unwrap.currentTime=e,this},fadeIn:function(e){var t=this;e=e||1;var o=this.getVolume();return this.volume(0),this.play(),this.$el.animate({volume:o*r.master.volume},1e3*e,function(){t.volume(o),u.emit(":volume",t),u.emit(":fade",t)}),this},fadeOut:function(e){e=e||1;var t=this,o=this.getVolume();return this.$el.animate({volume:0},1e3*e,function(){t.stop(),t.volume(o),u.emit(":volume",t),u.emit(":fade",t)}),this},fadeTo:function(e,t){var o=this;if(e=e||1,t=Number(t),!Number.isNaN(t))return 1<t?t=1:t<0&&(t=0),this.$el.animate({volume:t*r.master.volume},1e3*e,function(){o.volume(t),u.emit(":volume",o),u.emit(":fade",o)}),this;alert("ivalid volume level")},delay:function(e,t){var o=this;"function"==typeof t&&(e=Number(e),(Number.isNaN(e)||e<0)&&(e=0),setTimeout(function(){t.call(o,o,e)},e))},on:function(e,t){if(!t||"function"!=typeof t)return console.error("<track>.on() -> invalid callback"),this;(e=o(e))&&this.$el.on(e,t)},one:function(e,t){if(!t||"function"!=typeof t)return console.error("<track>.one() -> invalid callback"),this;(e=o(e))&&this.$el.one(e,t)},off:function(e){(e=o(e))&&this.$el.off(e)}}),r.classes.Track=u,r.newTrack=function(){try{return u.add.apply(null,arguments)}catch(e){console.error(e.message),alert("Error in A.newTrack() -> see the console for more information.")}},r.track=function(e){try{return u.get(e)}catch(e){console.error(e.message),alert("Error in A.track() -> see the console for more information.")}},$(document).on(":master-mute",u.renew),$(document).on(":master-volume",u.renew)}(),function(){"use strict";var i=Chapel.Audio,s=i.classes.Track,o=(i.data._extend,/(play)?list:(.+)/i);i.createGroup=function(e,t,o){var n,a,r=o?[].slice.call(arguments).slice(1):t;n=e,(a=r)&&Array.isArray(a)||(a=[]),i.groups.custom[n]=Fast.map(a,function(e){return s.get(e)})},i.group=function(e){if(!(this instanceof i.group))return new i.group(e);if(Object.keys(i.groups.custom).includes(e))this.members=i.groups.custom[e];else{if(!(i.groups[e]&&i.groups[e]instanceof Array))throw new ReferenceError('There is no group with the id "'+id+'". Please check your spelling and capitalization.',"group.js -> A.group()",29);this.members=i.groups[e]}var t;!o.test(e)||(t=e.match(o)[2])&&t.trim()&&(this.members=i.playlist(t).tracks),Array.isArray(this.members)||(this.members=[],console.error('Could not find members for track group "'+e+'"!'))},Object.assign(i.group,{is:function(e){return this instanceof i.group},_runOnAll:function(e,t,o,n){null!=n?o=[].slice.call(arguments).slice(2):o instanceof Array||(o=[o]);var a=[e.members,t,o];s._runOnMultiple.apply(null,a)}}),Object.assign(i.group.prototype,{constructor:i.group,_run:function(){i.group._runOnAll.apply(null,[this].concat([].slice.call(arguments)))},play:function(){return this._run("play"),this},pause:function(){return this._run("pause"),this},stop:function(){return this._run("stop"),this},mute:function(e){return this._run("mute",e),this},volume:function(e){return this._run("volume",e),this},loop:function(e){return this._run("loop",e),this}})}(),function(){"use strict";var e=Chapel.Audio,r=e.classes.Track;e.data._extend;function n(e,t){if(!(this instanceof n))return new n(e,t);this.id=e,this.tracks=t.map(function(e){return r.get(e)}),this.looping=!1,this.current="",this.playing=!1}Object.assign(n,{list:{},is:function(e){return e instanceof n},add:function(e,t,o){return o&&(t=[].slice.call(arguments).slice(1)),n.list[e]=new n(e,t),n.list[e]},_runOnAll:function(e,t,o,n){null!=n?o=[].slice.call(arguments).slice(2):o instanceof Array||(o=[o]);var a=[e.tracks,t,o];r._runOnMultiple.apply(null,a)}}),Object.assign(n.prototype,{constructor:n,clone:function(){return new n(this.id,this.tracks.map(function(e){return e.id}))},_run:function(){n._runOnAll.apply(null,[this].concat([].slice.call(arguments)))},volume:function(e){return this._run("volume",e),this},mute:function(e){return this._run("mute",e),this},shuffle:function(){for(var e,t,o=this.tracks,n=o.length-1;0<n;n--)e=Math.floor(Math.random()*(n+1)),t=o[n],o[n]=o[e],o[e]=t;return this.tracks=o,this},random:function(){return this.tracks[Math.floor(Math.random()*this.tracks.length)]},isPlaying:function(){return this.playing},nowPlaying:function(){return r.get(this.current)},play:function(e){var t=this;if((e=e||(t.current?Fast.findIndex(t.tracks,function(e){return e.id===t.current}):0))>=t.tracks.length&&t.looping)e=0;else if(e>=t.tracks.length)return t.current="",void(t.playing=!1);var o=t.tracks[e],n=o.isLooping();return o.loop(!1),o.play(),t.playing=!0,setTimeout(function(){o.isPlaying()||(t.playing=!1)},20),t.current=o.id,o.$el.one("ended.playlist",function(){e++,o.loop(n),t.play(e)}),t},loop:function(e){return this.looping=!!e,this},isLooping:function(){return this.looping},stop:function(){var e;return this.current&&this.isPlaying()?(e=this.nowPlaying())&&(e.stop(),e.$el.off(".playlist")):this._run("stop"),this.current="",this.playing=!1,this},pause:function(){var e;return this.current&&this.isPlaying()&&((e=this.nowPlaying())&&e.pause()),this.playing=!1,this}}),e.classes.Playlist=n,e.createPlaylist=function(){try{n.add.apply(null,arguments)}catch(e){console.error(e.message),alert("Error in A.createPlaylist() -> see the console for more information.")}},e.playlist=function(e){try{var t=n.list[e]||null;if(!t)throw new ReferenceError('There is no playlist with the id "'+e+'". Please check your spelling and capitalization.',"list.js -> A.playlist()",171);return t}catch(e){console.error(e.message),alert("Error in A.createPlaylist() -> see the console for more information.")}}}(),function(){"use strict";var t=Chapel.Audio,o=t.classes.Track,n=t.classes.Playlist;function a(t,o){if("object"!=typeof o)throw new TypeError("Invalid extension.","extensions.js -> _extend()",8);Fast.forEach(Object.keys(o),function(e){if(void 0!==t[e])throw new Error('Invalid extension: cannot clobber existing property "'+e+'".',"extensions.js -> _extend()",8);t[e]=o[e]})}t.extend=function(e){a(Audio,e)},o.extend=function(e){a(o,e)},o.extendPrototype=function(e){a(o.prototype,e)},t.extendTrack=o.extend,t.extendTrackProto=o.extendPrototype,t.group.extend=function(e){a(t.group,e)},t.group.extendPrototype=function(e){a(t.group.prototype,e)},t.extendGroup=t.group.extend,t.extendGroupProto=t.group.extendPrototype,n.extend=function(e){a(n,e)},n.extendPrototype=function(e){a(n.prototype,e)},t.extendPlaylist=n.extend,t.extendPlaylistProto=n.extendPrototype}(),function(){"use strict";var e,t,o,n,a,r,i,s,u=Chapel.options;u.showControls&&(e=$(document.createElement("div")).attr("id","story-menu").css("display","none"),t=$(document.createElement("span")).attr("id","vol-title").append("Volume"),u.volumeDisplay||t.css("display","none"),o=$(document.createElement("input")).attr({id:"audio-volume",type:"range",min:1,max:99,step:1,title:"Volume"}).addClass("hal"),(n=Math.trunc(100*window.Chapel.Audio.master.volume))<0?n=0:100<n&&(n=100),o.attr("value",n),a=function(e){void 0===e&&(e=o.val()),t.empty().append("Volume "+e)},o.on("input",function(){window.Chapel.Audio.volume($(this).val()/100),a($(this).val())}),r=$(document.createElement("tw-link")).attr({id:"audio-mute",title:"Mute"}).append("Mute <span></span>").on("click",function(e){e.preventDefault(),$(this).toggleClass("muted"),Chapel.Audio.mute(!Chapel.Audio.isMuted())}),Chapel.Audio.isMuted()&&r.addClass("muted"),i=$(document.createElement("tw-link")).attr("id","audio-panel-toggle").on("click",function(e){e.preventDefault(),s.toggleClass("closed")}),s=$(document.createElement("div")).attr("id","audio-controls").append(e,t,o,r,i).appendTo(document.body),u.sidebarStartClosed&&s.addClass("closed"),window.Chapel=window.Chapel||{},window.Chapel.Audio=window.Chapel.Audio||{},window.Chapel.Audio.controls={$panel:s,$volume:o,$mute:r,$user:e,close:function(){s.addClass("closed")},open:function(){s.removeClass("closed")},toggle:function(){s.toggleClass("closed")},hide:function(){s.css("display","none")},show:function(){s.css("display","block")},updateVolume:a})}(),function(){"use strict";var s=Chapel.options,t=State,e=$(document.createElement("div")).attr("id","audio-overlay").css("display","none").appendTo(document.body);function o(){e.css("display","block").append('<div class="lds-ring"><div></div><div></div><div></div><div></div></div>')}function u(){e.fadeOut(function(){e.empty()})}window.Chapel=window.Chapel||{},window.Chapel.Audio=window.Chapel.Audio||{},window.Chapel.Audio.loadScreen={show:o,dismiss:u,kill:function(){$("#audio-overlay").remove()}},window.Chapel.Audio.$overlay=e,window.Chapel.Audio.preload=function(){var a,e,r,i;Chapel.debug("This is a mobile browser -> ",$.browser.mobile),t.pastLength||t.futureLength||$.browser.mobile||($(document).ready(function(){o()}),a=100+s.loadDelay,e=Chapel.Audio.classes.Track.list,r=Chapel.Audio.loaded,e.length?(i=Fast.map(e,function(e){return e.id}),0<s.totalLoadLimit&&setTimeout(function(){u()},s.totalLoadLimit),function e(){var t,o,n;i.length?(t=i.shift(),r.includes(t)?e():(o=Chapel.Audio.classes.Track.get(t)).unwrap.readyState<2?(n=!1,o.$el.one("canplaythrough.hal",function(){e(),n=!0}),setTimeout(function(){n||(o.$el.off("canplaythrough.hal"),e())},s.trackLoadLimit)):(r.includes(t)||r.push(t),e())):setTimeout(u,a)}()):setTimeout(u,a))}}(),function(){"use strict";var o=Chapel.options.storagekey+"_hal_restart_";Chapel.debug("HAL Session Key -> ",o);var e,t,n=(window.sessionStorage?(Chapel.debug("Session Storage Available"),e=function(e,t){window.sessionStorage.setItem(o+e,t)},t=function(e){return window.sessionStorage.getItem(o+e)}):(Chapel.debug("Session Storage Unavailable"),e=function(){},t=function(){},console.warn("Session storage is unavailable...")),{save:e,load:t});window.Chapel.Audio.state={_store:n,saveTracks:function(){var e;try{e=Fast.map(Chapel.Audio.classes.Track.list,function(e){return{id:e.id,sources:e.sources}}),Chapel.debug("Session Saved (Tracks) -> ",e),e=JSON.stringify(e),n.save("tracks",e)}catch(e){console.error(e.message)}},loadTracks:function(){var e;try{e=(e=n.load("tracks"))&&JSON.parse(e),Array.isArray(e)&&e.length&&(Chapel.debug("Session Loaded (Tracks) -> ",e),Fast.forEach(e,function(e){e.id&&e.sources&&!Chapel.Audio.classes.Track.has(e.id)?Chapel.Audio.newTrack.apply(null,[e.id].concat(e.sources)):Chapel.debug("Track reloading skipped.")}))}catch(e){console.error(e.message)}},savePlaylists:function(){try{var o=Chapel.Audio.classes.Playlist.list,e=Fast.map(Object.keys(o),function(e){var t={};return t.tracks=Fast.map(o[e].tracks,function(e){return e.id}),t.id=o[e].id,t});Chapel.debug("Session Saved (Playlists) -> ",e),e=JSON.stringify(e),n.save("playlists",e)}catch(e){console.error(e.message)}},loadPlaylists:function(){var e;try{(e=(e=n.load("playlists"))&&JSON.parse(e))&&Array.isArray(e)&&e.length&&(Chapel.debug("Session Loaded (Playlists) -> ",e),Fast.forEach(e,function(e){e.id&&e.tracks&&Chapel.Audio.createPlaylist(e.id,e.tracks)}))}catch(e){console.error(e.message)}},saveGroups:function(){var t;try{t={},Fast.forEach(Object.keys(Chapel.Audio.groups.custom),function(e){t[e]=Fast.map(Chapel.Audio.groups.custom[e],function(e){return"string"==typeof e?e:e.id})}),Chapel.debug("Session Saved (Groups) -> ",t),t=JSON.stringify(t),n.save("groups",t)}catch(e){console.error(e.message)}},loadGroups:function(){var t;try{(t=(t=n.load("groups"))&&JSON.parse(t))&&"object"==typeof t&&(Chapel.debug("Session Loaded (Groups) -> ",t),Fast.forEach(Object.keys(t),function(e){Fast.map(t[e],function(e){return Chapel.Audio.classes.Track.get(e)})}),Chapel.Audio.groups.custom=t)}catch(e){console.error(e.message)}}}}(),function(){"use strict";var e=Chapel.options;e.globalA&&void 0===window.A&&(Chapel.debug("Created global A interface."),window.A=window.Chapel.Audio),Chapel.Get.fromPassage&&(Chapel.debug("Loading tracks from track def special passage -> ",Chapel.Get.fromPassage),Chapel.Get.fromPassage.forEach(function(e,t){Chapel.Audio.newTrack.apply(null,[t].concat(e))})),$(document).on("unload",function(){Chapel.debug("User Prefs Saved"),window.Chapel.Audio.savePrefs()}),Chapel.Audio.classes.Track.renew(),Chapel.Audio.controls&&Chapel.Audio.controls.updateVolume(),Chapel.Get.isHarlowe3OrLater&&($(window).on("unload",function(){Chapel.debug("HAL State Saved"),Chapel.Audio.state.saveTracks(),Chapel.Audio.state.savePlaylists(),Chapel.Audio.state.saveGroups()}),Chapel.debug("HAL State Loaded"),Chapel.Audio.state.loadTracks(),Chapel.Audio.state.loadPlaylists(),Chapel.Audio.state.loadGroups()),e.persistPrefs&&(Chapel.debug("User Prefs Loaded"),Chapel.Audio.loadPrefs())}(),function(){"use strict";var s,u,e,l,t;Chapel.options.showControls&&(s=Engine,u=Chapel.Audio.controls.$user,e=function(){return"none"!==u.css("display")},l=function(){return e()||u.css("display","block"),u},t=function(){return e()&&u.css("display","none"),u},Chapel.Audio.menu={hide:t,show:l,isShown:e,links:{add:function(e,t,o){var n,a;if(!e||"string"!=typeof e){var r="undefined";return alert(r),void console.error(r)}o||"function"!=typeof t?(t&&"string"==typeof t&&(n=t),o&&"function"==typeof o&&(a=o)):(a=t,n=null);var i=$(document.createElement("tw-link")).append(e).attr({tabindex:"0",name:e.toLowerCase().trim()}).on("click",function(){n&&s.goToPassage(n),a&&a()}).addClass("story-menu").appendTo(u);return l(),i},clear:function(){return u.empty(),t()},hide:function(e){e=e.toLowerCase().trim(),$('tw-link.story-menu[name="'+e+'"]').addClass("hide")},show:function(e){e=e.toLowerCase().trim(),$('tw-link.story-menu[name="'+e+'"]').removeClass("hide")},toggle:function(e){e=e.toLowerCase().trim(),$('tw-link.story-menu[name="'+e+'"]').toggleClass("hide")},remove:function(e){e=e.toLowerCase().trim(),$('tw-link.story-menu[name="'+e+'"]').remove()}}})}(),function(){"use strict";var n=Chapel.Audio;function o(e){return e&&"function"==typeof e}function a(e,t){if(!e||"string"!=typeof e)return null;switch(e=e.toLowerCase().trim()){case"isplaying":e="isPlaying";break;case"playwhenpossible":e="playWhenPossible";break;case"ismuted":e="isAMuted";break;case"togglemute":e="toggleMute";break;case"getvolume":e="getVolume";break;case"islooping":e="isLooping";break;case"toggleloop":e="toggleLoop";break;case"fadein":e="fadeIn";break;case"fadeout":e="fadeOut";break;case"fadeto":e="fadeTo";break;case"stopall":e="stopAll"}if("isPlaying"===e&&"master"===t&&(e="audioPlaying"),"group"===t){if(o(n.group.prototype[e]))return e}else if("master"===t){if(o(n[e]))return e}else if(o(n.classes[t].prototype[e]))return e;throw new ReferenceError('Cannot run the command: "'+e+'" on the API "'+t+'". The command may be invalid, or this may be a bug in HAL.',"macros.js -> getCommand()",10)}var e={newtrack:function(){var e=[].slice.call(arguments);try{return n.newTrack.apply(null,e)}catch(e){alert("Error in the (newtrack:) macro: "+e.message)}},newplaylist:function(e,t){t=[].slice.call(arguments).slice(1);try{return n.createPlaylist(e,t)}catch(e){alert("Error in the (newplaylist:) macro: "+e.message)}},newgroup:function(e,t){t=[].slice.call(arguments).slice(1);try{return n.createGroup(e,t)}catch(e){alert("Error in the (newgroup:) macro: "+e.message)}},masteraudio:function(e){try{return e=a(e,"master"),n[e].apply(null,[].slice.call(arguments).slice(1))}catch(e){alert("Error in the (masteraudio:) macro: "+e.message)}},track:function(e,t){try{var o=n.track(e);return o[t=a(t,"Track")].apply(o,[].slice.call(arguments).slice(2))}catch(e){alert("Error in the (track:) macro: "+e.message)}},playlist:function(e,t){try{var o=n.playlist(e);return o[t=a(t,"Playlist")].apply(o,[].slice.call(arguments).slice(2))}catch(e){alert("Error in the (playlist:) macro: "+e.message)}},group:function(e,t){try{var o=n.group(e);return o[t=a(t,"group")].apply(o,[].slice.call(arguments).slice(2))}catch(e){alert("Error in the (group:) macro: "+e.message)}}};window.Chapel.Macros.add(e)}();
-/** End of HAL code */</script><tw-tag name="fire" color="yellow"></tw-tag>,<tw-tag name="grey" color="blue"></tw-tag>,<tw-tag name="menu" color="gray"></tw-tag>,<tw-tag name="orchard" color="green"></tw-tag>,<tw-tag name="sienna" color="orange"></tw-tag>,<tw-tag name="smirnoff" color="red"></tw-tag>,<tw-tag name="smirnoff-alley" color="orange"></tw-tag>,<tw-tag name="sobrell-gates" color="red"></tw-tag>,<tw-tag name="vodka" color="purple"></tw-tag><tw-passagedata pid="1" name="A1 Chp0" tags="light-bg" position="1341,47" size="100,100">Today is a day like no other in Drinklympus. It’s the millennium anniversary since you, [[$name|Set Up Character]] became God of the Sesh and ushered in a new golden age of drinking. And what kind of Sesh God would you be if you did not celebrate such an occasion?
+/** End of HAL code */</script><tw-tag name="fire" color="yellow"></tw-tag>,<tw-tag name="grey" color="blue"></tw-tag>,<tw-tag name="menu" color="gray"></tw-tag>,<tw-tag name="orchard" color="green"></tw-tag>,<tw-tag name="sienna" color="orange"></tw-tag>,<tw-tag name="smirnoff" color="red"></tw-tag>,<tw-tag name="smirnoff-alley" color="orange"></tw-tag>,<tw-tag name="sobrell-gates" color="red"></tw-tag>,<tw-tag name="vodka" color="purple"></tw-tag>,<tw-tag name="galahad-bg" color="purple"></tw-tag><tw-passagedata pid="1" name="A1 Chp0" tags="light-bg" position="1341,47" size="100,100">Today is a day like no other in Drinklympus. It’s the millennium anniversary since you, [[$name|Set Up Character]] became God of the Sesh and ushered in a new golden age of drinking. And what kind of Sesh God would you be if you did not celebrate such an occasion?
 
 For the past month you have been partying day in, day out with your fellow gods in the lead up to the anniversary; you’ve downed kegs with Galalad, invented new cocktails with Smirnoff that would floor even the hardiest of mortals, and probably have drank a lake worth of the finest wine made from Chardonnay’s very own vineyards on Drinklympus.
 
@@ -124,7 +146,7 @@ Today is the final day of the festivities, but it is also the most important day
 [[Continue|A1 Chp1]]
 
 {(if: $pronoun_1 is &quot;she&quot;)[(set: $gender_noun to &quot;woman&quot;)(set: $pronoun_2 to &quot;her&quot;)]
-(else-if: $pronoun_1 is &quot;they&quot;)[(set: $gender_noun to &quot;person&quot;)(set: $pronoun_2 to &quot;them&quot;)]}</tw-passagedata><tw-passagedata pid="2" name="A1 Chp1" tags="light-bg" position="1347,209" size="100,100">You’re wandering around the rave, making small talk with the party-goers as is your duty as the host when you see someone skulking by the entrance doors. 
+(else-if: $pronoun_1 is &quot;they&quot;)[(set: $gender_noun to &quot;person&quot;)(set: $pronoun_2 to &quot;them&quot;)]}</tw-passagedata><tw-passagedata pid="2" name="A1 Chp1" tags="light-bg" position="1348,209" size="100,100">You’re wandering around the rave, making small talk with the party-goers as is your duty as the host when you see someone skulking by the entrance doors. 
 
 It’s Corona; one of the more powerful Beer Gods who’s been gunning for the Beer Ambassador role for quite a while. You’re surprised to see her by herself; she’s usually inseparable from her best friend Lime. 
 
@@ -139,31 +161,25 @@ You shake your head. It must have been a trick of the lights so you&#39;re going
 You have some time before your speech to [[chat to people|Chats]], or else you can just [[get ready|A1 Chp2]]. 
 (group: &#39;playing&#39;, &#39;stop&#39;)
 (track: &#39;club-song&#39;, &#39;loop&#39;, true)
-(track: &#39;club-song&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="3" name="Chardonnay Controller" tags="" position="595,605" size="100,100">You walk up to Chardonnay who&#39;s lounging by the wine waterfall, a large glass of wine in hand.
+(track: &#39;club-song&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="3" name="Chardonnay Controller" tags="" position="691.6666666666666,610" size="100,100">You walk up to Chardonnay who&#39;s lounging by the wine waterfall, a large glass of wine in hand.
 
 {(unless: (history:) contains &quot;Chardonnay Controller&quot;)[
 	(display: &quot;Chardonnay Start&quot;)
 ]
-(else-if: $chardonnay_random_passages is not 0 )[
-	(set: _random to $chardonnay_random_passages&#39;s 1st)
-	(if: _random is 1)		[(display: &quot;Chardonnay R1&quot;)]
-	(else-if: _random is 2)	[(display: &quot;Chardonnay R2&quot;)]
-	(else-if: _random is 3)	[(display: &quot;Chardonnay R3&quot;)]
-	
-	(if: $chardonnay_random_passages&#39;s length &gt; 1) [
-		(set: $chardonnay_random_passages to $chardonnay_random_passages&#39;s (range:2,$chardonnay_random_passages&#39;s length))
-	]
+(else-if: $chadonnay_angered is false)[
+	(if: $chardonnay_checks &lt; 3)[(display: &quot;Chardonnay Close&quot;)]
 	(else:)[
-		(set: $chardonnay_random_passages to 0)
+		(display: &quot;Chardonnay End&quot;)
 	]
 ]
-(else:)[(display: &quot;Chardonnay End&quot;)]} </tw-passagedata><tw-passagedata pid="4" name="startup" tags="startup" position="519,44" size="100,100">{(set: $chardonnay_random_passages to (shuffled: 1,2,3))
+(else:)[(display: &quot;Chardonnay Ignore&quot;)]} </tw-passagedata><tw-passagedata pid="4" name="startup" tags="startup" position="517.3333333333334,44" size="100,100">{(set: $chardonnay_random_passages to (shuffled: 1,2,3))
+(set: $chadonnay_angered to false)
 (set: $chardonnay_checks to 0)
 (set: $jagerbull_random_passages to (shuffled: 1,2))
 (set: $jagerbull_checks to 0)
 (set: $smirnoff_random_passages to (shuffled: 1,2,3))
 (set: $smirnoff_checks to 0)
-(set: $sambuca_random_passages to (shuffled: 1,2))
+(set: $sambuca_random_passages to 1)
 (set: $sambuca_checks to 0)
 (set: $Saves to &quot;&quot;)
 (set: $name to &quot;Astra&quot;)
@@ -205,7 +221,12 @@ You have some time before your speech to [[chat to people|Chats]], or else you c
 (set: $guinessGift to false)
 (set: $chats to 0)
 (set: $truthFound to false)
-}</tw-passagedata><tw-passagedata pid="5" name="Drinklympus" tags="light-bg" position="1099,1100" size="100,100">{(link:&quot;Save Game&quot;)[
+(set: $bulmersFinal to 0)
+(set: $galahadFinal to 0)
+(set: $tequilaFinal to 0)
+(set: $coronaFinal to 0)
+(set: $coronaAlly to false)
+(set: $char_name to &quot;Chardonnay&quot;)}</tw-passagedata><tw-passagedata pid="5" name="Drinklympus" tags="light-bg" position="1099,1100" size="100,100">{(link:&quot;Save Game&quot;)[
   (if:(save-game:&quot;Slot A&quot;))[
     Game saved!
   ](else: )[
@@ -247,8 +268,8 @@ You have been blinded for the turn, you cannot use any items!
 [[Drink]]]</tw-passagedata><tw-passagedata pid="7" name="Drink" tags="light-bg" position="2888,578" size="100,100">You drink and take 50 damage!(set: $playerTolerance to $playerTolerance - 50)
 
 Player Tolerance: $playerTolerance/$maxPlayerTolerance
-{(if: $playerPoisoned is 1)[(set: $playerTolerance to $playerTolerance - 30)
-	&lt;br&gt;You feel a little worse for wear! As a result you lost 30 tolerance.&lt;br&gt;
+{(if: $playerPoisoned)[(set: $playerTolerance to $playerTolerance - 30)
+	&lt;br&gt;The affects of downing a can of Galahad hit you and you feel a little worse for wear! As a result you lost 30 tolerance.&lt;br&gt;
 	
 	&lt;br&gt;Player Tolerance = $playerTolerance/$maxPlayerTolerance]
 	(if: $playerTolerance &lt; 1)[Your tolerance has reached 0 and you can no longer continue. &lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Battle Lost&quot;)]
@@ -271,15 +292,15 @@ Player Tolerance: $playerTolerance/$maxPlayerTolerance
 (go-to: &quot;Tequila Attack&quot;)]
 (else-if: $enemyType is 5)[
 (go-to: &quot;Corona Attack&quot;)]]</tw-passagedata><tw-passagedata pid="9" name="Item" tags="light-bg" position="3157,559" size="100,100">(text-style:&quot;bold&quot;)[What item do you wish to use?]
+(set: $tamova to 1)
+{(if: ($enemyPoisoned is false) and ($tamova &gt; 0))(link-goto: &quot;Use Tamova&quot;, &quot;Tamova Challenge&quot;) Tamova will poison your enemy and deal them damage over time. Currently you have: $tamova}
+{(if: $water &gt; 0 )[[Drink Water]] Water will cure you from any bad drink you&#39;ve had. Currently you have: $water}
+{(if: $tayto &gt; 0)[[Eat Packet of Tayto]] Tayto restores your Tolerance by 100. Currently you have:: $tayto}
 
-{(if: $enemyPoisoned is 0 and $tamova &gt; 0)[[Tamova Challange]] Tamova: $tamova}
-{(if: $water &gt; 0 )[[Drink Water]] Water: $water}
-{(if: $tayto &gt; 0)[[Eat Packet of Tayto]] Tayto: $tayto}
-
-[[Back to Battle Menu|Player Battle Menu]] </tw-passagedata><tw-passagedata pid="10" name="Druids Attack" tags="sienna" position="2609,198" size="100,100">&lt;img src=&quot;https://lh5.googleusercontent.com/Mt1E8s5iGrr2IvlTn1Ps7dl8BbQa7pPp34J4bXtiRBHF6XAdfBk0V75OS58qx24jCX_qt89xFXh9QrMdClc-s8SeCpMGFJFqZx6PMmrH&quot;&gt; 
+[[Back to Battle Menu|Player Battle Menu]] </tw-passagedata><tw-passagedata pid="10" name="Druids Attack" tags="sienna" position="2609,198" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/druids.png&quot;&gt; 
 
 It is Druids turn to drink.  
-{(if: $enemyPoisoned is 1)[
+{(if: $enemyPoisoned)[
 (set: $enemyTolerance to $enemyTolerance - 30)
 &lt;br&gt;$enemyName felt the effects of the paint stripper Tamova. As a result they lost 30 tolerance.&lt;br&gt;
 &lt;br&gt;$enemyName Tolerance: $enemyTolerance/$maxEnemyTolerance&lt;br&gt;]
@@ -289,10 +310,10 @@ It is Druids turn to drink.
 
 &lt;br&gt;In order to keep the Drink Off going you are forced to take your next turn.&lt;br&gt;
 &lt;br&gt;[[Next Turn|Player Battle Menu]]]}
-</tw-passagedata><tw-passagedata pid="11" name="Bulmers Attack" tags="sobrell-gates" position="3012,202" size="100,100">&lt;img src = &quot;https://lh4.googleusercontent.com/HtwsKfSYxFsE8srr0JQ4FrwldrMScQYMIYzvDM8kqVcPzs8OwiI_Sq3ZViJleEyC_z1OZzEE3RtLW6tT7nBrwn8OizjSNCLyWj7cWuQ3&quot;&gt;
+</tw-passagedata><tw-passagedata pid="11" name="Bulmers Attack" tags="sobrell-gates" position="3012,202" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/bulmers.png&quot;&gt;
 
 It is Bulmers turn to drink. 
-{(if: $enemyPoisoned is 1)[
+{(if: $enemyPoisoned)[
 (set: $enemyTolerance to $enemyTolerance - 30)
 &lt;br&gt;$enemyName felt the effects of the paint stripper Tamova. As a result they lost 30 tolerance.&lt;br&gt;
 &lt;br&gt;$enemyName Tolerance: $enemyTolerance/$maxEnemyTolerance&lt;br&gt;]
@@ -304,15 +325,18 @@ It is Bulmers turn to drink.
 &lt;br&gt;Your Tolerance: $playerTolerance/$maxPlayerTolerance&lt;br&gt;
 (if: $playerTolerance &lt; 1)[Your tolerance has reached 0 and you can no longer continue. &lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Battle Lost&quot;)]
 (else:)[[[Next Turn|Player Battle Menu]]]]}
-</tw-passagedata><tw-passagedata pid="12" name="Galahad Attack" tags="galahad-bg" position="2878,204" size="100,100">Galahad throws a luke warm can at you. You are not feeling too good
-(set: $playerPoisoned to 1)
-{(if: $enemyPoisoned is 1)[
+</tw-passagedata><tw-passagedata pid="12" name="Galahad Attack" tags="galahad-bg" position="2878,204" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/galahad.png&quot;&gt;
+It is Galalad&#39;s turn to drink. 
+
+Galalad throws a luke warm can at you. As you aren&#39;t a coward, you down it. Afterwards, you start feeling nauseous. Maybe some water might help.(set: $playerPoisoned to true)
+{(if: $enemyPoisoned)[
 (set: $enemyTolerance to $enemyTolerance - 30)
 &lt;br&gt;$enemyName felt the effects of the paint stripper Tamova. As a result they lost 30 tolerance.&lt;br&gt;
 &lt;br&gt;$enemyName Tolerance: $enemyTolerance/$maxEnemyTolerance&lt;br&gt;]
 (if: $enemyTolerance &lt; 1)[$enemyName&#39;s tolerance has reached 0 and they can no longer continue. &lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Battle Won&quot;)]
 (else-if: $playerTolerance &lt; 1)[Your tolerance has reached 0 and you can no longer continue. &lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Battle Lost&quot;)]
-(else:)[[[Next Turn|Player Battle Menu]]]}</tw-passagedata><tw-passagedata pid="13" name="Tequila Attack" tags="tequila-bg" position="2738,201" size="100,100">It is Tequila&#39;s turn to drink. 
+(else:)[[[Next Turn|Player Battle Menu]]]}</tw-passagedata><tw-passagedata pid="13" name="Tequila Attack" tags="tequila-bg" position="2738,201" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/tequila.png&quot;&gt;
+It is Tequila&#39;s turn to drink. 
 {(set: $playerBlinded to true) (set: $playerTolerance to $playerTolerance - 50)}
 Tequila throws Salt in your eyes, blinding you and making you lose 50 tolerance!.
 
@@ -324,8 +348,14 @@ Your Tolerance: $playerTolerance/$maxPlayerTolerance
 (if: $playerTolerance &lt; 1)[Your tolerance has reached 0 and you can no longer continue. &lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Battle Lost&quot;)]
 (else:)[[[Next Turn|Player Battle Menu]]]
 
-</tw-passagedata><tw-passagedata pid="14" name="Enemy Drink" tags="" position="2473,199" size="100,100">It is $enemyName&#39;s turn to drink. 
-{(if: $enemyPoisoned is 1)[
+</tw-passagedata><tw-passagedata pid="14" name="Enemy Drink" tags="dark-bg" position="2473,199" size="100,100">{(if: $enemyType is 1)[&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/druids.png&quot;&gt;]
+(else-if: $enemyType is 2)[&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/bulmers.png&quot;&gt;]
+(else-if: $enemyType is 3)[&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/galahad.png&quot;&gt;]
+(else-if: $enemyType is 4)[&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/tequila.png&quot;&gt;]
+(else-if: $enemyType is 5)[&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/corona.png&quot;&gt;]}
+
+It is $enemyName&#39;s turn to drink. 
+{(if: $enemyPoisoned)[
 (set: $enemyTolerance to $enemyTolerance - 30)
 &lt;br&gt;$enemyName felt the effects of the paint stripper Tamova. As a result they lost 30 tolerance.&lt;br&gt;
 &lt;br&gt;$enemyName Tolerance: $enemyTolerance/$maxEnemyTolerance&lt;br&gt;]
@@ -335,8 +365,7 @@ Your Tolerance: $playerTolerance/$maxPlayerTolerance
 &lt;br&gt;$enemyName drinks and loses 50 tolerance!&lt;br&gt;
 &lt;br&gt;$enemyName Tolerance: $enemyTolerance/$maxEnemyTolerance&lt;br&gt;
 (if: $enemyTolerance &lt; 1)[&lt;br&gt;$enemyName&#39;s tolerance has reached 0 and they can no longer continue. &lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Battle Won&quot;)]
-(else:)[[[Next Turn|Player Battle Menu]]]]}
-</tw-passagedata><tw-passagedata pid="15" name="Battle Won" tags="" position="3392,1505" size="100,100">Victory!
+(else:)[[[Next Turn|Player Battle Menu]]]]}</tw-passagedata><tw-passagedata pid="15" name="Battle Won" tags="light-bg" position="3392,1505" size="100,100">Victory!
 
 You have defeaten $enemyName.
 
@@ -348,8 +377,8 @@ You have defeaten $enemyName.
 (link-goto: &quot;Continue&quot;, &quot;After Galahad&quot;) ]
 (else-if: $enemyType is 4)[
 (link-goto: &quot;Continue&quot;, &quot;After Tequila&quot;) ]}
-</tw-passagedata><tw-passagedata pid="16" name="After Druids" tags="sienna" position="2610,1017" size="100,100">Congratulations! You defeated Druids. You may now pass into drinklympus
-&lt;img src =&quot;https://lh5.googleusercontent.com/Mt1E8s5iGrr2IvlTn1Ps7dl8BbQa7pPp34J4bXtiRBHF6XAdfBk0V75OS58qx24jCX_qt89xFXh9QrMdClc-s8SeCpMGFJFqZx6PMmrH&quot;&gt;
+</tw-passagedata><tw-passagedata pid="16" name="After Druids" tags="sienna" position="2610,1017" size="100,100">Congratulations! You defeated Druids. You may now pass into Drinklympus!
+&lt;img class=&quot;portrait-img-center&quot; src = &quot;./assets/images/druids.png&quot;&gt;
 Your tolerance has imporved!{
 (set: $maxPlayerTolerance to $maxPlayerTolerance + 50)
 (set: $playerTolerance to $maxPlayerTolerance)
@@ -357,7 +386,7 @@ Your tolerance has imporved!{
 
 Player Tolerance: $playerTolerance/$maxPlayerTolerance
 
-[[You finally ascend into Drinklympus.|Arrive in Drinklympus]]</tw-passagedata><tw-passagedata pid="17" name="Battle Lost" tags="" position="3189,1499" size="100,100">{(set: $deaths to $deaths + 1)
+[[You finally ascend into Drinklympus.|Arrive in Drinklympus]]</tw-passagedata><tw-passagedata pid="17" name="Battle Lost" tags="dark-bg" position="3187,1500" size="100,100">{(set: $deaths to it + 1)
 (set: $playerTolerance to $maxPlayerTolerance)}
 You have been defeated.&lt;br&gt;
 {(if: $deaths is 3 and $hardcore)[ As you have been bested too many times, your rep among the drink gods is ruined.
@@ -378,7 +407,7 @@ You have been defeated.&lt;br&gt;
 (else-if: ($enemyType is 3) and ($galahadFought is 3))[ [[Defeat]]]
 (else-if: ($enemyType is 4) and ($tequilaFought is 3))[ [[Defeat]]]
 (else:)[[[Continue|Return to Sobrell]]]}</tw-passagedata><tw-passagedata pid="18" name="After Bulmers" tags="sobrell-gates" position="2672,1327" size="100,100">Congratulations! You have defeated Bulmers!
-&lt;img src =&quot;https://lh4.googleusercontent.com/HtwsKfSYxFsE8srr0JQ4FrwldrMScQYMIYzvDM8kqVcPzs8OwiI_Sq3ZViJleEyC_z1OZzEE3RtLW6tT7nBrwn8OizjSNCLyWj7cWuQ3&quot;&gt;
+&lt;img class=&quot;portrait-img-center&quot; src = &quot;./assets/images/bulmers.png&quot;&gt;
 Your tolerance has imporved! When you next see Guinness he rewards you with a packet of Taytos, to celebrate your victory.{
 (set: $maxPlayerTolerance to $maxPlayerTolerance + 100)
 (set: $playerTolerance to $maxPlayerTolerance)
@@ -387,10 +416,9 @@ Your tolerance has imporved! When you next see Guinness he rewards you with a pa
 
 Player Tolerance: $playerTolerance/$maxPlayerTolerance
 
-[[You decide to return to Drinklympus.|Drinklympus]]</tw-passagedata><tw-passagedata pid="19" name="After Galahad" tags="" position="2869,1330" size="100,100">Congratulations! You have defeated Galahad.
-
-&lt;img src =&quot;https://raw.githubusercontent.com/vincent-kiely/CS4067_Project/dev/assets/images/galahad.PNG?token=AI4S665R2HTA5E6STTGDFBTAR2GLW&quot;&gt;
-
+(display: &quot;Banish Bulmers&quot;)
+</tw-passagedata><tw-passagedata pid="19" name="After Galahad" tags="galahad-bg" position="2869,1330" size="100,100">Congratulations! You have defeated Galahad.
+&lt;img class=&quot;portrait-img-center&quot; src = &quot;./assets/images/galahad.png&quot;&gt;
 Your tolerance has imporved! When you next see Guinness he rewards you with a packet of Taytos, to celebrate your victory.{
 (set: $maxPlayerTolerance to $maxPlayerTolerance + 100)
 (set: $playerTolerance to $maxPlayerTolerance)
@@ -399,7 +427,8 @@ Your tolerance has imporved! When you next see Guinness he rewards you with a pa
 
 Player Tolerance: $playerTolerance/$maxPlayerTolerance
 
-[[You decide to return to Drinklympus.|Drinklympus]]</tw-passagedata><tw-passagedata pid="20" name="After Tequila" tags="tequila-bg" position="2663,1145" size="100,100">Congratulations! You have defeated Tequila!
+(display: &quot;Banish Galahad&quot;)
+</tw-passagedata><tw-passagedata pid="20" name="After Tequila" tags="tequila-bg" position="2656.3333333333335,1160" size="100,100">Congratulations! You have defeated Tequila!
 
 Your tolerance has imporved! When you next see Guinness he rewards you with a packet of Taytos, to celebrate your victory.{
 (set: $maxPlayerTolerance to $maxPlayerTolerance + 100)
@@ -419,7 +448,7 @@ You feel refreshed!
 
 Player Tolerance: $playerTolerance/$maxPlayerTolerance
 
-{(if: $playerPoisoned is 1)[(set: $playerTolerance to $playerTolerance - 30)
+{(if: $playerPoisoned)[(set: $playerTolerance to $playerTolerance - 30)
 	&lt;br&gt;You feel a little worse for wear! As a result you lost 30 tolerance.&lt;br&gt;
 	
 	&lt;br&gt;Player Tolerance = $playerTolerance/$maxPlayerTolerance&lt;br&gt;]
@@ -429,46 +458,60 @@ Player Tolerance: $playerTolerance/$maxPlayerTolerance
 (input-box:2bind $name,&quot;====XX====&quot;,1,&quot;Astra&quot;)
 May (cycling-link: bind $pronoun_1, &quot;he&quot;,&quot;she&quot;,&quot;they&quot;) drink on forever!
 
-[[Continue|A1 Chp0]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="23" name="Chardonnay Start" tags="" position="504,394" size="100,100">&quot;Why hello cutie, long time no see,&quot; Chardonnay purrs with a wink before taking a long sip from her wine glass. The words that had been on the tip of your tongue suddenly vanish at the unexpected term of endearment and you find yourself swallowing heavily. 
+[[Continue|A1 Chp0]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="23" name="Chardonnay Start" tags="" position="504,394" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/donna.png&quot;&gt;
+&quot;Why hello cutie, long time no see,&quot; Chardonnay purrs with a wink before taking a long sip from her wine glass. The words that had been on the tip of your tongue suddenly vanish at the unexpected term of endearment and you find yourself swallowing heavily.
 
 &quot;H-Hey Chardonnay,&quot; you eventually manage to stammer, all the while berating yourself internally for getting flustered. You&#39;d really think a millenia would be enough time to get used to her flirtations, but she always manages to get under your skin.
 
 Chardonnay&#39;s lip juts out in a fake pout. &quot;Now $name, I thought we were... //close// enough for you to no longer call me that anymore. You&#39;re not going to break this poor girl&#39;s heart and say you&#39;ve forgotten, are you?&quot;
 
-You&#39;re alarmed for a brief moment by what her suggestive tone is implying, but then you see the mirth shinning in those gray eyes. Damn it she&#39;s messing with you again. You open your mouth to call her a liar when a vague drunken memory resurfaces. You... You //did// start calling her some kind of nickname during one of the many nights of the Millienium Anniversary but you cannot remember it for the life of you. 
+You&#39;re alarmed for a brief moment by what her suggestive tone is implying, but then you see the mirth shinning in those gray eyes. Damn it she&#39;s messing with you again. You open your mouth to call her a liar when a vague drunken memory resurfaces. You... You //did// start calling her some kind of nickname during one of the many nights of Rag Month{(if: (history:) contains &quot;Chardonnay Chat&quot;)[and you remember her reminding you of it before you were banished.](else:)[and you have no clue what it is.]} You say:
 
-[(link-reveal: &quot;\&quot;Donna\&quot;, you say slowly, testing the name on your lips.&quot;)[(replace: ?c1_o2)[](set: $chardonnay_checks to it +1)
-&lt;br&gt;She regards you silently for a long moment and you&#39;re sweating bullets until a small but pleased smile grows on her face.]]&lt;c1_o1|
-[(link: &quot;\&quot;Gorgeous\&quot;, you say with a wink.&quot;)[(replace: ?c1_o1)[&quot;Gorgeous&quot;, you say with a wink.&quot;&lt;br&gt;
-&quot;A $gender_noun after my own heart,&quot; she replies with a theatrical sigh, but her eyes seem more distant now. Is she upset with you for forgetting, you wonder.]
-]]&lt;c1_o2|
+[[&quot;Donna&quot;|Donna]]
+[[&quot;Char&quot;|Char]]
+[[&quot;Gorgeous&quot;|Gorgeous]]
+</tw-passagedata><tw-passagedata pid="24" name="Chardonnay Ignore" tags="" position="502.6666666666667,517.3333333333333" size="100,100">You walk towards the river, calling out $char_name&#39;s name. Nothing happens. Is she truly that mad at you for calling her that name? 
 
-[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="24" name="Chardonnay R1" tags="" position="401,494" size="100,100">r1
+[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="25" name="Chardonnay Close" tags="" position="499.3333333333334,633.6666666666666" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/donna.png&quot;&gt;
+You and Chardonnay spent some time together, sipping wine and exploring the Wine Falls. 
 
-[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="25" name="Chardonnay R2" tags="" position="401,602" size="100,100">r2
+You grow closer. 
+{(set: $chardonnay_checks to it+1)}
 
-[[Continue |Drinklympus]] </tw-passagedata><tw-passagedata pid="26" name="Chardonnay R3" tags="" position="399,707" size="100,100">r3
+[[Continue |Drinklympus]] </tw-passagedata><tw-passagedata pid="26" name="Chardonnay End" tags="" position="504.33333333333337,765.6666666666666" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/donna.png&quot;&gt;
+You pace by the edge of the river. You and Chardonnay. You&#39;ve spent a lot of time together recently. She&#39;s always flirty, always so suggestive but what does it mean?!
 
-[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="27" name="Chardonnay End" tags="" position="506,804" size="100,100">end
+You need to understand. 
 
-	[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="28" name="Jager and Red Bull Controller" tags="light-bg" position="1942,274" size="100,100">“Sup Brah”, you hear in chorus. You turn to see Jager and Red Bull, together as always.
+&quot;Char!&quot; you call and the river parts immediately. You stride across to where she&#39;s waiting on the other side.
+
+&quot;How kind of you to pay me a visit,&quot; she says, batting her eyelashes. 
+
+&quot;Char…&quot; you begin, taking a deep breath. &quot;Is there a reason you&#39;re always flirting with me?&quot; 
+
+She blinks. &quot;Yes? I thought that&#39;s been made abundantly clear. I have feelings for you, $name.&quot;
+
+Oh. //Oh//. You really didn&#39;t expect her to actually admit that. 
+
+&quot;Do you have feelings for me?&quot; she then asks, her expression more vulnerable than you&#39;ve ever seen it. 
+
+[[&quot;I do&quot;|Accept]]
+[[&quot;I&#39;m.. sorry, Char. I don&#39;t feel the same.&quot;|Reject]]</tw-passagedata><tw-passagedata pid="27" name="Jager and Red Bull Controller" tags="light-bg" position="1942,274" size="100,100">“Sup Brah”, you hear in chorus. You turn to see Jager and Red Bull, together as always.
 “Where’s the party at Brah” Jager says absently as he gazes proudly into a mirror of himself, flexing constantly. “You wanna do some shots Brah”, you turn to the voice of Red Bull, to see that she is also gazing into a mirror. 
 
-	[[Of course]] or [[Sorry maybe later]]</tw-passagedata><tw-passagedata pid="29" name="Tamova Challange" tags="light-bg" position="3155,808" size="100,100">&quot;If your so worthy of being a drink god why dont you give this a try&quot;, as you place a shot of Smirnoff&#39;s new paint stripper Tamova in front of $enemyName.
+	[[Of course]] or [[Sorry maybe later]]</tw-passagedata><tw-passagedata pid="28" name="Tamova Challange" tags="light-bg" position="3155,808" size="100,100">&quot;If your so worthy of being a drink god why dont you give this a try&quot;, as you place a shot of Smirnoff&#39;s new paint stripper Tamova in front of $enemyName.
+&lt;img class=&quot;portrait-img-center&quot; src = &quot;./assets/images/vodka.png&quot;&gt;
 	{(set: $tamova to $tamova - 1)
 	(if: $enemyType is 4)[The Spirit God is immune to tamova!&lt;br&gt;]
-	(else:)[(set: $enemyPoisoned to 1) &lt;br&gt;Their face wringles at the taste. Super Effective!&lt;br&gt;]}
-	{(if: $playerPoisoned is 1)[(set: $playerTolerance to $playerTolerance - 30)
+	(else:)[(set: $enemyPoisoned to true) &lt;br&gt;Their face wringles at the taste. Super Effective!&lt;br&gt;]}
+	{(if: $playerPoisoned)[(set: $playerTolerance to $playerTolerance - 30)
 	&lt;br&gt;You feel a little worse for wear! As a result you lost 30 tolerance.&lt;br&gt;
 	
 	&lt;br&gt;Player Tolerance = $playerTolerance/$maxPlayerTolerance&lt;br&gt;]
 	(if: $playerTolerance &lt; 1)[Your tolerance has reached 0 and you can no longer continue. &lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Battle Lost&quot;)]
-(else:)[[[Next Turn|Enemy Battle Menu]]]}</tw-passagedata><tw-passagedata pid="30" name="Drink Water" tags="light-bg" position="3158,924" size="100,100">{(set: $playerPoisoned to 0)}
-	You slam back a bottle of water.
+(else:)[[[Next Turn|Enemy Battle Menu]]]}</tw-passagedata><tw-passagedata pid="29" name="Drink Water" tags="light-bg" position="3158,924" size="100,100">You slam back a bottle of water. it really helps clear your system.(set: $water to $water -1)(set: $playerPoisoned to false)
 	
-	(set: $water to $water -1)
-	
-	[[Enemy Turn|Enemy Battle Menu]]</tw-passagedata><tw-passagedata pid="31" name="Who shall you fight?" tags="light-bg" position="2160,762" size="100,100">{(link:&quot;Save Game&quot;)[
+	[[Next Turn|Enemy Battle Menu]]</tw-passagedata><tw-passagedata pid="30" name="Who shall you fight?" tags="light-bg" position="2160,762" size="100,100">{(link:&quot;Save Game&quot;)[
 	  (if:(save-game:&quot;Slot A&quot;))[
 		Game saved!
 	  ](else: )[
@@ -491,13 +534,17 @@ Tequila has been defeaten. (if: $tequilaBanished)[As punishment for her betrayal
 (else:)[[[The Spirit Ambassador|Tequila Controller]]]}
 
 {(if: ($tequilaBeat is false) and ($galahadBeat is false) and ($bulmersBeat is false))[[[Keep walking around Drinklympus|Drinklympus]]]
-(else:)[There are no more Ambassadors to confront.&lt;br&gt;[[Return to Drinklympus|Drinklympus]]]}</tw-passagedata><tw-passagedata pid="32" name="Return to Sobrell" tags="dark-bg" position="2992,1494" size="100,100">How pitiful. You have once again been bested in a drinking competition.
+(else:)[There are no more Ambassadors to confront.&lt;br&gt;[[Return to Drinklympus|Drinklympus]]]}</tw-passagedata><tw-passagedata pid="31" name="Return to Sobrell" tags="dark-bg" position="2992,1494" size="100,100">How pitiful. You have once again been bested in a drinking competition.
 
 As a punsihment for your defeat, you have been banished back to Sobrell.
 
 Thankfully, Guiness has come to your aid.
 	
-[[Continue|Aftermath]]</tw-passagedata><tw-passagedata pid="33" name="End Game" tags="" position="3397,1693" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="34" name="Druids Battle" tags="sienna" position="2237.6666666666665,270.3333333333333" size="100,100">&lt;img src = &quot;https://lh5.googleusercontent.com/Mt1E8s5iGrr2IvlTn1Ps7dl8BbQa7pPp34J4bXtiRBHF6XAdfBk0V75OS58qx24jCX_qt89xFXh9QrMdClc-s8SeCpMGFJFqZx6PMmrH&quot;&gt;
+[[Continue|Aftermath]]</tw-passagedata><tw-passagedata pid="32" name="End Game" tags="dark-bg" position="3397,1693" size="100,100">You have been defeaten too many times by Corona. As a result you can no longer challenge her.
+
+Her rule over Drinklympus continues for a millenia and you are banished into Parchturus... never to return. 
+
+Ever since your crushing defeat you have been too dejected to ever take anotehr taste of alcohol ever again.</tw-passagedata><tw-passagedata pid="33" name="Druids Battle" tags="sienna" position="2238,268" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/druids.png&quot;&gt;
 You begin your Drink Off with Druids!
 {(set: $enemyType to 1)
 	(set: $lastFought to 1)
@@ -509,10 +556,10 @@ You begin your Drink Off with Druids!
 	(set: $specialUsed to false)
 	(group: &#39;playing&#39;, &#39;stop&#39;)
 	(track: &#39;battle-theme&#39;, &#39;play&#39;)}	
-[[Continue|Player Battle Menu]]</tw-passagedata><tw-passagedata pid="35" name="Bulmers Battle" tags="orchard" position="2254,497" size="100,100">After travelling around The Cider Orchard in search of Bulmers, you arrive at his brewery. You enter his brewery which stinks of rotten apples as it is clear there has not been much brewing taking place for quite some time. You approach the testing facility doors where you hear some commotion coming from inside.
+[[Continue|Player Battle Menu]]</tw-passagedata><tw-passagedata pid="34" name="Bulmers Battle" tags="orchard" position="2255,482" size="100,100">After travelling around The Cider Orchard in search of Bulmers, you arrive at his brewery. You enter his brewery which stinks of rotten apples as it is clear there has not been much brewing taking place for quite some time. You approach the testing facility doors where you hear some commotion coming from inside.
 
 The doors swing open and you enter to see a drunken green-haired man with a pear in hand screaming at the barrels filled with apple Cider. He has been known for his temper but this tandrum does not seem like him. Something seems off you think to yourself.
-&lt;img src = &quot;https://lh4.googleusercontent.com/HtwsKfSYxFsE8srr0JQ4FrwldrMScQYMIYzvDM8kqVcPzs8OwiI_Sq3ZViJleEyC_z1OZzEE3RtLW6tT7nBrwn8OizjSNCLyWj7cWuQ3&quot;&gt;
+&lt;img class=&quot;portrait-img-center&quot; src = &quot;./assets/images/bulmers.png&quot;&gt;
 (live:2s)[
 	[[“Is everthing alright Bulmers?&quot;|Approach Bulmers]] 
 	
@@ -530,7 +577,8 @@ The doors swing open and you enter to see a drunken green-haired man with a pear
 	(set: $bulmersFought to it + 1)}
 (group: &#39;playing&#39;, &#39;stop&#39;)
 (track: &#39;battle-theme&#39;, &#39;play&#39;)
-</tw-passagedata><tw-passagedata pid="36" name="Tequila Battle" tags="" position="2398,854" size="100,100">Your Drink Off with Tequila begins.
+</tw-passagedata><tw-passagedata pid="35" name="Tequila Battle" tags="" position="2398,854" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/tequila.png&quot;&gt;
+Your Drink Off with Tequila begins.
 	{(set: $enemyType to 4)
 	(set: $lastFought to 4)
 	(set: $enemyMaxTolerance to 400)
@@ -543,7 +591,7 @@ The doors swing open and you enter to see a drunken green-haired man with a pear
 	[[Drink Off!|Player Battle Menu]]
 	
 (group: &#39;playing&#39;, &#39;stop&#39;)
-(track: &#39;battle-theme&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="37" name="Galahad Battle" tags="galahad-bg" position="2396.3333333333335,701" size="100,100">&lt;img src =&quot;https://raw.githubusercontent.com/vincent-kiely/CS4067_Project/dev/assets/images/galahad.PNG?token=AI4S665R2HTA5E6STTGDFBTAR2GLW&quot;&gt;
+(track: &#39;battle-theme&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="36" name="Galahad Battle" tags="galahad-bg" position="2396,701" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/galahad.png&quot;&gt;
 You approach the Beer Gardens, preparing yourself, to challenge your old friend Galahad. To your surprise you are greeted by the sound of music. Perhaps if there is anyone still parting, it will be Galahad. As you step out into the beer gardens, the realisation is immediate. It is Galahad but, it’s just Galahad. He is reclining on a large chair, Warm can in one hand and chicken roll in the other. He is lazily watching Godflix with a speaker blaring in the background, possibly asleep. Not a far fall for him but still strange to see him alone.
 
 [(link-reveal: &quot;“Galahad, What’s the craic man“&quot;)[(replace: ?c1_o2)[]
@@ -577,28 +625,31 @@ Fight with Galahad begins.
 	(set: $specialUsed to false)
 	(set: $galahadFought to it + 1)}
 (group: &#39;playing&#39;, &#39;stop&#39;)
-(track: &#39;battle-theme&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="38" name="Smirnoff Start" tags="smirnoff" position="198,1096" size="100,100">Its late by the time you arrive at the Cider Orchard, The street is dark and empty. You start walking down the street and you come across a tall man with his back turned to you.
+(track: &#39;battle-theme&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="37" name="Smirnoff Start" tags="smirnoff" position="188,1197" size="100,100">It&#39;s late by the time you arrive at the Cider Orchard, The street is dark and empty. You start walking down the street and you come across a tall man with his back turned to you.
 
-(live:3s)[&quot;H-h-h-heeeeey! Wheeeere d&#39;ya think yeeeeer goin?&quot; a drunken old man slurrs as he takes a swig out of a bottle wrapped in a brown-paper bag. The man stumbles forward and grabs the pool outside this shady club. You find yourself caught off guard and carefully take a step back from him and give a friendly reply.]
+(live:3s)[&quot;H-h-h-heeeeey! Wheeeere d&#39;ya think yeeeeer goin?&quot; a drunken old man slurrs, as he takes a swig out of a bottle wrapped in a brown-paper bag. The man stumbles forward and grabs a pole outside this shady club. You find yourself caught off guard and carefully take a step back from him and give a friendly reply.]
 	
-	(live:8s)[ He stumbled closer, his pupils were dilated and he was sweating profusely. &quot;Whaaaat do they call yoooouuu?&quot; he blurted out as he stumbled to the ground. Without hesistation you help the drunken mess up from the ground and rest him against the wall outside the bar.   ]
+	(live:8s)[ He stumbles closer, his pupils are dilated and he is sweating profusely. &quot;Whaaaat do they call yoooouuu?&quot; he blurted out as he stumbled to the ground. Without hesistation, you help the drunken mess up from the ground and rest him against the wall outside the bar.]
 	(live:14s)[
-	&quot;$name, hmmmm, that&#39;s er pretty name yeeeer got theeerre&quot;. Your face blushes as you awkward change the subject. The man drops his bottle down at the bar and reaches into his belt and produces a hip flask. ]
-	(live:18s)[
-	&quot;Round eeere theeey call mee Sssmirnoff&quot; he said as he sprayed out saliva from his mouth in your direction. You wince and unconsciously reach to your bag and rigorously apply some hand sanitizer.&quot;I used ttto-be the Sspirit Ambassador until that dd-damn Tequila came along. I got kicked out of the Spirit Well and now just hang out around the Cidar Orchard.&quot; he says in a beaten tone.]
-	(live:25s)[
-	&quot;So err what you doin heree $name?&quot; grunted Smirnoff. 
+	&quot;Round eeere theeey call mee Sssmirnoff&quot; he said as he sprayed out saliva from his mouth in your direction. You jump backwards... You are shocked that you didn&#39;t recognise your old friend! &quot;What happened to you Smirnoff? Y-your hair is so long, w-what happened my old friend&quot; you blurt out. 
 	
-[[Looking for someone|Looking for Bulmers]] 
+	&lt;img class=&quot;portrait-img-center&quot; src = &quot;./assets/images/smirnoff.png&quot;&gt;]
+	
+	(live:20s)[ 
+	&quot;I got kicked out of the Spirit Well and now just hang out around the Cidar Orchard, it has not been a good time for me. My Sobrell, how long has it been dear $name?&quot; he says in an improved tone.
+		]
+	(live:25s)[
+	&quot;So err what you doin heree dear $name?&quot; grunted Smirnoff. 
+	
+[[Looking for Bulmers|Looking for Bulmers]] 
 
-[[Just looking around|Nothing]]]</tw-passagedata><tw-passagedata pid="39" name="Smirnoff r1" tags="smirnoff" position="93,1383" size="100,100">&lt;img src = &quot;https://lh3.googleusercontent.com/NOvGoLm4mhdeGBb4N3BsuePNJ8-h-ePiKySy1L-pNhUTwvMaobdNLRnykFVcMHdByUK--g-V7D5vP_JX3M_MQdUpuHGqLKEPqYYMRCTR&quot;&gt;
-
+]</tw-passagedata><tw-passagedata pid="38" name="Smirnoff r1" tags="smirnoff" position="93,1386" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/smirnoff.png&quot;&gt;
 &quot;Welll if it isnt $name, fancy seeing you here.&quot; Smirnoff says in a happier manner than usual. You&#39;re curiousity gets the better of you and you ask why he is in such a good mood. 
 	
-	&quot;I...I have been w-working on a special drink that&#39;ll make ME the King of the Spirits once again...ahem..&quot; Smirnoff says as he coughs uncontrollably. You look at him nervously wondering if he will be alright.
+&quot;I...I have been w-working on a special drink that&#39;ll make ME the King of the Spirits once again...ahem..&quot; Smirnoff says as he coughs uncontrollably. You look at him nervously wondering if he will be alright.
 	
 [(link-reveal: &quot;\&quot;Are you alright Smirnoff?\&quot;, you ask curiously&quot;)[(replace: ?c1_o2, ?c1_o3)[](set: $smirnoff_checks to it +1)
-	&lt;br&gt;Smirnoff sighs &quot;Dont worry about ol me haha, just the drink gettin the better of me&quot;. You notice that this is the first time he isnt slurring his words. &quot;Call back ere in a while, ill have somethin for yea&quot;
+	&lt;br&gt;Smirnoff sighs &quot;Dont worry about ol me haha, just the drink gettin the better of me&quot;. You notice that this is the first time he isn&#39;t slurring his words. &quot;Call back ere in a while, i&#39;ll have somethin for yea&quot;
 (link-goto: &quot;Return to Drinklympus&quot;, &quot;Drinklympus&quot;)]]&lt;c1_o1|
 	
 [(link: &quot;\&quot;So what is this special drink about?\&quot;, your curiousity spikes.&quot;)[(replace: ?c1_o1, ?c1_o3)[][&quot;So what is this special drink about?&quot;, your curiousity spikes.
@@ -606,10 +657,10 @@ Fight with Galahad begins.
 
 (link-goto: &quot;Return to Drinklympus&quot;, &quot;Drinklympus&quot;)]]]&lt;c1_o2|
 
-</tw-passagedata><tw-passagedata pid="40" name="Smirnoff r3" tags="grey" position="486,1330" size="100,100">As the sun sets, the weather turns harsh and bitterly cold. You are strolling down the street of Drinklympus and see a fire in an alley with a small crowd gathering in a huddle around it. 
+</tw-passagedata><tw-passagedata pid="39" name="Smirnoff r3" tags="grey" position="486,1330" size="100,100">As the sun sets, the weather turns harsh and bitterly cold. You are strolling down the street of Drinklympus and see a fire in an alley with a small crowd gathering in a huddle around it. 
 	(live:2s)[
 	[[Warm yourself up|Go to the Fire]]
-	]</tw-passagedata><tw-passagedata pid="41" name="Smirnoff End" tags="vodka" position="542,1637" size="100,100">&lt;img src = &quot;https://lh3.googleusercontent.com/NOvGoLm4mhdeGBb4N3BsuePNJ8-h-ePiKySy1L-pNhUTwvMaobdNLRnykFVcMHdByUK--g-V7D5vP_JX3M_MQdUpuHGqLKEPqYYMRCTR&quot;&gt;
+	]</tw-passagedata><tw-passagedata pid="40" name="Smirnoff End" tags="vodka" position="543,1637" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/smirnoff.png&quot;&gt;
 &quot;Hey $name, perfect timing.&quot; Smirnoff says ecstatically. &quot;The special drink I&#39;ve been w-working on is finally ready&quot; Smirnoff says in a demoniac way.
 
 [(link-reveal: &quot;\&quot;Can I try some?\&quot;&quot;)[(replace: ?c1_o2)[](set: $smirnoff_checks to it +1)
@@ -617,18 +668,18 @@ Fight with Galahad begins.
 
 [(link-reveal: &quot;\&quot;Thanks Smirnoff, but I gotta go\&quot;, you say cheerfully.&quot;)[&quot;Sorry Smirnoff, I gotta go&quot;, you say cheerfully.&quot;
 
-&quot;Ahh alright then see ya later Astra says Smirnoff as he smiles revealing his gnarly yellow teeth as you walk away waving goodbye to your good friend.&quot; 
+&quot;Ahh alright then see ya later $name&quot; says Smirnoff as he smiles revealing his gnarly yellow teeth as you walk away waving goodbye to your good friend.&quot; 
 
 (link-goto: &quot;Onward to Drinklympus&quot;, &quot;Drinklympus&quot;)]
 ]]]
 (set: $tamova to 1)
-</tw-passagedata><tw-passagedata pid="42" name="Smirnoff r2" tags="smirnoff-alley" position="270,1390" size="100,100">The sun begins to set in the Cider Orchard.
+</tw-passagedata><tw-passagedata pid="41" name="Smirnoff r2" tags="smirnoff-alley" position="270,1388" size="100,100">The sun begins to set in the Cider Orchard.
 
 As you walk down the street looking for Smirnoff you hear a sudden bang down the alley beside his usual haunt. What will you do?
 	
 	[[Search the Alley|Search Alley]] or [[Keep Walking|Keep Walking]]
 	
-	</tw-passagedata><tw-passagedata pid="43" name="Smirnoff Controller" tags="smirnoff" position="477,1129" size="100,100">{(unless: (history:) contains &quot;Smirnoff Controller&quot;)[
+	</tw-passagedata><tw-passagedata pid="42" name="Smirnoff Controller" tags="smirnoff" position="428,1134" size="100,100">{(unless: (history:) contains &quot;Smirnoff Controller&quot;)[
 		(display: &quot;Smirnoff Start&quot;)
 	]
 	(else-if: $smirnoff_random_passages is not 0 )[
@@ -644,22 +695,22 @@ As you walk down the street looking for Smirnoff you hear a sudden bang down the
 			(set: $smirnoff_random_passages to 0)
 		]
 	]
-	(else:)[(display: &quot;Smirnoff End&quot;)]} </tw-passagedata><tw-passagedata pid="44" name="Search Alley" tags="smirnoff-alley" position="148,1537" size="100,100">You slowly creep up towards the noise behind the dumpster in the alley. You notice this big black figure not moving.
+	(else:)[(display: &quot;Smirnoff End&quot;)]} </tw-passagedata><tw-passagedata pid="43" name="Search Alley" tags="smirnoff-alley" position="148,1537" size="100,100">You slowly creep up towards the noise behind the dumpster in the alley. You notice this big black figure not moving.
 	
 	(live: 3s) [ Bang! Suddenly the black figure moves and hits the dumpster. You jump backwards, startled by the sudden move, you try to examine the figure without getting closer. ]
 	
 	(live: 6s) [ The black figure rolls over and it appears to be a man lying down in a puddle. The clink of empty vodka bottles distract you from identifying this man as they roll towards you. You look closely at this man and you are shocked to realise its Smirnoff!  ]
 	
-	(live: 10s) [&lt;img src = &quot;https://lh3.googleusercontent.com/NOvGoLm4mhdeGBb4N3BsuePNJ8-h-ePiKySy1L-pNhUTwvMaobdNLRnykFVcMHdByUK--g-V7D5vP_JX3M_MQdUpuHGqLKEPqYYMRCTR&quot;&gt;
+	(live: 10s) [&lt;img class=&quot;portrait-img-center&quot; src = &quot;./assets/images/smirnoff.png&quot;&gt;
 	You call his name and get no reply, after several attempts you approach him and gently push him with your foot. &quot;grrrrrrrrrrr, gwaywiththat&quot; is slurred in an unaudible tone. You push him  with more force this time.]
 	
 	(live: 13s)[ “Uggggghhhh, backoffa-ahhhh, leavemealone arghhhhh&quot; Smirnoff barks at you in an aggressive tone. 
 	
-	You notice that Smirnoff is no good to you in his current state, you help move him out of the puddle and lean him against the wall to check in on him  later
+	You notice that Smirnoff is no good to you in his current state, you help move him out of the puddle and help him to get inside a nearby Inn to check in on him later.
 	]
 	(live:19s)[
 	[[Return to Drinklympus|Drinklympus]]
-	]</tw-passagedata><tw-passagedata pid="45" name="Keep Walking" tags="grey" position="302,1539" size="100,100">You start walking down the street of Drinklympus, searching for any signs of your drunken friend.
+	]</tw-passagedata><tw-passagedata pid="44" name="Keep Walking" tags="grey" position="302,1539" size="100,100">You start walking down the street of Drinklympus, searching for any signs of your drunken friend.
 	
 Where could he have gone, you think to yourself as you stop in the middle of the street. With a deep sigh, you decide to keep walking in search of Smirnoff.
 	
@@ -668,13 +719,13 @@ Where could he have gone, you think to yourself as you stop in the middle of the
 		Do you [[Keep Going|Keep Searching]] or [[Give up|Give Up]]
 	
 	]}
-	</tw-passagedata><tw-passagedata pid="46" name="Keep Searching" tags="grey" position="358,1694" size="100,100">You continue your search for Smirnoff as you check different areas around Drinklympus. 
+	</tw-passagedata><tw-passagedata pid="45" name="Keep Searching" tags="grey" position="358,1694" size="100,100">You continue your search for Smirnoff as you check different areas around Drinklympus. 
 	{(live: 5s)[
 		Another hour has past and you still havent found him. With a reluctance to give up, you decide that youre wasting your own time here and you wont find him today	
 	]}
 	{(live: 5s)[
 			[[Return to Drinklympus|Drinklympus]]
-	]}</tw-passagedata><tw-passagedata pid="47" name="Give Up" tags="grey" position="210,1700" size="100,100">You have spent over an hour trying to find your friend but he is nowhere to be seen. You decide to give up and return to Drinklympus. 
+	]}</tw-passagedata><tw-passagedata pid="46" name="Give Up" tags="grey" position="211,1705" size="100,100">You have spent over an hour trying to find your friend but he is nowhere to be seen. You decide to give up and return to Drinklympus. 
 
 As you have spent so long searching for Smirnoff, you realise your tolerance has decreased as you haven&#39;t had a drink all day. 
 
@@ -682,10 +733,10 @@ Your tolerance has decreased by 50!
 {(set: $playerTolerance to $playerTolerance - 50)}
 	(live: 5s)[
 		[[Give up searching|Drinklympus]]
-	]</tw-passagedata><tw-passagedata pid="48" name="Go to the Fire" tags="fire" position="480,1497" size="100,100">You walk over towards the group gathered around the fire. You notice a man sitting in the corner of the alley away from the group. 
+	]</tw-passagedata><tw-passagedata pid="47" name="Go to the Fire" tags="fire" position="480,1498" size="100,100">You walk over towards the group gathered around the fire. You notice a man sitting in the corner of the alley away from the group. 
 (live: 4s ) [
 After warming up for a few minutes you decide to approach this man who appears to be whimpering. As you approach, you begin to realise that the man sobbing in the corner of the alley is Smirnoff!
-    ](live: 8s ) [&lt;img src = &quot;https://lh3.googleusercontent.com/NOvGoLm4mhdeGBb4N3BsuePNJ8-h-ePiKySy1L-pNhUTwvMaobdNLRnykFVcMHdByUK--g-V7D5vP_JX3M_MQdUpuHGqLKEPqYYMRCTR&quot;&gt;
+    ](live: 8s ) [&lt;img class=&quot;portrait-img-center&quot; src = &quot;./assets/images/smirnoff.png&quot;&gt;
 &quot;Smirnoff are you alright?&quot; you say in a concerned tone. &quot;Ah wee lassy, d-dont worry about poor old meee&quot; as he replies with a sniffle. You crouch down besides him as you try and console him. &quot;Whats the matter Smirnoff?&quot; you utter compassionately.    
     ](live: 12s ) [
 &quot;I just dont k-know what to do anymore&quot; he muffers while wimpering. &quot;Being the Spirit Ambassador meant e-everything to me, now i-its g-gone&quot; Smirnoff continues. You sympathise with Smirnoff and promise to do what you can to help him.   
@@ -695,28 +746,25 @@ After warming up for a few minutes you decide to approach this man who appears t
   
 (live: 20s ) [
     [[Back to Drinklympus|Drinklympus]] 
-    ]</tw-passagedata><tw-passagedata pid="49" name="Looking for Bulmers" tags="smirnoff" position="110,1229" size="100,100">&quot;Oii so who are ya lookin for?&quot; Smirnoff blurts out rudely. 
+    ]</tw-passagedata><tw-passagedata pid="48" name="Looking for Bulmers" tags="smirnoff" position="328,1264" size="100,100">&quot;Oii, so who are ya lookin for and how can I help a dear friend?&quot; Smirnoff says cheerfully. 
 	
-Just wondering if you have seen a guy around here named Bulmers, I hear he is the Ambassador around here in the Cider Orchard you kindly reply with.
+&quot;Just wondering if you have seen a guy around here named Bulmers, I hear he is the Ambassador around here in the Cider Orchard&quot;, you kindly reply with.
 	(live: 2s)[
-	&quot;Errr ammm not sure I can help yeeer thereee! Ave you tried lookin around his club in the Orchard. Thats err the only place I am allowed in round ere&quot;]
-	(live: 5s ) [You decide to return to Drinklympus to explore before going after Bulmers
+	&quot;Errr ammm not sure I can help yeeer thereee! Ave you tried lookin around his brewery in the Orchard. Thats err the only place I am not allowed in round ere.&quot;]
+	(live: 5s ) [You thank Smirnoff for his help and you decide to return to Drinklympus to explore for more information.
 	
 	[[Look around for Bulmers |Drinklympus]] 
-	]</tw-passagedata><tw-passagedata pid="50" name="Nothing" tags="smirnoff" position="284,1224" size="100,100">&quot;err what are you really doin heree $name?&quot; Smirnoff says in a passive aggressive mood. 
-	
-	&quot;Nothing Im just walking around Drinklympus&quot; you say reluctantly to Smirnoff.
-	(live: 2s )[
-	&quot;Ahh Alright shur, Dont be shy if ya see me round thesee parts&quot; he replies with an exaggerated bow as some vodka spills from his hip-flask.]
-	(live: 5s ) [
-	[[Keep walking around Drinklympus|Drinklympus]] 
-
-	]</tw-passagedata><tw-passagedata pid="51" name="hal.tracks" tags="" position="719,47" size="100,100">tense-song: ./assets/audio/under-pressure-michael-kobrin-105bpm-3781.mp3
+	]</tw-passagedata><tw-passagedata pid="49" name="hal.tracks" tags="" position="719,47" size="100,100">tense-song: ./assets/audio/under-pressure-michael-kobrin-105bpm-3781.mp3
 start-song: ./assets/audio/awakening-chill-out-music-1295.mp3
 tequila-laugh: ./assets/audio/oh-oh-oh.mp3
 club-song: ./assets/audio/bensound-moose.mp3
 sobrell-song: ./assets/audio/Blear-Moon-Weary-remains.mp3
-battle-theme: ./assets/audio/bensound-evolution.mp3</tw-passagedata><tw-passagedata pid="52" name="Menu" tags="menu" position="902,46" size="100,100">
+battle-theme: ./assets/audio/bensound-evolution.mp3</tw-passagedata><tw-passagedata pid="50" name="Menu" tags="menu" position="902,46" size="100,100">
+
+
+
+
+
 
 
 
@@ -731,24 +779,14 @@ battle-theme: ./assets/audio/bensound-evolution.mp3</tw-passagedata><tw-passaged
 (link: &#39;Start Game&#39;)[(track: &#39;start-song&#39;, &#39;play&#39;)(goto: &#39;Difficulty&#39;)]
 {(if: $Saves contains &quot;Slot A&quot;)[(link: &quot;Load game&quot;)[(load-game:&quot;Slot A&quot;)]
 (enchant:?passage,(text-colour:white))
-]}</tw-passagedata><tw-passagedata pid="53" name="Sambuca Controller" tags="sambuca-bg" position="1596,1403" size="100,100">{(unless: (history:) contains &quot;Sambuca Controller&quot;)[
+]}</tw-passagedata><tw-passagedata pid="51" name="Sambuca Controller" tags="sambuca-bg" position="1585.9999999999998,1401.3333333333333" size="100,100">{(unless: (history:) contains &quot;Sambuca Controller&quot;)[
     (display: &quot;Sambuca Start&quot;)
 ]
-(else-if: $sambuca_random_passages is not 0 )[
-    (set: _random to $sambuca_random_passages&#39;s 1st)
-    (if: _random is 1)        [(display: &quot;Sambuca R1&quot;)]
-    (else-if: _random is 2)    [(display: &quot;Sambuca R2&quot;)]
-    (else-if: _random is 3)    [(display: &quot;Sambuca R3&quot;)]
-    
-    (if: $sambuca_random_passages&#39;s length &gt; 1) [
-        (set: $sambuca_random_passages to $sambuca_random_passages&#39;s (range:2,$sambuca_random_passages&#39;s length))
-    ]
-    (else:)[
-        (set: $sambuca_random_passages to 0)
-    ]
-]
-(else:)[(display: &quot;Sambuca End&quot;)]}
-</tw-passagedata><tw-passagedata pid="54" name="Sambuca Start" tags="sambuca-bg" position="1394,1545" size="100,100">You venture into the outskirts of the Spirit Well. You begin to look for anyone you recognise and before long you spot the familiar face of Sambuca. 
+(else-if: (history:) contains &quot;Sambuca R1&quot;)[(goto: &quot;Sambuca End&quot;)]
+(else:)[(goto: &quot;Sambuca R1&quot;)]}
+</tw-passagedata><tw-passagedata pid="52" name="Sambuca Start" tags="sambuca-bg" position="1447.3333333333333,1553.3333333333333" size="100,100">You venture into the outskirts of the Spirit Well. You begin to look for anyone you recognise and before long you spot the familiar face of Sambuca. 
+
+&lt;img class=&quot;portrait-img-center&quot; src = &quot;./assets/images/sambuca.png&quot;&gt;
 
 As you approach her, Sambuca turns to face you. She appears shocked to see you for only a moment before happily running up to you.
 
@@ -761,30 +799,41 @@ Her friendly demeanour sets your mind at ease. It&#39;s nice to see some things 
 Sambuca and you were never particularly close when you were the God of Sesh but you find yourself reminiscing with her for several minutes talking about everything you can think of.
 
 [[Continue|Sambuca  Start Continued]]
-</tw-passagedata><tw-passagedata pid="55" name="Sambuca R1" tags="sambuca-bg" position="1528,1547" size="100,100">You venture into the outskirts of the Spirit Well. You begin to look for Sambuca again and eventually you find her. 
+</tw-passagedata><tw-passagedata pid="53" name="Sambuca R1" tags="sambuca-bg" position="1581.3333333333333,1555.3333333333333" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/sambuca.png&quot;&gt;
+You venture into the outskirts of the Spirit Well. You begin to look for Sambuca again and eventually you find her. She is drinking by herself. 
 
-R1
+[(link-reveal: &quot;\&quot;Is everything alright Sambuca?,\&quot; you ask.&quot;)[(replace: ?c1_o2)[]Sambuca doesn&#39;t reply. She seems kind of out of it. You think she might have had a bit too much to drink. (set: $sambuca_checks to it +1)
 
-[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="56" name="Sambuca R2" tags="sambuca-bg" position="1663,1547" size="100,100">You venture into the outskirts of the Spirit Well. You begin to look for Sambuca again and eventually you find her.  
+As she doesn’t respond, you go off in search of something that might help her. Before you leave, pick her up and carry her on your back. You wouldn&#39;t want anything bad to happen to her while you went for help.
 
-R2
+You carry her for a bit before you come across Guinness. You ask him for some help and he provides some Taytos and two bottles of water. You give the Taytos and one of the bottles to Sambuca. You decide to keep the other bottle. (set: $water to it + 1)
 
-[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="57" name="Sambuca End" tags="sambuca-bg" position="1797,1548" size="100,100">{(if: $tequilaBeat)[(if: ($sambuca_checks &gt; 1) and ($tequilaBanished is false))[(display: &quot;Sambuca Good End&quot;)]
+After having the Taytos and Water, Sambuca regains a bit of awareness.
+
+“Sorry,” she mutters sadly. “I guess I’ve got a lot on my mind.” She goes silent again after that. You sit with her until she starts to feel better.
+
+(link-goto: &quot;Return to Drinklympus&quot;, &quot;Drinklympus&quot;)]]&lt;c1_o1|
+[(link: &quot;Ignore her&quot;)[(replace: ?c1_o1)[You decide to ignore her. She seems to be going through a lot and you think it will be too much effort to deal with.
+
+You decide to head back to Drinklympus.
+
+(link-goto: &quot;Return to Drinklympus&quot;, &quot;Drinklympus&quot;)]]]&lt;c1_o2|
+</tw-passagedata><tw-passagedata pid="54" name="Sambuca End" tags="sambuca-bg" position="1700.3333333333333,1558" size="100,100">{(if: $tequilaBeat)[(if: ($sambuca_checks &gt; 1) and ($tequilaBanished is false))[(display: &quot;Sambuca Good End&quot;)]
 (else:)[(display: &quot;Sambuca Bad End&quot;)]]
-(else:)[(display: &quot;Sambuca Missing&quot;)]}</tw-passagedata><tw-passagedata pid="58" name="Aftermath" tags="dark-bg" position="2999,1699" size="100,100">&quot;Thank you for finding me, Guinness.&quot; You put on your best smile, hoping that it will hide your disappointment.
+(else:)[(display: &quot;Sambuca Missing&quot;)]}</tw-passagedata><tw-passagedata pid="55" name="Aftermath" tags="dark-bg" position="2999,1699" size="100,100">&quot;Thank you for finding me, Guinness.&quot; You put on your best smile, hoping that it will hide your disappointment.
 
 &quot;Sure look, it was no probelm, $name!&quot; Guinness replies. You get the feeling that the smile he gives you is a more genuine one. &quot;Ya best not get discouraged now... I&#39;m sure ya can beat em next time!&quot;.
 
 Guiness&#39; optimisim knows no bounds. It inspires you just a little. &quot;I hope you&#39;re right. I&#39;m not going to give up just yet!&quot;
 
-[[Head towards the gates of Drinklyumpus|Return to Gates of Drinklympus]]</tw-passagedata><tw-passagedata pid="59" name="Return to Gates of Drinklympus" tags="dark-bg" position="2811,1699" size="100,100">You arrive once again at the games of Drinklyumpus. Druids stands by them as always.
+[[Head towards the gates of Drinklyumpus|Return to Gates of Drinklympus]]</tw-passagedata><tw-passagedata pid="56" name="Return to Gates of Drinklympus" tags="dark-bg" position="2811,1699" size="100,100">You arrive once again at the games of Drinklyumpus. Druids stands by them as always.
 
 {(unless: (history:) contains &quot;Return to Gates of Drinklympus&quot;)[
     (display: &quot;First return to Drinklympus&quot;)
 ](else:) [
 	(display: &quot;Returning to Drinklympus&quot;)
 ]}
-</tw-passagedata><tw-passagedata pid="60" name="First return to Drinklympus" tags="dark-bg" position="2606,1497" size="100,100">As you approach, you become wary that Druids shall attempt to block your path once again. You prepare to challenge him to another drink off.
+</tw-passagedata><tw-passagedata pid="57" name="First return to Drinklympus" tags="dark-bg" position="2606,1497" size="100,100">As you approach, you become wary that Druids shall attempt to block your path once again. You prepare to challenge him to another drink off.
 
 &quot;Didn&#39;t think I would see you here again&quot; Druids voice rang out before you could say anything.
 
@@ -800,20 +849,20 @@ Druids rolls his eye.
 
 &quot;Thank you, Druids!&quot; All you hear in reply is a grunt from the man.
 
-[[Return to Drinklympus|Drinklympus]]</tw-passagedata><tw-passagedata pid="61" name="Returning to Drinklympus" tags="dark-bg" position="2811,1499" size="100,100">You no longer worry that Druids will block you path back to Drinklympus. As such you quikly hurry to get through the gates back to Drinklympus.
+[[Return to Drinklympus|Drinklympus]]</tw-passagedata><tw-passagedata pid="58" name="Returning to Drinklympus" tags="dark-bg" position="2811,1499" size="100,100">You no longer worry that Druids will block you path back to Drinklympus. As such you quikly hurry to get through the gates back to Drinklympus.
 
 As you pass Druids you offer your thanks once again.
 
-[[Return to Drinklympus|Drinklympus]]</tw-passagedata><tw-passagedata pid="62" name="Sorry maybe later" tags="light-bg" position="2012,446" size="100,100">You leave them and continue through the streets of Drinklympus
+[[Return to Drinklympus|Drinklympus]]</tw-passagedata><tw-passagedata pid="59" name="Sorry maybe later" tags="light-bg" position="2012,446" size="100,100">You leave them and continue through the streets of Drinklympus
 
-[[Return to Drinklympus|Drinklympus]]</tw-passagedata><tw-passagedata pid="63" name="Of course" tags="light-bg" position="1764,306" size="100,100">As a tray of shots is brought out (Jager Bombs, of course). You reach for a shot but are interrupted by Jager. “Wait man we need to get a picture”. “For what?” you replied confused by the strange request. “For Godstagram”, Red Bull says without the slightest hint of sarcasm.
+[[Return to Drinklympus|Drinklympus]]</tw-passagedata><tw-passagedata pid="60" name="Of course" tags="light-bg" position="1764,306" size="100,100">As a tray of shots is brought out (Jager Bombs, of course). You reach for a shot but are interrupted by Jager. “Wait man we need to get a picture”. “For what?” you replied confused by the strange request. “For Godstagram”, Red Bull says without the slightest hint of sarcasm.
 
-	[[Wait for them to finish]] or [[Take a shot anyway]]</tw-passagedata><tw-passagedata pid="64" name="Wait for them to finish" tags="light-bg" position="1684,475" size="100,100">You wait….and wait….and wait.
+	[[Wait for them to finish]] or [[Take a shot anyway]]</tw-passagedata><tw-passagedata pid="61" name="Wait for them to finish" tags="light-bg" position="1684,475" size="100,100">You wait….and wait….and wait.
 
- [[Keep Waiting|Wait for them to finish]] or [[Take a shot anyway]]</tw-passagedata><tw-passagedata pid="65" name="Take a shot anyway" tags="light-bg" position="1861,442" size="100,100">“What the Sobrell, Heart in a Bag, I wasn’t ready” Red Bull says with clear disgust. You glance to Jager expecting a similar response, but he is far to fixated on his phone to make any comment. 
+ [[Keep Waiting|Wait for them to finish]] or [[Take a shot anyway]]</tw-passagedata><tw-passagedata pid="62" name="Take a shot anyway" tags="light-bg" position="1861,442" size="100,100">“What the Sobrell, Heart in a Bag, I wasn’t ready” Red Bull says with clear disgust. You glance to Jager expecting a similar response, but he is far to fixated on his phone to make any comment. 
 “Thanks for the shot, see you later guys” As you turn and leave the duo, you suddenly hear Jager in an angry tone exclaiming “Brah I was taking a photo”. Jager has always run on a bit of a delay.
 
-[[Return to Drinklympus|Drinklympus]]</tw-passagedata><tw-passagedata pid="66" name="Difficulty" tags="light-bg" position="365,45" size="100,100">Easy Mode:
+[[Return to Drinklympus|Drinklympus]]</tw-passagedata><tw-passagedata pid="63" name="Difficulty" tags="light-bg" position="365,45" size="100,100">Easy Mode:
 	If you lose three times to single boss, you lose the opportunity to recruit them
 
 Hard Mode:
@@ -824,169 +873,200 @@ Hard Mode:
 (link: &#39;Easy Mode&#39;)[(set: $hardcore to false)(goto: &#39;A1 Chp0&#39;)]
 
 (link: &#39;Hard Mode&#39;)[(set: $hardcore to true)(goto: &#39;A1 Chp0&#39;)]
-</tw-passagedata><tw-passagedata pid="67" name="Defeat" tags="dark-bg" position="3182,1693" size="100,100">You have been defeated by $enemyName too many times they will not join you.
-[[Continue|Return to Sobrell]]]</tw-passagedata><tw-passagedata pid="68" name="Final Player Menu" tags="" position="3805,416" size="100,100">Player Tolerance: $playerTolerance/$maxPlayerTolerance
-(if: $playerBlinded is 0)[
+</tw-passagedata><tw-passagedata pid="64" name="Defeat" tags="dark-bg" position="3182,1693" size="100,100">You have been defeated by $enemyName too many times they will not join you.
+[[Continue|Return to Sobrell]]]</tw-passagedata><tw-passagedata pid="65" name="Final Player Menu" tags="light-bg" position="3805,416" size="100,100">Craic: $craic %
+(if: $playerBlinded is false)[
 What will the player do?
 
 [[Drink|Final Drink]]
 [[Item|Final Item]]]
 (else:)[
 The blayer has been blinded for the turn, you cannot use any items!
-(set: $playerBlinded to 0)
+(set: $playerBlinded to false)
 
-[[Drink|Final Drink]]]</tw-passagedata><tw-passagedata pid="69" name="Final Item" tags="" position="4006,417" size="100,100">(text-style:&quot;bold&quot;)[What item do you wish to use?]
+[[Drink|Final Drink]]]</tw-passagedata><tw-passagedata pid="66" name="Final Item" tags="light-bg" position="4006,417" size="100,100">(text-style:&quot;bold&quot;)[What item do you wish to use?]
 
-{(if: $enemyPoisoned is 0 and $tamova &gt; 0)[[Tamova Challange|Final Tamova]] Tamova: $tamova}
-{(if: $water &gt; 0 )[[Drink Water|Final Water]] Water: $water}
-{(if: $tayto &gt; 0)[[Eat Packet of Tayto| Final Tayto]] Tayto: $tayto}
+{(if: $enemyPoisoned is false and $tamova &gt; 0)[[Final Tamova]] Tamova will poison your enemy and deal them damage over time. Currently you have: $tamova}
+{(if: $water &gt; 0 )[[Final Water]] Water will cure you from any bad drink you&#39;ve had. Currently you have: $water}
+{(if: $tayto &gt; 0)[[Final Tayto]] Tayto restores your Tolerance by 100. Currently you have:: $tayto}
 
-[[Back|Final Player Menu]]</tw-passagedata><tw-passagedata pid="70" name="Final Water" tags="" position="4216,532" size="100,100">{(set: $playerPoisoned to 0)}
+[[Back|Final Player Menu]]</tw-passagedata><tw-passagedata pid="67" name="Final Water" tags="light-bg" position="4207.666666666667,547" size="100,100">{(set: $playerPoisoned to false)}
 You slam back a bottle of water and flush out the 0.0%.
 	
 (set: $water to $water -1)
 	
-[[Next Turn|Ally Special Moves]]</tw-passagedata><tw-passagedata pid="71" name=" Final Tayto" tags="" position="4218,419" size="100,100">You pull out a packet of crisps and through them into the crowd.
+[[Next Turn|Ally Special Moves]]</tw-passagedata><tw-passagedata pid="68" name="Final Tayto" tags="light-bg" position="4248,414" size="100,100">You pull out a packet of crisps and throw them to all of your allies. It really livens the glace up and give increases the craic by 20.
 {(set: $craic to $craic + 20)
-(set: $tayto to $tayto - 1)
-(if: $playerPoisoned is 1)}[
+(set: $tayto to $tayto - 1)}
+{(if: $craic &gt; 99)[The craic has reached unprecedented levels. As a result, your untouchable vibes have repelled the Pioneer&#39;s dry attitude.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Won&quot;)]} (else:)[
+{(if: $playerPoisoned)[
 (set: $craic to $craic - 5)
-You need to do something about that 0.0% coursing through you]
-
+You need to do something about that 0.0% coursing through you. It&#39;s killing the craic.]}
 Craic: $craic %
 
 {(if: $craic &lt; 1)[The craic has fallen below zero. As a result, Pioneer&#39;s dry attitude has overpowered your vibes.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Lost&quot;)]
-(else:)[[[Next Turn|Ally Special Moves]]]}</tw-passagedata><tw-passagedata pid="72" name="Final Tamova" tags="" position="4216,649" size="100,100">&quot;If your so worthy of ruling the Drink Gods give this a try&quot;, as you place a shot of Smirnoff&#39;s new paint stripper Tamova in front of Pionners.
+(else:)[[[Next Turn|Ally Special Moves]]]}]</tw-passagedata><tw-passagedata pid="69" name="Final Tamova" tags="light-bg" position="4235.333333333334,648.3333333333334" size="100,100">&quot;If your are so worthy of ruling the Drink Gods give this a try&quot;, as you place a shot of Smirnoff&#39;s new paint stripper Tamova in front of Karen.
 (set: $tamova to $tamova - 1)
+&lt;img class=&quot;portrait-img-center&quot; src = &quot;./assets/images/vodka.png&quot;&gt;
 They refuse and throw the shot to the ground
-(set: $craic to $craic - 15)
-(if: $playerPoisoned is 1)[The 0.0% burns through you!(set: $craic to $craic - 5)
+{(if: $playerPoisoned)[
+(set: $craic to $craic - 5)
+You need to do something about that 0.0% coursing through you. It&#39;s killing the craic.]}
 
-Craic: $craic %]
-{(if: $craic &lt; 1)[The craic has fallen below zero. As a result, Pioneer&#39;s dry attitude has overpowered your vibes.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Lost&quot;)]
-(else:)[[[Next Turn|Ally Special Moves]]]}</tw-passagedata><tw-passagedata pid="73" name="Ally Special Moves" tags="" position="3795,200" size="100,100">Which one of your allies do you want to help you?
+Craic: $craic %
 
-[[Guinnes|Ally Guinness Attack]]
+{(if: $craic &lt; 1)[The craic has fallen bellow zero. As a result, Pioneer&#39;s dry attitute has overpowered your vibes.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Lost&quot;)]
+(else:)[[[Next Turn|Ally Special Moves]]]}</tw-passagedata><tw-passagedata pid="70" name="Ally Special Moves" tags="" position="3795,200" size="100,100">Which one of your allies do you want to help you?
+
+[[Guinness|Ally Guinness Attack]]
 [[Driuds|Ally Druids Attack]]
+{(if: (history:) contains &quot;Chardonnay End&quot;)[&lt;br&gt;&quot;[[Chardonnay|Ally Chardonnay Attack]]] 
 (if: $bulmersBeat and $bulmersBanished is false)[[[Bulmers|Ally Bulmers Attack]]]
 (if: $tequilaBeat and $tequilaBanished is false)[[[Tequila|Ally Tequila Attack]]]
 (if: $galahadBeat and $galahadBanished is false)[[[Galahad|Ally Galahad Attack]]]
-(if: $coronaBeat and $coronaBanished is false)[[[Corona|Ally Corona Attack]]]</tw-passagedata><tw-passagedata pid="74" name="Final Drink" tags="" position="4216,770" size="100,100">You drink deep as a cheer echos arround you as if from Drinklymlpus itself.
-{(set: $craic to $craic + 10)
-(if: $playerPoisoned is 1)}[
+(if: $coronaAlly)[[[Corona|Ally Corona Attack]]]}</tw-passagedata><tw-passagedata pid="71" name="Final Drink" tags="light-bg" position="4216,770" size="100,100">You drink deep as a cheer echos around you as if from Drinklymlpus itself. The Craic is raised by 10! (set: $craic to $craic + 10)
+{(if: $craic &gt; 99)[The craic has reached unprecedented levels. As a result, your untouchable vibes have repelled the Pioneer&#39;s dry attitude.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Won&quot;)]} (else:)[
+{(if: $playerPoisoned)[
 (set: $craic to $craic - 5)
-You need to do something about that 0.0% coursing through you]
+You need to do something about that 0.0% coursing through you. It&#39;s killing the craic.]}
+Craic: $craic %
+
+{(if: $craic &lt; 1)[The craic has fallen below zero. As a result, Pioneer&#39;s dry attitude has overpowered your vibes.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Lost&quot;)]
+(else:)[[[Next Turn|Ally Special Moves]]]}]</tw-passagedata><tw-passagedata pid="72" name="Final Enemy Battle Menu" tags="karen-bg" position="3793,772" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/pioneer.png&quot;&gt;
+It&#39;s Pioneer&#39;s turn to drink, but she downs a can of 0.0%! 
+
+She&#39;s absolutely killing the craic and it lowers by 10.(set: $craic to $craic - 10)
 
 Craic: $craic %
 
 {(if: $craic &lt; 1)[The craic has fallen below zero. As a result, Pioneer&#39;s dry attitude has overpowered your vibes.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Lost&quot;)]
-(else:)[[[Next Turn|Ally Special Moves]]]}</tw-passagedata><tw-passagedata pid="75" name="Final Enemy Battle Menu" tags="" position="3793,772" size="100,100">(if: $bulmersBeat is false and $bulmersBanished is false and $specialBulmers is false)[(goto: &#39;Enemy Bulmers Attack&#39;)]
-(else-if: $tequilaBeat is false and $tequilaBanished is false and $specialTequila is false)[(goto: &#39;Enemy Tequila Attack&#39;)]
-(else-if: $galahadBeat is false and $galahadBanished is false and $specialGalahad is false)[(goto: &#39;Enemy Galahad Attack&#39;)]
-(else-if: $coronaBeat is false and $coronaBanished is false and $specialCorona is false)[(goto: &#39;Enemy Corona Attack&#39;)]
-(else:)[(goto: &#39;Enemy Final Drink&#39;)]</tw-passagedata><tw-passagedata pid="76" name="Final Battle Lost" tags="" position="4408,890" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="77" name="Ally Guinness Attack" tags="guinness-bg" position="3398,485" size="100,100">(if: $playerPoisoned is 1)[
+(else:)[[[Next Turn|Enemy Ally Menu]]]}</tw-passagedata><tw-passagedata pid="73" name="Final Battle Lost" tags="dark-bg" position="4408,886" size="100,100">You have been defeaten by Karen. However, with the strength of your allies that you have formed along this journey you manage to rise up and challenge her again.
+
+[[Continue|Final Battle]]</tw-passagedata><tw-passagedata pid="74" name="Ally Guinness Attack" tags="guinness-bg" position="3398,485" size="100,100">&quot;Sure, I don&#39;t know if I can do much here now, but, I can give you this packet of Taytos&quot; Guinness says happily. (set: $taytos to it + 1)
+&lt;img class=&quot;portrait-img-center&quot; src = &quot;./assets/images/guinness.png&quot;&gt;
+(if: $playerPoisoned)[
 (set: $craic to $craic - 5)
-You need to do something about that 0.0% coursing through you]
+You need to do something about that 0.0% coursing through you. It&#39;s killing the craic.]
 
 Craic: $craic %
 
 {(if: $craic &lt; 1)[The craic has fallen below zero. As a result, Pioneer&#39;s dry attitude has overpowered your vibes.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Lost&quot;)]
-(else:)[[[Next Turn|Final Enemy Battle Menu]]]}</tw-passagedata><tw-passagedata pid="78" name="Ally Tequila Attack" tags="" position="3393,362" size="100,100">(set: $craic to $craic + 15)
-Tequila throws Salt in Pioneer&#39;s eyes.
+(else:)[[[Next Turn|Final Enemy Battle Menu]]]}</tw-passagedata><tw-passagedata pid="75" name="Ally Tequila Attack" tags="tequila-bg" position="3393,362" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/tequila.png&quot;&gt;
+(set: $craic to $craic + 15)Tequila throws Salt in Pioneer&#39;s eyes.
 
 &quot;Stop throwing me all the time!&quot; Salt shouts.
 
-Craic: $craic %
-
 {(if: $craic &gt; 99)[The craic has reached unprecedented levels. As a result, your untouchable vibes have repelled the Pioneer&#39;s dry attitude.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Won&quot;)]} (else:)[
-{(if: $playerPoisoned is 1)[
+{(if: $playerPoisoned)[
 (set: $craic to $craic - 5)
-You need to do something about that 0.0% coursing through you}
-
+You need to do something about that 0.0% coursing through you. It&#39;s killing the craic.]}
 Craic: $craic %
 
 {(if: $craic &lt; 1)[The craic has fallen below zero. As a result, Pioneer&#39;s dry attitude has overpowered your vibes.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Lost&quot;)]
 (else:)[[[Next Turn|Final Enemy Battle Menu]]]}]
-</tw-passagedata><tw-passagedata pid="79" name="Ally Galahad Attack" tags="galahad-bg" position="3389.3333333333335,248.33333333333334" size="100,100">You turn to galahad for help. 
-&quot;Sorry man, she won&#39;t take the can&quot;
-
-{(if: $playerPoisoned is 1)[
+</tw-passagedata><tw-passagedata pid="76" name="Ally Galahad Attack" tags="galahad-bg" position="3387,248" size="100,100">You turn to Galahad for help. 
+&lt;img class=&quot;portrait-img-center&quot; src = &quot;./assets/images/galahad.png&quot;&gt;
+&quot;Sorry man, she won&#39;t take the can off me.&quot;
+{(if: $playerPoisoned)[
 (set: $craic to $craic - 5)
-You need to do something about that 0.0% coursing through you]}
+You need to do something about that 0.0% coursing through you. It&#39;s killing the craic.]}
 
 Craic: $craic %
 
 {(if: $craic &lt; 1)[The craic has fallen bellow zero. As a result, Pioneer&#39;s dry attitute has overpowered your vibes.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Lost&quot;)]
 (else:)[[[Next Turn|Final Enemy Battle Menu]]]}
-</tw-passagedata><tw-passagedata pid="80" name="Ally Corona Attack" tags="" position="3400,609" size="100,100">
+</tw-passagedata><tw-passagedata pid="77" name="Ally Corona Attack" tags="corona-bg" position="3400,609" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/corona.png&quot;&gt;
+Corona follows your lead and chugs a can. All of your allies cheer. The Craic is raised by 10! (set: $craic to $craic + 10)
 
-(if: $playerPoisoned is 1)[
-You need to do something about that 0.0% coursing through you
-(set: $craic to $craic - 5)]
-Craic: $craic %
-
-{(if: $craic &lt; 1)[The craic has fallen below zero. As a result, Pioneer&#39;s dry attitude has overpowered your vibes.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Lost&quot;)]
-(else:)[[[Next Turn|Final Enemy Battle Menu]]]}</tw-passagedata><tw-passagedata pid="81" name="Ally Druids Attack" tags="sienna" position="3396,723" size="100,100">&lt;img src =&quot;https://lh5.googleusercontent.com/Mt1E8s5iGrr2IvlTn1Ps7dl8BbQa7pPp34J4bXtiRBHF6XAdfBk0V75OS58qx24jCX_qt89xFXh9QrMdClc-s8SeCpMGFJFqZx6PMmrH&quot;&gt;
-Druids is called to attack. Being your ally now he uses his special attack &quot;Taste The Magic&quot;.
-
-(if: $playerPoisoned is 1)[
+{(if: $craic &gt; 99)[The craic has reached unprecedented levels. As a result, your untouchable vibes have repelled the Pioneer&#39;s dry attitude.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Won&quot;)]} (else:)[
+{(if: $playerPoisoned)[
 (set: $craic to $craic - 5)
-You need to do something about that 0.0% coursing through you]
-
+You need to do something about that 0.0% coursing through you. It&#39;s killing the craic.]}
 Craic: $craic %
 
 {(if: $craic &lt; 1)[The craic has fallen below zero. As a result, Pioneer&#39;s dry attitude has overpowered your vibes.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Lost&quot;)]
-(else:)[[[Next Turn|Final Enemy Battle Menu]]]}</tw-passagedata><tw-passagedata pid="82" name="Ally Bulmers Attack" tags="sobrell-gates" position="3401,856" size="100,100">&lt;img src =&quot;https://lh4.googleusercontent.com/HtwsKfSYxFsE8srr0JQ4FrwldrMScQYMIYzvDM8kqVcPzs8OwiI_Sq3ZViJleEyC_z1OZzEE3RtLW6tT7nBrwn8OizjSNCLyWj7cWuQ3&quot;&gt;
-Bulmers loses his temper at the pioneers for making his brew 0.0 Cider. He lauches a vicious attack with his pear that deals huge damage to the Pioneers.
+(else:)[[[Next Turn|Final Enemy Battle Menu]]]}]</tw-passagedata><tw-passagedata pid="78" name="Ally Druids Attack" tags="sienna" position="3396,723" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/druids.png&quot;&gt;
+Druids is called to attack. Being your ally now he uses his special attack &quot;Taste The Magic&quot;. He tosses around several cans of Druids and everyone drinks some, raising the craic by 15%.(set: $craic to $craic + 15)
 
-(if: $playerPoisoned is 1)[
+{(if: $craic &gt; 99)[The craic has reached unprecedented levels. As a result, your untouchable vibes have repelled the Pioneer&#39;s dry attitude.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Won&quot;)]} (else:)[
+{(if: $playerPoisoned)[
 (set: $craic to $craic - 5)
-You need to do something about that 0.0% coursing through you]
-
+You need to do something about that 0.0% coursing through you. It&#39;s killing the craic.]}
 Craic: $craic %
 
 {(if: $craic &lt; 1)[The craic has fallen below zero. As a result, Pioneer&#39;s dry attitude has overpowered your vibes.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Lost&quot;)]
-(else:)[[[Next Turn|Final Enemy Battle Menu]]]}</tw-passagedata><tw-passagedata pid="83" name="Enemy Tequila Attack" tags="" position="3579,1104" size="100,100">(set: $craic to $craic - 15)
-Tequilla throws Salt in your eyes. This time you turn away and avoid the blinding. Her nasty attitude has lowered the craic.
+(else:)[[[Next Turn|Final Enemy Battle Menu]]]}]</tw-passagedata><tw-passagedata pid="79" name="Ally Bulmers Attack" tags="sobrell-gates" position="3401,856" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/bulmers.png&quot;&gt;
+Bulmers loses his temper with Karen for making his brew 0.0 Cider. He lauches a vicious attack with his pear that deals huge damage to the her. Everyone cheers and the criac goes up by 15%! (set: $craic to $craic + 15)
+
+Craic: $craic %
+
+{(if: $craic &gt; 99)[The craic has reached unprecedented levels. As a result, your untouchable vibes have repelled the Pioneer&#39;s dry attitude.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Won&quot;)]} (else:)[
+{(if: $playerPoisoned)[
+(set: $craic to $craic - 5)
+You need to do something about that 0.0% coursing through you. It&#39;s killing the craic.]}
+Craic: $craic %
+
+{(if: $craic &lt; 1)[The craic has fallen below zero. As a result, Pioneer&#39;s dry attitude has overpowered your vibes.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Lost&quot;)]
+(else:)[[[Next Turn|Final Enemy Battle Menu]]]}]
+</tw-passagedata><tw-passagedata pid="80" name="Enemy Tequila Attack" tags="tequila-bg" position="3580,1104" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/tequila.png&quot;&gt;
+{(set: $playerBlinded to true)(set: $craic to $craic - 15)}
+Tequila throws Salt in your eyes, blinding you and making you lowering teh craic!. You won&#39;t be able to use any items next turn. 
 
 &quot;Stop throwing me all the time!&quot; Salt shouts.
 
-Craic: $craic %
-
-{(if: $craic &lt; 1)[The craic has fallen below zero. As a result, Pioneer&#39;s dry attitude has overpowered your vibes.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Lost&quot;)]
-(else-if: $craic &gt; 99)[The craic has reached unprecendented levels. As a result, your untouchable vibes have repelled the Pioneer&#39;s dry attitude.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Won&quot;)]
-(else:)[[[Next Turn|Final Enemy Battle Menu]]]}</tw-passagedata><tw-passagedata pid="84" name="Enemy Galahad Attack" tags="galahad-bg" position="3705,1107" size="100,100">Galahad throws a luke warm can of 0.0% at you. You are not feeling too good
-(set: $playerPoisoned to 1)
+Her actions lower the craic by 15.
 
 Craic: $craic %
 
 {(if: $craic &lt; 1)[The craic has fallen below zero. As a result, Pioneer&#39;s dry attitude has overpowered your vibes.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Lost&quot;)]
-(else-if: $craic &gt; 99)[The craic has reached unprecendented levels. As a result, your untouchable vibes have repelled the Pioneer&#39;s dry attitude.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Won&quot;)]
-(else:)[[[Next Turn|Final Enemy Battle Menu]]]}</tw-passagedata><tw-passagedata pid="85" name="Enemy Corona Attack" tags="" position="3825,1107" size="100,100">
+(else:)[[[Next Turn|Final Player Menu]]]}</tw-passagedata><tw-passagedata pid="81" name="Enemy Galahad Attack" tags="galahad-bg" position="3705,1107" size="100,100">It is Galahad&#39;s turn to drink. 
+&lt;img class=&quot;portrait-img-center&quot; src = &quot;./assets/images/galahad.png&quot;&gt;
+Galalad throws a luke warm can at you. As you aren&#39;t a coward, you down it. Afterwards, you start feeling nauseous. Maybe some water might help.
+(set: $playerPoisoned to true)
+
+Other than that, Galahad is fairly dry but he doesn&#39;t lower the craic.
+
+{(if: $craic &lt; 1)[The craic has fallen below zero. As a result, Pioneer&#39;s dry attitude has overpowered your vibes.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Lost&quot;)]
+(else:)[[[Next Turn|Final Player Menu]]]}</tw-passagedata><tw-passagedata pid="82" name="Enemy Corona Attack" tags="corona-bg" position="3823,1107" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/corona.png&quot;&gt;
+It&#39;s Corona&#39;s turn to drink.
+
+However, just like Karen, she downs a can of 0.0%! She&#39;s absolutely killing the craic and it lowers by 10.(set: $craic to $craic - 10)
 
 Craic: $craic %
 
-(if: $craic &gt; 99)[
-(go-to: &quot;Final Battle Won&quot;)]
 
-[[Next Turn|Final Player Menu]]</tw-passagedata><tw-passagedata pid="86" name="Enemy Bulmers Attack" tags="sobrell-gates" position="3955,1105" size="100,100">&lt;img src =&quot;https://lh4.googleusercontent.com/HtwsKfSYxFsE8srr0JQ4FrwldrMScQYMIYzvDM8kqVcPzs8OwiI_Sq3ZViJleEyC_z1OZzEE3RtLW6tT7nBrwn8OizjSNCLyWj7cWuQ3&quot;&gt;
-Bulmers under the Pioneers control,lauches a vicious attack with his pear that deals huge damage to you. (set: $craic to $craic - 15)
+{(if: $craic &lt; 1)[The craic has fallen below zero. As a result, Pioneer&#39;s dry attitude has overpowered your vibes.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Lost&quot;)]
+(else:)[[[Next Turn|Final Player Menu]]]}</tw-passagedata><tw-passagedata pid="83" name="Enemy Bulmers Attack" tags="sobrell-gates" position="3953,1105" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/bulmers.png&quot;&gt;
+Bulmers launches a vicious attack with his pear that causes everyone to scatter killing the vibe and lowering the craic by 15. (set: $craic to $craic - 15)
 
 Craic: $craic %
 
 {(if: $craic &lt; 1)[The craic has fallen below zero. As a result, Pioneer&#39;s dry attitude has overpowered your vibes.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Lost&quot;)]
-(else-if: $craic &gt; 99)[The craic has reached unprecendented levels. As a result, your untouchable vibes have repelled the Pioneer&#39;s dry attitude.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Won&quot;)]
-(else:)[[[Next Turn|Final Enemy Battle Menu]]]}</tw-passagedata><tw-passagedata pid="87" name="Final Battle Won" tags="" position="4410,1020" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="88" name="Enemy Final Drink" tags="" position="3450,1105" size="100,100">Pioneer Drinks 0.0%
+(else:)[[[Next Turn|Final Player Menu]]]}</tw-passagedata><tw-passagedata pid="84" name="Final Battle Won" tags="light-bg" position="4410,1020" size="100,100">Victory!
 
-(set: $craic to $craic - 10)
+You have defeaten Karen.
+
+[[Continue|Ending]]</tw-passagedata><tw-passagedata pid="85" name="Enemy Final Drink" tags="karen-bg" position="3450,1105" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/pioneer.png&quot;&gt;
+Using her allies’ powers, Karen is able to take another turn! She downs another can of 0.0%!
+
+She&#39;s absolutely killing the craic and it lowers by 10.(set: $craic to $craic - 10)
+
 Craic: $craic %
 
 {(if: $craic &lt; 1)[The craic has fallen below zero. As a result, Pioneer&#39;s dry attitude has overpowered your vibes.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Lost&quot;)]
-(else-if: $craic &gt; 99)[The craic has reached unprecendented levels. As a result, your untouchable vibes have repelled the Pioneer&#39;s dry attitude.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Won&quot;)]
-(else:)[[[Next Turn|Final Enemy Battle Menu]]]}</tw-passagedata><tw-passagedata pid="89" name="Final Battle" tags="" position="3163,1125" size="100,100">
-
-[[Drink Off!|Final Player Menu]]</tw-passagedata><tw-passagedata pid="90" name="Approach Bulmers" tags="orchard" position="2404,398" size="100,100">You approach Bulmers and.. 
-(live: 3s)[&lt;img src =&quot;https://lh4.googleusercontent.com/HtwsKfSYxFsE8srr0JQ4FrwldrMScQYMIYzvDM8kqVcPzs8OwiI_Sq3ZViJleEyC_z1OZzEE3RtLW6tT7nBrwn8OizjSNCLyWj7cWuQ3&quot;&gt;
+(else:)[[[Next Turn|Final Player Menu]]]}
+</tw-passagedata><tw-passagedata pid="86" name="Final Battle" tags="" position="3163,1125" size="100,100">The final Drink Off with Karen begins.
+{(set: $craic to 0)(if: $bulmersBanished)[(set: $bulmersFinal to 1)]
+(if: $galahadBanished)[(set: $galahadFinal to 2)]
+(if: $tequilaBanished)[(set: $tequilaFinal to 3)]
+(if: $coronaBanished)[(set: $coronaFinal to 4)]
+(set: $playerPoisoned to false)
+	(set: $enemyPoisoned to false)}
+[[Drink Off!|Final Player Menu]]
+	
+(group: &#39;playing&#39;, &#39;stop&#39;)
+(track: &#39;battle-theme&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="87" name="Approach Bulmers" tags="orchard" position="2404,398" size="100,100">You approach Bulmers and.. 
+(live: 3s)[&lt;img class=&quot;portrait-img-center&quot; src = &quot;./assets/images/bulmers.png&quot;&gt;
 He turns around with a snap, but ashamed of his display his tone calms down to a normal level. &quot;I just have had enough, I can&#39;t brew any Cider anymore and I am forced to drink this gone off crap&quot; he says, in a defeated manner. ]
 (live: 5s)[
 &quot;Why can&#39;t you brew anymore?&quot; you ask in a curious tone, which evidently causes a reaction in Bulmers as he begins to see red. &quot;It is none of your goddamn business&quot; he barks back. ]
@@ -994,8 +1074,8 @@ He turns around with a snap, but ashamed of his display his tone calms down to a
 &quot;Why do you have a pear in your hand?&quot; you say in a mocking voice as you begin to laugh. &quot;Are you mocking me kid?!?&quot; he screams back at you. &quot;Do you think your funny huh?&quot; he continues as he starts to mush the pear in his hands. Finally he says in a maniacal fashion, &quot;If you think you are so great, why don&#39;t you challenge me, Bulmers, Cider Ambassador of the Cider Orchard!&quot; 
 
 &lt;center&gt;[[Drink Off!|Player Battle Menu]]&lt;/center&gt;
-]</tw-passagedata><tw-passagedata pid="91" name="Calm Down Bulmers" tags="orchard" position="2405,532" size="100,100">You try to calm down Bulmers to stop him for hurting himself.
-(live: 3s)[&lt;img src =&quot;https://lh4.googleusercontent.com/HtwsKfSYxFsE8srr0JQ4FrwldrMScQYMIYzvDM8kqVcPzs8OwiI_Sq3ZViJleEyC_z1OZzEE3RtLW6tT7nBrwn8OizjSNCLyWj7cWuQ3&quot;&gt;
+]</tw-passagedata><tw-passagedata pid="88" name="Calm Down Bulmers" tags="orchard" position="2405,532" size="100,100">You try to calm down Bulmers to stop him for hurting himself.
+(live: 3s)[&lt;img class=&quot;portrait-img-center&quot; src = &quot;./assets/images/bulmers.png&quot;&gt;
 He turns around viciously with venom in his voice he says &quot;Who do you think you are that you can come into my brewery and talk down to me like that&quot;. You panic and hesistently say that you were only trying to help. You try and diffuse the situation but to no avail. ]
 (live: 6s)[
 Clearly engulfed in anger, Bulmers sees no resolution other than to prove why he should not be messed with. The Cider Ambassador takes a step forward throws his pear onto the floor and grabs two goblets and begins to pour from his dusty out of date cider barrels.]
@@ -1003,7 +1083,8 @@ Clearly engulfed in anger, Bulmers sees no resolution other than to prove why he
 Bulmers challenges you to a drink off.
 
 			&lt;center&gt;[[Drink Off!|Player Battle Menu]]&lt;/center&gt;
-]</tw-passagedata><tw-passagedata pid="92" name="Sambuca  Start Continued" tags="sambuca-bg" position="1394,1702" size="100,100">After a few minutes, you remember that Sambuca and Tequila were inseparable back in the day but, currently Tequila is nowhere to be found. {(if: (history:) contains &quot;Tequila Battle&quot;)[You have a feeling Tequila is probably too busy acting as the new Spirit Ambassador to worry about her //friend//. ]}
+]</tw-passagedata><tw-passagedata pid="89" name="Sambuca  Start Continued" tags="sambuca-bg" position="1447.3333333333333,1710.3333333333333" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/sambuca.png&quot;&gt;
+After a few minutes, you remember that Sambuca and Tequila were inseparable back in the day but, currently Tequila is nowhere to be found. {(if: (history:) contains &quot;Tequila Battle&quot;)[You have a feeling Tequila is probably too busy acting as the new Spirit Ambassador to worry about her //friend//. ]}
 
 “How has Tequila been?” You ask. “The two of you are never seen apart.”.
 
@@ -1027,13 +1108,13 @@ With that Sambuca makes her exit. You are left to wander back towards Drinklympu
 
 The two of you continue your talk for several more minutes before you decide that it&#39;s finally time to return to Drinklympus.
 
-(link-goto: &quot;Return to Drinklympus&quot;, &quot;Drinklympus&quot;)]]]&lt;c1_o2|</tw-passagedata><tw-passagedata pid="93" name="Tequila Controller" tags="tequila-bg" position="2212,1078" size="100,100">{(if: $tequilaBeat is not true )[
+(link-goto: &quot;Return to Drinklympus&quot;, &quot;Drinklympus&quot;)]]]&lt;c1_o2|</tw-passagedata><tw-passagedata pid="90" name="Tequila Controller" tags="tequila-bg" position="2212,1078" size="100,100">{(if: $tequilaBeat is not true )[
     (set: _round to $tequilaFought)
     (if: _round is 0)        [(display: &quot;Tequila R1&quot;)]
     (else-if: _round is 1)    [(display: &quot;Tequila R2&quot;)]
     (else-if: _round is 2)    [(display: &quot;Tequila R3&quot;)]
 ]}
-</tw-passagedata><tw-passagedata pid="94" name="Tequila R1" tags="guinness-bg" position="2216,1275" size="100,100">You venture into the Spirit Well, one destination in mind. In the past the Spirit Ambassador always lived in the center of the Spirit Well, within the Spirit Embassy. As a result you feel that you have the best chance of finding the Spirit Ambassador there.
+</tw-passagedata><tw-passagedata pid="91" name="Tequila R1" tags="guinness-bg" position="2216,1275" size="100,100">You venture into the Spirit Well, one destination in mind. In the past the Spirit Ambassador always lived in the center of the Spirit Well, within the Spirit Embassy. As a result you feel that you have the best chance of finding the Spirit Ambassador there.
 
 Before you can venture too far in you hear a friendly voice call out to you. Turning around you find Guinness running up to you.
 
@@ -1046,7 +1127,8 @@ Before you can venture too far in you hear a friendly voice call out to you. Tur
 [[Ignore his advice|Skip Explanation]]
 [[Listen to his advice|Hear Explanation]]
 
-</tw-passagedata><tw-passagedata pid="95" name="Tequila R2" tags="tequila-bg" position="2114,1180" size="100,100">You once again venture into the Spirit Well, heading straight for the center. There’s no way Tequila has moved from there. Losing to her once was bad enough but you won’t let it happen again.
+</tw-passagedata><tw-passagedata pid="92" name="Tequila R2" tags="tequila-bg" position="2114,1180" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/tequila.png&quot;&gt; &lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/salt.png&quot;&gt; &lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/lemon.png&quot;&gt;
+You once again venture into the Spirit Well, heading straight for the center. There’s no way Tequila has moved from there. Losing to her once was bad enough but you won’t let it happen again.
 
 The Journey there is uneventful. As you approach you hear a moronic laugh echoing from the main chamber of the Spirit Embassy.
 
@@ -1057,7 +1139,8 @@ The Journey there is uneventful. As you approach you hear a moronic laugh echoin
 “You’re such a pushover, Lemon. How could you question Tequila like that?”
 
 [[Continue|Tequila R2 Continued]]
-</tw-passagedata><tw-passagedata pid="96" name="Tequila R3" tags="tequila-bg" position="2319,1178" size="100,100">You once again venture into the Spirit Well, heading straight for the center. Frustration builds inside you after your last defeat. You vow not to let it happen again. You can’t lose to Tequila a third time… you won’t allow it.
+</tw-passagedata><tw-passagedata pid="93" name="Tequila R3" tags="tequila-bg" position="2319,1178" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/tequila.png&quot;&gt; &lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/salt.png&quot;&gt; &lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/lemon.png&quot;&gt;
+You once again venture into the Spirit Well, heading straight for the center. Frustration builds inside you after your last defeat. You vow not to let it happen again. You can’t lose to Tequila a third time… you won’t allow it.
 
 As you approach the Spirit Embassy you hear a lack of moronic laughter echoing from the main chamber.
 
@@ -1070,7 +1153,8 @@ As you approach the Spirit Embassy you hear a lack of moronic laughter echoing f
 “We know this and we love you!” You hear Lemon reply. You almost feel bad for the girl until you remember she’s beaten you in two drink-offs.
 
 [[Continue|Tequila R3 Continued]]
-</tw-passagedata><tw-passagedata pid="97" name="Tequila R3 Continued" tags="tequila-bg" position="2413,1325" size="100,100">You ready yourself and bust into the main chamber ready to challenge Tequila.
+</tw-passagedata><tw-passagedata pid="94" name="Tequila R3 Continued" tags="tequila-bg" position="2413,1325" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/tequila.png&quot;&gt; &lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/salt.png&quot;&gt; &lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/lemon.png&quot;&gt;
+You ready yourself and bust into the main chamber ready to challenge Tequila.
 
 “I challenge you again!” you shout angrily at Tequila. 
 
@@ -1082,7 +1166,8 @@ Not hearing her moronic laugh after a sentence feels wrong somehow. After a mome
 
 “Oh um, I suppose I can accept another challenge from you.” 
 
-(link-goto: &quot;Start the drink off!&quot;, &quot;Tequila Battle&quot;)</tw-passagedata><tw-passagedata pid="98" name="Tequila R2 Continued" tags="tequila-bg" position="2013,1328" size="100,100">Before lemon has a chance to respond you finally enter the main chamber.
+(link-goto: &quot;Start the drink off!&quot;, &quot;Tequila Battle&quot;)</tw-passagedata><tw-passagedata pid="95" name="Tequila R2 Continued" tags="tequila-bg" position="2013,1328" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/tequila.png&quot;&gt; &lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/salt.png&quot;&gt; &lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/lemon.png&quot;&gt;
+Before lemon has a chance to respond you finally enter the main chamber.
 
 “Sorry to interrupt, I’m-”
 
@@ -1103,7 +1188,7 @@ You accept her challenge.
 You ignore her taunting. //She’s not worth getting angry at.//
 
 (link-goto: &quot;Start the drink off!&quot;, &quot;Tequila Battle&quot;)]]]&lt;c1_o2|
-</tw-passagedata><tw-passagedata pid="99" name="Skip Explanation" tags="tequila-bg" position="2114,1481" size="100,100">“I have a few ideas about what has happened here” you answer. “Thanks for the offer but I have to meet with the Spirit Ambassador as soon as possible.”
+</tw-passagedata><tw-passagedata pid="96" name="Skip Explanation" tags="tequila-bg" position="2114,1481" size="100,100">“I have a few ideas about what has happened here” you answer. “Thanks for the offer but I have to meet with the Spirit Ambassador as soon as possible.”
 
 “Oh” Guinness says dejectedly. He seems a bit hurt that you would ignore his advice like that. You make a mental note to get him something nice after you reclaim your position as God of the Sesh. (set: $guiness_gift to true)
 
@@ -1111,7 +1196,7 @@ You offer a quick apology and then depart towards the Spirit Embassy.
 
 [[Continue towards the Spirit Embassy|Confront Tequila]]
 
-</tw-passagedata><tw-passagedata pid="100" name="Hear Explanation" tags="guinness-bg" position="2314,1477" size="100,100">“I would love to know,” you answer. “So who exactly has taken over the position?”
+</tw-passagedata><tw-passagedata pid="97" name="Hear Explanation" tags="guinness-bg" position="2314,1477" size="100,100">“I would love to know,” you answer. “So who exactly has taken over the position?”
 
 Guinness takes a moment to collect himself before imparting all his knowledge of the Spirit Well’s current state on you.
 
@@ -1123,7 +1208,8 @@ Guinness takes a moment to collect himself before imparting all his knowledge of
 
 “I see.” Tequila has always had her eye on becoming the Spirit Ambassador. You had been keeping her from getting that power. You thought she had given up on her ambition but you were obviously wrong.
 [[Continue|Hear Explanation Continued]]
-</tw-passagedata><tw-passagedata pid="101" name="Confront Tequila" tags="tequila-bg" position="2112,1680" size="100,100">You eventually arrive at the Spirit Embassy and head inside. From the main chamber you hear a distinct laugh ring out. (track: &#39;tequila-laugh&#39;, &#39;play&#39;)You recognise it as Tequila’s immediately. 
+</tw-passagedata><tw-passagedata pid="98" name="Confront Tequila" tags="tequila-bg" position="2112,1680" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/tequila.png&quot;&gt; &lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/salt.png&quot;&gt; &lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/lemon.png&quot;&gt;
+You eventually arrive at the Spirit Embassy and head inside. From the main chamber you hear a distinct laugh ring out. (track: &#39;tequila-laugh&#39;, &#39;play&#39;)You recognise it as Tequila’s immediately. 
 
 You approach the main chamber. Before you can even step inside Tequila calls out to you.
 
@@ -1136,7 +1222,7 @@ You enter the main chamber to find Tequila lying on a bed located in the middle 
 Tequila scowls at you, obviously not impressed with your comment.
 
 [[Continue|Confront Tequila Continued]]
-</tw-passagedata><tw-passagedata pid="102" name="Hear Explanation Continued" tags="guinness-bg" position="2310,1679" size="100,100">“That’s very unfortunate… I was hoping she had gotten over her obsession with that role” you say after a moment.
+</tw-passagedata><tw-passagedata pid="99" name="Hear Explanation Continued" tags="guinness-bg" position="2310,1679" size="100,100">“That’s very unfortunate… I was hoping she had gotten over her obsession with that role” you say after a moment.
 
 “Aye, it’s pretty disappointing ain’t it,” Guinness replied solemnly. “Ya best be careful of the two boyos with her too. Lemon and Salt can be very dangerous.”
 
@@ -1144,11 +1230,13 @@ You wonder if that’s really true. All you can remember them doing was existing
 
 (if: ($bulmersBeat is false) and ($galahadBeat is false))[&quot;Tequila is probably the strongest of the Ambassadors,&quot; Guinness warns. &quot;If it were me, I&#39;d probably try and beat another one of the Ambassadors before I had a rink off with her.&quot;
 
-(display: &quot;Guinness Advice Decision&quot;)]
+[[“I thik I&#39;ll be able to deal with her.”|Confront Tequila]]
+[[“I&#39;ll leave her for later.”|Drinklympus]]]
 (else:)[“Thanks for your advice, I should get going so I can deal with her.”
 
 [[Continue towards the Spirit Embassy|Confront Tequila]]]
-</tw-passagedata><tw-passagedata pid="103" name="Pre-Tequila Battle" tags="tequila-bg" position="1964,1835" size="100,100">“Oh ho ho ho,” Tequila lets out her moronic laugh, “I’ll take your silence as a yes… It’s okay to have been shocked into silence at my brilliance.”
+</tw-passagedata><tw-passagedata pid="100" name="Pre-Tequila Battle" tags="tequila-bg" position="1964,1835" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/tequila.png&quot;&gt; &lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/salt.png&quot;&gt; &lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/lemon.png&quot;&gt;
+“Oh ho ho ho,” Tequila lets out her moronic laugh, “I’ll take your silence as a yes… It’s okay to have been shocked into silence at my brilliance.”
 
 [(link-reveal: &quot;\&quot;Do you ever shut up?,\&quot; you ask, half serious, half joking.&quot;)[(replace: ?c1_o2)[]
 &lt;br&gt;Tequila pauses for a moment after this, a frown lay plasted on her face.
@@ -1174,10 +1262,12 @@ She pauses for a moment before tilting her head and smirking at you.
 
 You ignore her taunting. There’s no way you’re going to lose here.
 
-(link-goto: &quot;Start the drink off!&quot;, &quot;Tequila Battle&quot;)]]]&lt;c1_o2|</tw-passagedata><tw-passagedata pid="104" name="Tequila Victory" tags="tequila-bg" position="2313,1830" size="100,100">Through her power as the Spirit Ambassador, Tequila throws you out of Drinklympus for losing the drink-off to her.
+(link-goto: &quot;Start the drink off!&quot;, &quot;Tequila Battle&quot;)]]]&lt;c1_o2|</tw-passagedata><tw-passagedata pid="101" name="Tequila Victory" tags="tequila-bg" position="2313,1830" size="100,100">&lt;img class=&quot;portrait-img-center&quot; src = &quot;./assets/images/tequila.png&quot;&gt; 
+Through her power as the Spirit Ambassador, Tequila throws you out of Drinklympus for losing the drink-off to her.
 
 (track: &#39;tequila-laugh&#39;, &#39;play&#39;)As you fall you hear her distinct laugh echoing around you.
-</tw-passagedata><tw-passagedata pid="105" name="Tequila Defeat" tags="tequila-bg" position="2211,1962" size="100,100">Tequila collapses to the ground. Her power drained from the drink-off. Salt and Lemon rush to her side.
+</tw-passagedata><tw-passagedata pid="102" name="Tequila Defeat" tags="tequila-bg" position="2211,1962" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/tequila.png&quot;&gt; &lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/salt.png&quot;&gt; &lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/lemon.png&quot;&gt;
+Tequila collapses to the ground. Her power drained from the drink-off. Salt and Lemon rush to her side.
 
 &quot;Well, U suppose you were all talk,&quot; you let out a hearty laugh to rub in her defeat even more. If looks could kill, the glare she shoots you would have put an end to your life right there. 
 
@@ -1188,7 +1278,8 @@ Tequila is silent for a moment before she finally speaks.
 You take a moment before you decide to:
 [[Accept her into Drinklympus|Tequila Spared]]
 [[Banish her to Sobrell|Tequila Banished]]
-</tw-passagedata><tw-passagedata pid="106" name="Tequila Banished" tags="tequila-bg" position="2288,2115" size="100,100">&quot;I am banishing you from Drinklympus,&quot; you declare. &quot;You&#39;ll spend the rest of your days in Sobrell!&quot; 
+</tw-passagedata><tw-passagedata pid="103" name="Tequila Banished" tags="tequila-bg" position="2288,2115" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/tequila.png&quot;&gt; &lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/salt.png&quot;&gt; &lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/lemon.png&quot;&gt;
+&quot;I am banishing you from Drinklympus,&quot; you declare. &quot;You&#39;ll spend the rest of your days in Sobrell!&quot; 
 
 Salt and Lemon are both shocked by your declaration.
 
@@ -1203,7 +1294,8 @@ Salt and Lemon are both shocked by your declaration.
 You watch her go, taken aback by her abrasive attitude. You feel a bit bad for her two cronies but before you can offer to let them go, they&#39;re already running after her. 
 
 (link-goto: &quot;Return to Drinklympus&quot;, &quot;Drinklympus&quot;)
-</tw-passagedata><tw-passagedata pid="107" name="Tequila Spared" tags="tequila-bg" position="2133,2115" size="100,100">&quot;I will allow you to stay in Drinklympus… but, I may not be so forgiving if you turn against me again,&quot; you declare, not wishing to further disrupt Drinklympus.
+</tw-passagedata><tw-passagedata pid="104" name="Tequila Spared" tags="tequila-bg" position="2133,2115" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/tequila.png&quot;&gt; &lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/salt.png&quot;&gt; &lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/lemon.png&quot;&gt;
+&quot;I will allow you to stay in Drinklympus… but, I may not be so forgiving if you turn against me again,&quot; you declare, not wishing to further disrupt Drinklympus.
 
 Salt and Lemon both rejoice upon hearing this. Tequila even let&#39;s a small smile slip through her cold demeanor. 
 
@@ -1216,7 +1308,8 @@ You are about to argue with that, after all Smirnoff has had that position for y
 Your victory feels almost hollow, a drink ambassador that doesn&#39;t listen to you isn&#39;t ideal. It doesn&#39;t seem like you&#39;ll be able to stop her though.
 
 (link-goto: &quot;Return to Drinklympus&quot;, &quot;Drinklympus&quot;)
-</tw-passagedata><tw-passagedata pid="108" name="Confront Tequila Continued" tags="tequila-bg" position="2113,1835" size="100,100">“Don’t talk to Tequila like that!” her blonde cronie Lemon shouted. 
+</tw-passagedata><tw-passagedata pid="105" name="Confront Tequila Continued" tags="tequila-bg" position="2113,1835" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/tequila.png&quot;&gt; &lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/salt.png&quot;&gt; &lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/lemon.png&quot;&gt;
+“Don’t talk to Tequila like that!” her blonde cronie Lemon shouted. 
 
 “Tequila is so much better than you.” Salt adds hastily.
 
@@ -1227,7 +1320,7 @@ Tequila raises her hand to silence them. Following this, she rises from her bed.
 You don’t answer her question. You make a mental note to never hire her to do any decorations for future raves you plan on hosting.
 
 [[Continue|Pre-Tequila Battle]]
-</tw-passagedata><tw-passagedata pid="109" name="Chats" tags="light-bg" position="1203,362" size="100,100">[You glance around the room, looking for someone to share a drink with. Surely you&#39;ll be able to talk to one or two people before it&#39;s time for your speech.
+</tw-passagedata><tw-passagedata pid="106" name="Chats" tags="light-bg" position="1203,362" size="100,100">[You glance around the room, looking for someone to share a drink with. Surely you&#39;ll be able to talk to one or two people before it&#39;s time for your speech.
 {(unless: (history:) contains &quot;Guinness Chat&quot;)[
 [[&lt;br&gt;You approach Old Man Guinness who&#39;s nursing a pint at the bar.|Guinness Chat]]] }
 {(unless: (history:) contains &quot;Tequila and Sambuca Chat&quot;)[
@@ -1247,7 +1340,8 @@ Smirnoff heaves a heavy sigh. &quot;I shall feel better when this is over with.&
 But you&#39;re not worried; you&#39;re the God of the Sesh!
 
 [[Continue|A1 Chp2]]]]
-</tw-passagedata><tw-passagedata pid="110" name="A1 Chp2" tags="light-bg" position="1350,364" size="100,100">(if: $chats is not 2)[You approach the side of the stage, to where Smirnoff is leaning against it with his arms crossed. 
+</tw-passagedata><tw-passagedata pid="107" name="A1 Chp2" tags="light-bg" position="1350,364" size="100,100">(if: $chats is not 2)[&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/smirnoff.png&quot;&gt;
+You approach the side of the stage, to where Smirnoff is leaning against it with his arms crossed. 
 
 &quot;You&#39;re early,&quot; he says, straightening up and uncrossing his arms.
 
@@ -1257,7 +1351,7 @@ He raises a bushy brow at you. &quot;I fully expected you to spend every last se
 
 Well, he&#39;s not wrong. You //do// have a tendency to ignore your duties until the last possible moment.
 
-He thrusts a naggin of Smirnoff in your hand. &quot;For luck. May the sesh never end, $name.&quot;
+He thrusts a naggin of Vodka in your hand. &quot;For luck. May the sesh never end, $name.(set: $tamova to it + 1)&quot;
 
 You open it and take a long swig, relishing the smooth burn of the alcohol going down your throat.
 
@@ -1274,10 +1368,10 @@ The applause is deafening, and you&#39;re absolutely ecstatic. This went even be
 “I challenge you to an official drink-off!” Corona shouts loudly enough to be heard over the din of everyone&#39;s cheers. The room grows eerily silent as everyone waits for your response.
 
 (link: &#39;Continue&#39;)[(group: &#39;playing&#39;, &#39;stop&#39;)
-(track: &#39;tense-song&#39;, &#39;play&#39;)(goto: &#39;A1 Chp2 Part 2&#39;)]</tw-passagedata><tw-passagedata pid="111" name="Guinness Chat" tags="light-bg" position="733,370" size="100,100">&quot;I&#39;ll have two pints of guinness for me and the ol&#39; man here,&quot; you say to the bartender as you take a seat on a barstool. 
+(track: &#39;tense-song&#39;, &#39;play&#39;)(goto: &#39;A1 Chp2 Part 2&#39;)]</tw-passagedata><tw-passagedata pid="108" name="Guinness Chat" tags="light-bg" position="736,373" size="100,100">&quot;I&#39;ll have two pints of guinness for me and the ol&#39; man here,&quot; you say to the bartender as you take a seat on a barstool. 
 
 The old man in question, Guinness, harrumphs at you and finishes the last of his pint. There&#39;s a comfortable silence between the two of you as you wait for the bartender to return.
-
+&lt;img class=&quot;portrait-img-center&quot; src = &quot;./assets/images/guinness.png&quot;&gt;
 You break the silence when the bartender puts the pints in front of you. &quot;Couldn&#39;t you just summon your own pints?&quot; you ask out of curiosity.
 
 &quot;Of course I could,&quot; Guinness replies. &quot;But &#39;tis not the same as getting a fresh pint pulled from the tap by a master barman. Look at the head on that pint - it&#39;s perfection.&quot;
@@ -1295,7 +1389,8 @@ You nod at him, his words sinking into you fully. You finish your pint before ho
 [[Look for others to talk to|Chats]]
 [[Find Smirnoff to get ready for your speech|A1 Chp2]]
 (set: $chats to it + 1)
-</tw-passagedata><tw-passagedata pid="112" name="Tequila and Sambuca Chat" tags="light-bg" position="883,370" size="100,100">As you get closer to Tequila and Sambuca, you can make out snippets of their conversation. 
+</tw-passagedata><tw-passagedata pid="109" name="Tequila and Sambuca Chat" tags="light-bg" position="883,370" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/tequila.png&quot;&gt; &lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/sambuca.png&quot;&gt;
+As you get closer to Tequila and Sambuca, you can make out snippets of their conversation. 
 
 &quot;Do… have to follow you everywhere?!&quot; Sambuca shouts loudly that it can even be heard of the music. She points a finger accusingly to where Salt and Lemon are lurking nearby, staring at Tequila with unabashed admiration. (Why they&#39;re so obsessed with her you&#39;ll never understand.)
 
@@ -1308,7 +1403,8 @@ Oh. What is going on here. You feel like you&#39;re hearing something you&#39;re
 [[Look for others to talk to|Chats]]
 [[Find Smirnoff to get ready for your speech|A1 Chp2]]
 (set: $chats to it + 1)
-</tw-passagedata><tw-passagedata pid="113" name="Chardonnay Chat" tags="light-bg" position="1033,370" size="100,100">&quot;I brought you a drink,&quot; you say, holding the cocktail towards Chardonnay. She takes it with a pleasant smile, bringing the straw to her lips and taking a sip. 
+</tw-passagedata><tw-passagedata pid="110" name="Chardonnay Chat" tags="light-bg" position="1033,370" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/chardonnay.png&quot;&gt;
+&quot;I brought you a drink,&quot; you say, holding the cocktail towards Chardonnay. She takes it with a pleasant smile, bringing the straw to her lips and taking a sip. 
 
 As she drinks, a smirk grows on her face and she looks up at you, batting her lashes. &quot;Hmm,&quot; she says, relinquishing the straw. &quot;A Sex on the Beach of all things. Now what could you be suggesting, $name?&quot;
 
@@ -1331,7 +1427,7 @@ You look over at her, a deadpan expression on your face. &quot;You&#39;re as dra
 [[Look for others to talk to|Chats]]
 [[Find Smirnoff to get ready for your speech|A1 Chp2]]
 (set: $chats to it + 1)
-</tw-passagedata><tw-passagedata pid="114" name="A1 Chp3" tags="dark-bg" position="1353,657" size="100,100">You wake up with a pained gasp, your mouth dry like sandpaper and your head pounding terribly. Your entire body seems to ache. You open your eyes slowly, trying to adapt your surroundings. 
+</tw-passagedata><tw-passagedata pid="111" name="A1 Chp3" tags="dark-bg" position="1353,657" size="100,100">You wake up with a pained gasp, your mouth dry like sandpaper and your head pounding terribly. Your entire body seems to ache. You open your eyes slowly, trying to adapt your surroundings. 
 
 You&#39;re in an unfamiliar place, a seemingless endless cavern, and everything from the floor to the stalactites hanging from the roof of the cave are this dull red. There&#39;s an unbearable heat in the air that makes your dry mouth even feel worse. 
 
@@ -1374,7 +1470,7 @@ You beam at him and start walking.
 You do a one-eighty and resume walking. 
 
 [[Continue |A1 Chp4]]
-</tw-passagedata><tw-passagedata pid="115" name="A1 Chp4" tags="dark-bg" position="1350,807" size="100,100">You&#39;re nearly at the gate to Olympus when Guinness stops you and hands you a bag of Cheese and Onion Tayto. &quot;It&#39;s dangerous to go alone without snacks. Take this!&quot;
+</tw-passagedata><tw-passagedata pid="112" name="A1 Chp4" tags="dark-bg" position="1350,807" size="100,100">You&#39;re nearly at the gate to Olympus when Guinness stops you and hands you a bag of Cheese and Onion Tayto. &quot;It&#39;s dangerous to go alone without snacks. Take this!&quot;
 
 You almost drool looking at them. Ah, to have a cold pint with these taytos… (set: $tayto to it + 1)
 
@@ -1391,7 +1487,7 @@ You almost drool looking at them. Ah, to have a cold pint with these taytos… (
 He stares at you for a moment. &quot;That is exactly what I just said. Did you ignore- Nevermind. I am beyond caring about it. Let&#39;s begin.&quot;
 
 (link-goto: &#39;Fight Druids&#39;,&#39;Guinness Explains Combat&#39;)
-</tw-passagedata><tw-passagedata pid="116" name="A1 Chp2 Part 2" tags="light-bg" position="1355,508" size="100,100">&quot;I welcome your challenge!&quot; you respond with a war cry, gesturing at her to approach you. You look towards the bar. &quot;Guinness, will you oversee this?&quot;
+</tw-passagedata><tw-passagedata pid="113" name="A1 Chp2 Part 2" tags="light-bg" position="1355,508" size="100,100">&quot;I welcome your challenge!&quot; you respond with a war cry, gesturing at her to approach you. You look towards the bar. &quot;Guinness, will you oversee this?&quot;
 
 A gruff &quot;Sure.&quot; is all you get in reply. 
 
@@ -1436,28 +1532,70 @@ As you start to sink into the ground and your vision begins to darken, you hear 
 (else-if: $chats is not 2)[&quot;I&#39;ll still have my lucky naggin,&quot; you chuckle weakly before the darkness takes you.]}
 
 (link: &#39;Continue&#39;)[(group: &#39;playing&#39;, &#39;stop&#39;)
-(track: &#39;sobrell-song&#39;, &#39;play&#39;)(goto: &#39;A1 Chp3&#39;)]</tw-passagedata><tw-passagedata pid="117" name="Forced back by Druids" tags="dark-bg" position="3392,1346" size="100,100">After losing to Druids, you are forced back into the depths of Sobrell. However, your loss has only delayed the inevitable and you soon return to the entrance to Drinklympus.
+(track: &#39;sobrell-song&#39;, &#39;play&#39;)(goto: &#39;A1 Chp3&#39;)]</tw-passagedata><tw-passagedata pid="114" name="Forced back by Druids" tags="dark-bg" position="3392,1346" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/druids.png&quot;&gt;
+After losing to Druids, you are forced back into the depths of Sobrell. However, your loss has only delayed the inevitable and you soon return to the entrance to Drinklympus.
 
 You find Guiness waiting there for you. &quot;Ah, you made me worried so you did.&quot; Guiness gives you a quick look over to make sure that you haven&#39;t been hurt too badly.
 
 &quot;You look alright but you&#39;ve taken a beating.&quot; he says after a moment. &quot;ya best take these in case things get bad in there.&quot; (set: $tayto to it + 1)
 
-He hands you another crisp pack of Taytos. YOu thank him before turning to face Druids.
+He hands you another crisp pack of Taytos. You thank him before turning to face Druids.
 
 &quot;I challenge you again, same conditions as last time.&quot; 
 
 He stares at you for a moment, before shrugging his shoulders. &quot;Fine. It&#39;s not like I have anything better to be doing.&quot;
 
 (link: &#39;Fight Druids&#39;)[(group: &#39;playing&#39;, &#39;stop&#39;)
-(track: &#39;battle-theme&#39;, &#39;play&#39;)(goto: &#39;Druids Battle&#39;)]</tw-passagedata><tw-passagedata pid="118" name="Sambuca Good End" tags="sambuca-bg" position="1796,1707" size="100,100">As you approach you notice that Sambuca isn&#39;t alone. Beside her stands someone you know all too well, Tequila.</tw-passagedata><tw-passagedata pid="119" name="Sambuca Bad End" tags="sambuca-bg" position="1796,1845" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="120" name="Guinness Explanation" tags="light-bg" position="1310,1096" size="100,100">To your suprise, Guinness waiting for you by the beer fountain. He acknowledges you with a nod, gesturing you to sit beside him.
+(track: &#39;battle-theme&#39;, &#39;play&#39;)(goto: &#39;Druids Battle&#39;)]</tw-passagedata><tw-passagedata pid="115" name="Sambuca Good End" tags="sambuca-bg" position="1699.3333333333333,1717" size="100,100">You venture into the outskirts of the Spirit Well. You begin to look for Sambuca again and eventually you find her.  
 
+As you approach you notice that Sambuca isn&#39;t alone. Beside her stands someone you know all too well, Tequila.  Tequila is the first to speak.
+
+&lt;img class=&quot;portrait-img-venter&quot;= &quot;./assets/images/tequila.png&quot;&gt; &lt;img class=&quot;portrait-img-center&quot;= &quot;./assets/images/sambuca.png&quot;&gt;
+
+“Well, look who it is… have you become besties with Sambuca recently or something?” she asks.
+
+You don’t know what besties means but you say yes anyway. Tequila scowls at you and turns away. Sambuca lets out a small laugh but then falls silent. 
+
+(if: $sambuca_checks &gt; 1)[“Oh I have something for you,” Sambuca says, breaking the silence. She turns to Tequila and the two seem to argue for a bit. Eventually, Tequila relents and hands Sambuca a bottle.
+
+“Here, think of it as a thank you present,” she offers you the bottle. After you take it, she explains that it’s a drink Tequila took of Smirnoff called Tamova. She hopes that it will help you in a future Drink Off. You thank her for the gift.
+
+The three of you continue to talk for some time before you decide to return to Drinklympus. You leave happy that you have reunited the two friends.
+
+[[Continue|Drinklympus]]](else:)[“Thank you for not banishing Tequila,” Sambuca says, breaking the silence. She smiles at Tequila before looking back at you. “It means a lot to me.” 
+
+“No problem,” you reply. Sambuca seems happier than usual. Maybe you won’t banish Tequila in the future after all.
+
+The three of you continue to talk for some time before you decide to return to Drinklympus. You leave happy that you have reunited the two friends.
+
+[[Continue|Drinklympus]]]
+</tw-passagedata><tw-passagedata pid="116" name="Sambuca Bad End" tags="sambuca-bg" position="1699.3333333333333,1855" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/sambuca.png&quot;&gt;
+You venture into the outskirts of the Spirit Well. You begin to look for Sambuca again and eventually you find her.  
+
+As you approach, she doesn’t even seem to notice you. Her demeanor this time is very different from how you usually find her. She looks devastated. You rush to her side.
+
+“What’s wrong, Sambuca?”
+
+She finally turns her head towards you, she looks like she has been crying.“Is it true?” For a moment you are confused, but she clarifies her question a moment later. “Did you really banish Tequila from Drinklympus?”
+
+“Of course I did,” you answer honestly, “She betrayed Drinklympus and deserved to be punished.”
+
+“I- I see,” Sambuca replies. A moment later, she rises to her feet. “I was hoping the rumours were wrong… I was hoping...” Her voice trails off. You hear her mumbling something but can’t make it out. You try to speak, to explain yourself but, she raises her hand to stop you.
+
+“You’ve already done enough.”
+
+With that she walks off further into the Spirit Well. You don’t follow her.
+
+[[Return to Drinklympus|Drinklympus]]
+</tw-passagedata><tw-passagedata pid="117" name="Guinness Explanation" tags="light-bg" position="1308,1096" size="100,100">To your suprise, Guinness waiting for you by the beer fountain. He acknowledges you with a nod, gesturing you to sit beside him.
+&lt;img class=&quot;portrait-img-center&quot; src = &quot;./assets/images/guinness.png&quot;&gt;
 &quot;A lot has changed since you were banished. The sesh has died completely - Something is definitely off about the drink they&#39;re serving these days. Your Drink Ambassadors were replaced which may have something to with it.&quot;
 {(if: (history:) contains &quot;Smirnoff Controller&quot;)[&quot;Yeah… I&#39;ve seen what&#39;s become of Smirnoff,&quot; you murmur. Guinness gives your shoulder a squeeze of reassurance.]}
 (else:)[&quot;Wait what?! (if: (history:) contains &quot;Chardonnay Controller&quot;)[But $char_name was fine…&quot;
 
 Guinness nods. &quot;She&#39;s an exception to the rule. She destroyed all the ways to access the Wine Falls so Corona has been unable to do anything about her.&quot;](else:)[&quot; you exclaim.]]
 
-Guinness glances at you out of the corner of his eye. &quot;Galalad is now the Beer Ambassador, an appointment that I cannot understand for the life of me. That shtuff is absolute poison. The Cider Ambassador is Bulmers, a man with quite a temper if provoked much like meself. And finally, the Spirit Ambassador. I&#39;d be weary of that one. No one knows who it is, but they&#39;re apparently ruthless and one hell of a drinker.&quot;
+Guinness glances at you out of the corner of his eye. &quot;Galahad is now the Beer Ambassador, an appointment that I cannot understand for the life of me. That shtuff is absolute poison. The Cider Ambassador is Bulmers, a man with quite a temper if provoked much like meself. And finally, the Spirit Ambassador. I&#39;d be weary of that one. No one knows who it is, but they&#39;re apparently ruthless and one hell of a drinker.&quot;
 
 You pinch the bridge of your nose, trying to process all the information. &quot;So, you think I should… &quot; 
 
@@ -1470,7 +1608,7 @@ You pinch the bridge of your nose, trying to process all the information. &quot;
 You nod thoughtfully, he&#39;s clearly out a lot of thought into this. &quot;Thanks for the info, Old Man,&quot; you say, rising to your feet. &quot;I&#39;ll be sure to give you a decade&#39;s tab at the bar for this.&quot;
 
 As you walk away you hear him mutter: &quot;Make it a century and we&#39;re even.&quot; 
-</tw-passagedata><tw-passagedata pid="121" name="Arrive in Drinklympus" tags="light-bg" position="1108.6666666666667,661.3333333333333" size="100,100">You and Guinness arrive in the main square of Drinklympus but something seems wrong. You spot a few gods drinking but there&#39;s no celebration, no music, no anything! It&#39;s as if the life has been sucked out of everyone. Where is the craic?!
+</tw-passagedata><tw-passagedata pid="118" name="Arrive in Drinklympus" tags="light-bg" position="1108,661" size="100,100">You and Guinness arrive in the main square of Drinklympus but something seems wrong. You spot a few gods drinking but there&#39;s no celebration, no music, no anything! It&#39;s as if the life has been sucked out of everyone. Where is the craic?!
 
 &quot;What has Corona done to everyone?&quot; you wonder. 
 
@@ -1492,14 +1630,14 @@ You wave him off. Most of your rage has subsided for now. You decide to:
 [[Explore the Cider Orchards|Smirnoff Controller]]
 [[Explore the Spirit Well|Sambuca Controller]] 
 [[Explore the Wine Falls|Chardonnay Controller]]
-</tw-passagedata><tw-passagedata pid="122" name="Sambuca Missing" tags="" position="1798,1965" size="100,100">You venture into the outskirts of the Spirit Well. You begin to look for Sambuca again however, this time, she is nowhere to be found. 
+</tw-passagedata><tw-passagedata pid="119" name="Sambuca Missing" tags="" position="1701.3333333333333,1975" size="100,100">You venture into the outskirts of the Spirit Well. You begin to look for Sambuca again however, this time, she is nowhere to be found. 
 
 After spending some time searching for her you decide to return to Drinklympus. You wonder if she might be looking for Tequila.
 
-[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="123" name="Guiness Advice Decision" tags="" position="2451,1680" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="124" name="Guinness Advice" tags="light-bg" position="1311,1219" size="100,100">You arrive back in the main square and find Guinness in silence. The old man is busy pouring over the a collection of papers. When asked about them, he reveals that he found the papers in each Ambassador&#39;s embassy. You drag him towards the Beer Fountain where you both sit down. 
+[[Continue|Drinklympus]] </tw-passagedata><tw-passagedata pid="120" name="Guinness Advice" tags="light-bg" position="1311,1219" size="100,100">You arrive back in the main square and find Guinness in silence. The old man is busy pouring over the a collection of papers. When asked about them, he reveals that he found the papers in each Ambassador&#39;s embassy. You drag him towards the Beer Fountain where you both sit down. 
 
 You wait for a long time until Guinness suddenly leaps to his feet, startling you. 
-
+&lt;img class=&quot;portrait-img-center&quot; src = &quot;./assets/images/guinness.png&quot;&gt;
 &quot;There&#39;s not a drop of alcohol in these drinks!&quot; he splutters, pointing at a passage on one of the many pages. He hands it to you. 
 
 &quot;Zero Zero Alcohol…&quot; you say slowly as you read from the page. &quot;Alcohol free beverages…&quot; A realisation strikes you like a bolt of lightning. &quot;No wonder why there&#39;s no craic! No-one&#39;s drunk - they&#39;re all //sober//.&quot;
@@ -1513,17 +1651,21 @@ You nod. &quot;How do we stop her from doing it this time?&quot;
 Guinness is quiet for a moment, his bushy brows furrowed in contemplation. &quot;You&#39;ll set the terms of the Drink Off. If we bring the drink and she refuses it&#39;d be suspicious.&quot;
 
 &quot;Okay! Let&#39;s do this!&quot; 
-</tw-passagedata><tw-passagedata pid="125" name="Guinness Explains Combat" tags="light-bg" position="2083,277" size="100,100">Before you can start your Drink Off with Druids, Guinness grabs onto your shoulder.
-
+</tw-passagedata><tw-passagedata pid="121" name="Guinness Explains Combat" tags="light-bg" position="2079,270" size="100,100">Before you can start your Drink Off with Druids, Guinness grabs onto your shoulder.
+&lt;img class=&quot;portrait-img-center&quot; src = &quot;./assets/images/guinness.png&quot;&gt;
 &quot;Wait a minute there, $name, it&#39;s been a good few years now so do you want a bit of a refresher on Drink Offs?&quot; Guinness asks.
 
-[(link-reveal: &quot;\&quot;Of Course\&quot;, you are the God of the Sesh&quot;)[(replace: ?c1_o2)[]
-&lt;br&gt;&quot;OK then, Guinness says, pleased by your confidence&quot;
-[[Continue|Player Battle Menu]]]]&lt;c1_o1|
-[(link: &quot;\&quot;Not really\&quot;, you say embarassed.&quot;)[(replace: ?c1_o1)[&quot;Not Really&quot;, you say embarassed.&quot;&lt;br&gt;
-&quot;Alright the let me exlpain&quot;, Guinness begins &quot;each round you can choose to take a drink of use an item but you have to do something. Be careful not to drink too much or you will pass out lose. Each of the ambassadors has a special ability, so be ready&quot;
-[[Continue|Player Battle Menu]]]
-]]&lt;c1_o2|</tw-passagedata><tw-passagedata pid="126" name="Confront Corona" tags="light-bg" position="1098,1264" size="100,100">&quot;Corona!&quot; you roar, kicking down the door and storming in. &quot;Where are you, you traitor?!&quot; 
+[(link-reveal: &quot;\&quot;Ah sure I&#39;m a master of the sesh. I&#39;m grand.\&quot;&quot;)[(replace: ?c1_o2)[]
+&lt;br&gt;&quot;OK then,&quot; Guinness says, pleased by your confidence.
+[[Start the Drink Off!|Druids Battle]]]]&lt;c1_o1|
+[(link: &quot;\Sure, I could do with a bit of a refresher.\&quot;&quot;)[(replace: ?c1_o1)[&quot;Not really,&quot; you say, trying to hide your embarrassment.&quot;&lt;br&gt;
+&quot;Alright the let me exlpain,&quot; Guinness begins. &quot;Each round you can choose to take a drink or use an item. Ya have to pick one of the two. Yer tolerance is how you stay in the Drink Off. Each time ya drink you lose some Tolerance. So, be careful not to drink too much or ya will pass out in the middle of the Drink Off and embarasses yourself. If that happens ya lose. Using items are a good way to keep yer tolerance up as they take a turn to use. Yer opponent will probably have a special ability so be careful as that might mess you up.&quot;
+
+You take a moment to mull over his words before you turn back to Druids. 
+[[Start the Drink Off!|Druids Battle]]]
+]]&lt;c1_o2|</tw-passagedata><tw-passagedata pid="122" name="Confront Corona" tags="corona-bg" position="1098,1264" size="100,100">&quot;Corona!&quot; you roar, kicking down the door and storming in. &quot;Where are you, you traitor?!&quot; 
+
+&lt;img class=&quot;portrait-img-center&quot; src = &quot;./assets/images/corona.png&quot;&gt;
 
 &quot;Haha. I said you&#39;d be back but she didn&#39;t believe me ahahaha.&quot; You look up to find Corona standing on the landing, a crazed grin on her face. She jumps over the railing and lands in front you. 
 
@@ -1556,7 +1698,8 @@ You make a move towards her, but this seems to upset her more, her mutters turni
 &quot;No!&quot; she snaps back, picking up a bottle. &quot;I accept your challenge, $name. Let us begin.&quot;]
 
 [[Corona Battle]]
-</tw-passagedata><tw-passagedata pid="127" name="Corona Battle" tags="" position="2401,1009" size="100,100">Your Drink Off with Corona begins.
+</tw-passagedata><tw-passagedata pid="123" name="Corona Battle" tags="" position="2401,1009" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/corona.png&quot;&gt;
+Your Drink Off with Corona begins.
 	{(set: $enemyType to 5)
 	(set: $lastFought to 5)
 	(set: $enemyMaxTolerance to 500)
@@ -1569,51 +1712,272 @@ You make a move towards her, but this seems to upset her more, her mutters turni
 	[[Drink Off!|Player Battle Menu]]
 	
 (group: &#39;playing&#39;, &#39;stop&#39;)
-(track: &#39;battle-theme&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="128" name="Mercy for Corona" tags="" position="1000,1559" size="100,100">&quot;Why, Corona? Why do all this?&quot; you demand.
+(track: &#39;battle-theme&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="124" name="Mercy for Corona" tags="corona-bg" position="1000,1559" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/corona.png&quot;&gt;
+&quot;Why, Corona? Why do all this?&quot; you demand.
 
-&quot;I…I had no choice. They- No. //She//, me,&quot; she chokes out, the words pained. 
+&quot;I…I had no choice. They- No. //She// made me,&quot; she chokes out, the words pained.
 
 &quot;Who?&quot;
 
 &quot;Kar-&quot; she tries, but her body convulses and she screams.  
+(if: $tequilaBeat and $galahadBeat and $bulmersBeat)[Something is seriously wrong; Corona almost seems possessed with the way she&#39;s thrashing around. You kneel beside her, placing your hands on her back. You funnel as much of your sesh power into her as possible, and little by little, her body stops shaking and you can see her eyes returning to their usual hue. 
 
-(if: $tequilaBeat and $galahadBeat and $bulmersBeat)[
+&quot;She&#39;s //gone//…&quot; Corona gasps, doing a quick once over of her body. 
 
-]
-(else:)[(set: $corona_saved to false)&quot;Corona! What&#39;s happening?!&quot; you exclaim. 
+&quot;Who&#39;s &#39;she&#39;?&quot; you question. 
 
-&quot;She&#39;s… not happy with me,&quot; she chuckles darkly, twitching with pain. &quot;We&#39;ll be… in Parchturus. Please, free… Lime.&quot;
+&quot;Th-The Pioneers… their leader Karen…&quot; 
 
-And then she vanishes. 
+The Pioneers. You know little about them for you never had the misfortune of meeting one. You know they&#39;re leeches from the deepest depths of the soberworld… They hate all Drink Gods and have wanted to destroy the Sesh since the Sesh began.
 
-&quot;Corona!&quot; You yell, grasping at where she had been just moments ago. You  
+&quot;They kidnapped Lime… said they&#39;d keep her down there forever unless I followed their plan,&quot; she continues with an anguished expression. 
 
-]
+You think back to when you spoke to Corona during Rag Month. Lime wasn&#39;t with her (which you had thought was really strange) and Corona had been very upset when you asked about it.
+
+&quot;I believe you,&quot; you say and the palpable relief on Corona&#39;s face cements your gut feeling that she is telling the truth. &quot;But you need to tell me everything, Corona.&quot;
+
+She nods, swallowing heavily. &quot;The 00 drinks… They are //her// invention. A way to make all the Drink Gods&#39; tolerance weak and to destroy any craic we have forever. A-And she used me to make it happen. I had… doubts about you and she used that to get inside my head.. To whisper in my mind until I started agreeing with her. Eventually I realised that I was being manipulated… I //tried// to back out, but then she took Lime.&quot;
+
+Everything makes more sense now. The lack of parties on Drinklympus… how lethargic everyone seemed. Their drive to rave has been ruined by 00 drinks!
+
+&quot;And how do I put a stop to this?&quot; you ask. 
+
+&quot;By defeating her… down in…&quot; Corona goes pale with fear. &quot;Parchturus,&quot; she says so quietly it&#39;s almost a whisper.
+
+&quot;Parchturus…&quot; you murmur and a chill runs down your spine. A realm even worse than Sobrell… you&#39;d never even once set foot in it because it&#39;s a creepy place. But now you have no choice. You need to free Lime, defeat the Pioneers and put an end to 00 drinks once and for all!
+
+You pivot towards the door and are nearly gone when Corona calls out behind you. &quot;Wait! Let me help. //Please//. I can help you in the fight against Karen.&quot;
+
+You look over at Corona over your shoulder. She looks awful; eyes bloodshot and teary, her lip bleeding from where she&#39;s bit it too much. She looks desperate. You know she&#39;d do anything to get Lime back.
+
+(link: &quot;Fine. But if you betray me again I will leave you in Parchturus.&quot;)[(set: $coronaAlly to true)(go-to: &quot;A3 Chp1&quot;)
+(link: &quot;I can&#39;t trust you, Corona. Not after everything you&#39;ve done. I&#39;ll bring Lime back myself.&quot;)[(set: $coronaAlly to false)(go-to: &quot;A3 Chp1&quot;)]
+]]
+(else:)[&quot;Corona! What&#39;s happening?!&quot; you exclaim.
+
+&quot;She&#39;s… not happy with me,&quot; she chuckles darkly, twitching with pain. &quot;We&#39;ll be… in Parchturus. Please… free… Lime.&quot;
+
+And then she vanishes.
+
+&quot;Corona!&quot; You yell, grasping at where she had been just moments ago. Corona… she had never wanted to do this, had she? Someone was //making// her do it.
+
+&quot;Parchturus…&quot; you murmur and a chill runs down your spine. A place even worse than Sobrell… you&#39;d never even once set foot in it because it&#39;s a creepy realm. But now you have no choice. You need to put an end to whoever was controlling Corona. (set: $coronaBanished to true)]
 
 [[Continue|A3 Chp1]]
-</tw-passagedata><tw-passagedata pid="129" name="A3 Chp1" tags="" position="996,1709" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="130" name="After Corona" tags="" position="2763,1014" size="100,100">Congratulations! You have defeated Tequila!
+
+</tw-passagedata><tw-passagedata pid="125" name="A3 Chp1" tags="light-bg" position="996,1709" size="100,100">Guinness is waiting for you outside. &quot;Well?&quot; he says. 
+
+&quot;We&#39;re going to Parchturus,&quot; you reply. 
+
+&quot;What?! What do you mean we&#39;re going to flippin&#39; Parchturus? Are you daft?&quot; 
+
+&quot;It&#39;s a long story…&quot;(if: $coronaBanished is false)[You jut your thumb behind you at where Corona is emerging from the club. &quot;She can fill you in on it.&quot;
+
+Guinness mutters vehement curses under his breath. &quot;There better be a damn good reason that wan isn&#39;t rotting in Sobrell.&quot;](else:)[You pinch the bridge of your nose; your brain is still a bit fried from your Drink Off. &quot;I&#39;ll tell it to you along the way.&quot;]
+
+[[Continue|A3 Chp2]]
+</tw-passagedata><tw-passagedata pid="126" name="After Corona" tags="corona-bg" position="2763,1014" size="100,100">Congratulations! You have defeated Corona!
 {(set: $coronaBeat to true)}
-(display: &quot;A2 Climax&quot;)</tw-passagedata><tw-passagedata pid="131" name="A2 Climax" tags="light-bg" position="1095,1416.6666666666667" size="100,100">You feel incredible power flow back into your veins; you&#39;re God of the Sesh again! You&#39;re so elated that it takes a moment for you to register the sound of Corona falling to her knees.
+(display: &quot;A2 Climax&quot;)</tw-passagedata><tw-passagedata pid="127" name="A2 Climax" tags="corona-bg" position="1095,1416" size="100,100">You feel incredible power flow back into your veins; you&#39;re God of the Sesh again! You&#39;re so elated that it takes a moment for you to register the sound of Corona falling to her knees.
+
+&lt;img class=&quot;portrait-img-center&quot; src = &quot;./assets/images/corona.png&quot;&gt;
 
 You walk towards her, and she looks up at you, black eyes glossy with unshed tears. 
 
 [[Ask her why she did this|Mercy for Corona]] 
 [[Banish her to Sobrell for her crimes|Banish Corona]]
-</tw-passagedata><tw-passagedata pid="132" name="Banish Corona" tags="" position="1211,1557" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="133" name="Corona Attack" tags="" position="3146,199" size="100,100">It is Corona&#39;s turn to drink. 
-(set: $enemyTolerance to $enemyTolerance + 50)}
+</tw-passagedata><tw-passagedata pid="128" name="Banish Corona" tags="corona-bg" position="1211,1557" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/corona.png&quot;&gt;
+(set: $coronaBanished to true)Corona has brought too much destruction to Olympus. You don&#39;t think you could ever trust her again so that leaves you with only one option:
+
+&quot;I banish you, Corona, to Sobrell where you will henceforth spend eternity languishing in sobriety,&quot; you declare loudly. 
+
+The tears in Corona&#39;s eyes finally start to fall. She speaks, but it&#39;s more of a choked sob. &quot;Parchturus… Lime…&quot;
+
+And then she fades away, banished to Sobrell. 
+
+&quot;Parchturus…&quot; you murmur and a chill runs down your spine. A place even worse than Sobrell… you&#39;d never even once set foot in it because it&#39;s a creepy realm. But now you have no choice. You&#39;re certain that the answers to everything that happened lie down there, somewhere in those depths. 
+
+[[Continue|A3 Chp1]]
+</tw-passagedata><tw-passagedata pid="129" name="Corona Attack" tags="corona-bg" position="3146,197" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/corona.png&quot;&gt;
+It is Corona&#39;s turn to drink. (set: $enemyTolerance to $enemyTolerance + 50)
 Without you noticing, Corona has whipped out a can of 00.
 
 She chugs it down easily after flashing you a wicked smile. You are positive that drinking it has given her even more tolerance.
 
 Corona Tolerance: $enemyTolerance/$maxEnemyTolerance
-{(if: $enemyPoisoned is 1)[
+{(if: $enemyPoisoned)[
 (set: $enemyTolerance to $enemyTolerance - 30)
 &lt;br&gt;$enemyName felt the effects of the paint stripper Tamova. As a result they lost 30 tolerance.&lt;br&gt;
 &lt;br&gt;$enemyName Tolerance: $enemyTolerance/$maxEnemyTolerance&lt;br&gt;]
 (if: $enemyTolerance &lt; 1)[$enemyName&#39;s tolerance has reached 0 and they can no longer continue. &lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Battle Won&quot;)]
 (else:)[[[Next Turn|Player Battle Menu]]]}
 
-</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="130" name="Enemy Ally Menu" tags="" position="3793,922" size="100,100">(if: $bulmersFinal is 0 and $galahadFinal is 0 and $tequilaFinal is 0 and $coronaFinal is 0)[
+(goto: &quot;Final Player Menu&quot;)]
+(else:)[(put: (random: $bulmersFinal,$galahadFinal,$tequilaFinal,$coronaFinal) into $enemyAlly)
+(if: $enemyAlly is 0)[
+(goto: &quot;Enemy Final Drink&quot;)]
+(if: $enemyAlly is 1)[
+(goto: &quot;Enemy Bulmers Attack&quot;)]
+(else-if: $enemyAlly is 2)[
+(goto: &quot;Enemy Galahad Attack&quot;)]
+(else-if: $enemyAlly is 3)[
+(goto: &quot;Enemy Tequila Attack&quot;)]
+(else-if: $enemyAlly is 4)[
+(goto: &quot;Enemy Corona Attack&quot;)]]
+</tw-passagedata><tw-passagedata pid="131" name="Banish Bulmers" tags="sobrell-gates" position="2811,1190" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/bulmers.png&quot;&gt;
+You decide to:
+[(link-reveal: &quot;Banish Bulmers&quot;)[(replace: ?c1_o2)[]
+(Set: $bulmersBanished to true) You banish Bulmers from Drinklympus for his betrayal.
+[[You decide to return to Drinklympus.|Drinklympus]]]]&lt;c1_o1|
+[(link: &quot;Spare Bulmers&quot;)[(replace: ?c1_o1)[Spare Bulmers.&lt;br&gt;
+You decide to forgive Bulmers for his betrayal.
+[[You decide to return to Drinklympus.|Drinklympus]]]
+]]&lt;c1_o2|</tw-passagedata><tw-passagedata pid="132" name="Banish Galahad" tags="" position="2936,1189" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/galahad.png&quot;&gt;
+You decide to:
+[(link-reveal: &quot;Banish Galalad&quot;)[(replace: ?c1_o2)[]
+(Set: $galahadBanished to true) You banish Galahad from Drinklympus for his betrayal.
+[[You decide to return to Drinklympus.|Drinklympus]]]]&lt;c1_o1|
+[(link: &quot;Spare Galalad&quot;)[(replace: ?c1_o1)[Spare Galahad.&lt;br&gt;
+You decide to forgive Galahad for his betrayal.
+[[You decide to return to Drinklympus.|Drinklympus]]]
+]]&lt;c1_o2|</tw-passagedata><tw-passagedata pid="133" name="A3 Chp2" tags="" position="996,1859" size="100,100">You arrive in the main square of Drinklympus to cheers. Many of the gods have gathered. 
+
+&quot;Today is a great day. Today I have once again become of God of the Sesh!&quot; 
+
+&quot;May the sesh never end!&quot; they cheer, raising their glasses towards you and you return the cheer in kind.
+
+&quot;But this fight is not over. The Sesh is still in danger. I must journey to Parchturus to put an end to this once and for all. Who is with me?&quot;
+{(if: (history:) contains &quot;Chardonnay End&quot;)[&lt;br&gt;&quot;You can count on me, darling,&quot; Chardonnay winks at you from within the crowd.] 
+(if: $tequilaBanished is false and $tequilaBeat is true)[&lt;br&gt;&quot;Ugh. I guess I can give you my help. You&#39;ll definitely need it anyway,&quot; Tequila utters, not even meeting your gaze.]
+(if: $galahadBanished is false and $galahadBeat is true)[&lt;br&gt;Galahad laughs loudly. &quot;Sounds like good craic to me!&quot;]
+(if: $bulmersBanished is false and $bulmersBeat is true)[&lt;br&gt;&quot;Sure, why not,&quot; Bulmers shrugs nonchalantly.]} 
+
+&quot;I&#39;m with you to the end at this point,&quot; Guinness grunts, clapping you on the back. &quot;I want those pints you promised!&quot;
+
+&quot;Then on to Parchturus!&quot; you cry. 
+
+[[Continue|A3 Chp3]]</tw-passagedata><tw-passagedata pid="134" name="A3 Chp3" tags="" position="996,2010.6666666666667" size="100,100">You pass through the gates of Sobrell and find Druids dozing off on a chair, several cans of Druids around him.
+
+&quot;Druids, my man. How would you like to come defeat the Pioneers?&quot;
+
+Druid cracks open an eye, regards you for a moment, and then shuts it without saying a word. Wow. You&#39;ve been brutally ignored. Guinness tries to hide a laugh but fails, and you feel yourself going red with embarrassment. 
+
+Guinness goes over to Druids and kicks over the chair, spending Druids to the ground in a heap. 
+
+&quot;Whaassss - Hic! - the story with this?! Hic!&quot; Druid slurs.
+
+&quot;From one aul buck to another: When $name offers you a deal, you take it. $pronoun_1&#39;ll relieve you from your post guarding the gates of Sobrell. Isn&#39;t that right, $name?&quot; 
+
+Your eyes widen in surprise. &quot;Uh.. Sure! Of course! I&#39;m God of the Sesh again so I //can// make that happen.&quot; Probably. You hope.
+
+Druids hops to his feet, a grin splitting across his face. &quot;Shure... why didn&#39;t you say so? Of courshhh I&#39;ll help you!&quot; This is the most emotion you&#39;ve seen from Druids. //Ever//. You really hope you actually can do what Guinness said. Damn that old man.
+
+With Druids now in tow, you descend into Sobrell. You head to the darkest, creepiest part of the realm where there&#39;s a gaping hole that leads to Parchturus. You can&#39;t even see the bottom.
+{(if: $coronaAlly)[&lt;br&gt;&quot;Lime… I&#39;m coming for you. I promise,&quot; Corona murmurs staring down into the pitch black.]}
+
+You gulp. This is it. &quot;Better now than never!&quot; and you hop down into the darkness. 
+
+[[Continue|A3 Chp4]]
+</tw-passagedata><tw-passagedata pid="135" name="A3 Chp4" tags="" position="996,2160.666666666667" size="100,100">You expected to be attacked immediately upon your arrival, but there&#39;s no-one around to your surprise. You&#39;re almost disappointed. You move around cautiously in the dark, trying to suss out where you need to go.
+
+You look around in the low light and see a huge, gray, drab building with a sign that says &#39;Pioneers HQ&#39;.
+{(if: $coronaBanished is false)[&lt;br&gt;&quot;Well, I guess they never expected anyone to come down here,&quot; you says, scratching the side of your head in confusion.]}
+{(else:)[You stare at the building in confusion. &quot;That&#39;s probably the place, right?&quot;
+&lt;br&gt;Guinness shrugs. &quot;Ah... Probably?]}
+
+You head towards the Pioneers HQ with your allies.
+(if: $coronaAlly)[&lt;br&gt;&quot;I sense Lime! She&#39;s nearby!&quot; Corona exclaims, sprinting ahead through the main door. You run after her, and damn if this building doesn&#39;t remind you of the Main Building from the University of Limerick, the college you attended during your mortal years. It&#39;s an absolute maze.&lt;br&gt;
+[[Continue|Free Lime with Corona]]]
+(else:)[You head inside the main door and find an absolute maze waiting for you. There&#39;s so many halls and corridors to go down. This is going to be a nightmare. 
+
+[[Continue|A3 Chp5]]]
+</tw-passagedata><tw-passagedata pid="136" name="Free Lime with Corona" tags="" position="921,2310.666666666667" size="100,100">Corona takes many turns and goes up and down different flights of stairs. A left and right. Up a floor. Followed by another left, down a floor, and then two rights. Eventually she stops in front of a door. Her hand trembles above the closed bolt that keeps the door locked.
+
+&lt;img class=&quot;portrait-img-center&quot; src = &quot;./assets/images/lime.png&quot;&gt; 
+
+&quot;Go on,&quot; you encourage. &quot;She&#39;s waited long enough. I&#39;ll be back at the entrance.&quot;
+
+The look in her eyes is grateful and she reaches forwards to open the lock. You hear Lime gasp inside. &quot;Corona?&quot; And that&#39;s your cue to leave. You (somehow) manage to make your way back to the entrance where everyone else is waiting.
+
+Eventually, Corona and Lime rejoin you and Corona mouths a quick &#39;thank you&#39; when your eyes meet.
+
+[[Continue|A3 Chp5]]
+</tw-passagedata><tw-passagedata pid="137" name="A3 Chp5" tags="" position="1071,2310.666666666667" size="100,100">(if: $coronaAlly is false)[(if: $coronaBanished is false)[You look everywhere for Lime but cannot find her. You nearly got lost yourself in the winding corridors, and had to return to the beginning. You feel terrible about it, but there&#39;s nothing you can do.](else:)[You look around for a bit, but find nothing of note.] All that&#39;s left to do now is go up to the top.]
+(else:)[After finding Lime, all that&#39;s left to do is go to the top, where you&#39;re sure Karen is waiting for you.]
+
+[[Continue|A3 Chp6]]
+</tw-passagedata><tw-passagedata pid="138" name="A3 Chp6" tags="" position="1071,2460.666666666667" size="100,100">The elevator dings as you arrive on the top floor. You and your allies walk out into a huge hall. A blonde woman stands in the middle of the room, her back towards you. 
+{(if: $coronaBanished is false)[&lt;br&gt;&quot;Karen,&quot; you growl, taking a step towards her.]}
+{(else:)[&lt;br&gt;&quot;Uh… hello?&quot; you say.]}
+
+&quot;Oh, if it isn&#39;t my immortal nemesis!&quot; she cackles twirling around. You blanche. Her face is deathly pale and crisscrossed with  black lines. The entirety of her eyes are inky black and it&#39;s really unnerving; She&#39;s like a puppet master and puppeteer combined into one.
+ {(if: $coronaBanished is false)[&lt;br&gt;&quot;I&#39;m flattered you think that of me,&quot; you drawl. &quot;But it&#39;s time for me to destroy your nasty 00 drinks. The sesh shall never die!&quot; All your allies, from Druids to Corona repeat your chant, causing Karen to take a step back.&lt;br&gt;&quot;You may have cut my puppet strings, but the sesh shall never recover from my 00 drinks!&quot; she screeches.]}
+{(else:)[You stare at her blankly. &quot;Uh… who are you exactly?&quot;&lt;br&gt;Her puppet mouth drops open. &quot;What do you mean //who// am I?! I am your nemesis! The Pioneers who oppose the Sesh! I have destroyed your pathetic parties with the power of non-alcoholic drinks!&quot;&lt;br&gt;&quot;That was you?! Well I&#39;m gonna beat your ass!&quot; you yell. ]}
+
+[[Fight Karen|Final Battle]</tw-passagedata><tw-passagedata pid="139" name="Ally Chardonnay Attack" tags="" position="3404.6666666666665,970" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/donna.png&quot;&gt;
+$char_name blows a kiss to all of your allies. They go wild and raise the craic by 15. (set: $craic to $craic + 10)
+
+{(if: $craic &gt; 99)[The craic has reached unprecedented levels. As a result, your untouchable vibes have repelled the Pioneer&#39;s dry attitude.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Won&quot;)]} (else:)[
+{(if: $playerPoisoned)[
+(set: $craic to $craic - 5)
+You need to do something about that 0.0% coursing through you. It&#39;s killing the craic.]}
+Craic: $craic %
+
+{(if: $craic &lt; 1)[The craic has fallen below zero. As a result, Pioneer&#39;s dry attitude has overpowered your vibes.&lt;br&gt; (link-goto: &quot;Continue&quot;, &quot;Final Battle Lost&quot;)]
+(else:)[[[Next Turn|Final Enemy Battle Menu]]]}]</tw-passagedata><tw-passagedata pid="140" name="Ending" tags="light-bg" position="4410,1170" size="100,100">{(if: $coronaAlly)[(display: &quot;Good End&quot;)]
+(else:)[(display: &quot;Neutral End&quot;)]}</tw-passagedata><tw-passagedata pid="141" name="Good End" tags="light-bg" position="4283,1317.6666768391929" size="100,100">Everyone is freed from Karen&#39;s reign of terror and 00 is destroyed.
+
+Lime has been freed and now her and Corona live peacefully in Drinklympus.
+
+After the events of the final battle, Corona joins your side. Together you, Corona and the Drink Ambassadors found the Inver Drinking Council.
+
+This council ushers in a new age of Sesh, one like no one has ever seen before.
+</tw-passagedata><tw-passagedata pid="142" name="Neutral End" tags="light-bg" position="4403,1317.6666768391929" size="100,100">With the help of all of your allies, you have managed to crush Karen(if:$coronaBanished)[ and Corona].
+
+After your decisive victory, you reinstate your power as the ultimate God of the Sesh. You usher in a new age of drinking. Your power goes unquestioned and you make sure to crush any potential threats to your title.
+
+Unfortunately, Lime was never able to be found. No matter how hard you and your allies searched, you could never even find a trace of her.
+</tw-passagedata><tw-passagedata pid="143" name="Donna" tags="" position="272.66666666666663,347.3333333333333" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/donna.png&quot;&gt;
+&quot;Donna,&quot; you say as it was the first thing that seemed like it could be a nickname. 
+
+She scowls at you in disgust. &quot;Ugh my toxic ex used to call me that, $name. Now the mood is ruined. Begone from my sight.&quot;
+
+And with a wave of her hand, the river claims you and you&#39;re thrown back into the main square of Drinklympus.
+{(set: $chadonnay_angered to true)}
+[[Continue|Drinklympus]]
+</tw-passagedata><tw-passagedata pid="144" name="Char" tags="" position="276,482.3333333333333" size="100,100">{(set: $chardonnay_checks to it + 1)
+(set: $char_name to &quot;Char&quot;)} &lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/donna.png&quot;&gt;
+&quot;Char…&quot; you say softly. You cannot believe you had forgotten. You can see her smile slightly behind her wine glass and you&#39;re glad. 
+
+&quot;Now don&#39;t you forget it,&quot; she winks at you. 
+
+&quot;I won&#39;t,&quot; you promise. 
+
+[[Continue|Drinklympus]]
+</tw-passagedata><tw-passagedata pid="145" name="Gorgeous" tags="" position="274,626.6666666666667" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/donna.png&quot;&gt;
+&quot;Gorgeous,&quot; you say with a wink.
+
+&quot;A $gender_noun after my own heart,&quot; she replies with a theatrical sigh. &quot;I&#39;ll forgive you for forgetting since you happened to state nothing but facts.&quot;
+
+You laugh. &quot;Thank you for your mercy.&quot;
+
+She hums. &quot;I&#39;m not always that merciful you know! Call me &#39;Char&#39;, please. My full name is truly too long. Absolutely dreadful.&quot;
+{set: $char_name to &quot;Char&quot;}
+[[Continue|Drinklympus]]
+</tw-passagedata><tw-passagedata pid="146" name="Accept" tags="" position="429.33333333333337,915.6666666666666" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/donna.png&quot;&gt;
+&quot;I do,&quot; you murmur.
+
+Her face lights up before turning devious. She pulls you towards her. &quot;Then, what are you waiting for?&quot; she whispers, and then you kiss her.
+
+[[Continue|Drinklympus]]</tw-passagedata><tw-passagedata pid="147" name="Reject" tags="" position="579.3333333333334,915.6666666666666" size="100,100">&lt;img class=&quot;portrait-img-left&quot; src = &quot;./assets/images/donna.png&quot;&gt; (set: $chadonnay_angered to true)
+&quot;I&#39;m.. sorry, Char. I don&#39;t feel the same.&quot;
+
+She nods, biting her lip. &quot;That&#39;s okay. I understand. Is it okay if I have a little time to process this? To move on?&quot;
+
+&quot;Of course,&quot; you reply. &quot;Take all the time you need.&quot; And then you leave.
+
+[[Continue|Drinklympus]] </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
