@@ -348,7 +348,7 @@ You have defeaten $enemyName.
 (link-goto: &quot;Continue&quot;, &quot;After Galahad&quot;) ]
 (else-if: $enemyType is 4)[
 (link-goto: &quot;Continue&quot;, &quot;After Tequila&quot;) ]}
-</tw-passagedata><tw-passagedata pid="16" name="After Druids" tags="sienna" position="2865,1147" size="100,100">Congratulations! You defeated Druids. You may now pass into drinklympus
+</tw-passagedata><tw-passagedata pid="16" name="After Druids" tags="sienna" position="2610,1017" size="100,100">Congratulations! You defeated Druids. You may now pass into drinklympus
 &lt;img src =&quot;https://lh5.googleusercontent.com/Mt1E8s5iGrr2IvlTn1Ps7dl8BbQa7pPp34J4bXtiRBHF6XAdfBk0V75OS58qx24jCX_qt89xFXh9QrMdClc-s8SeCpMGFJFqZx6PMmrH&quot;&gt;
 Your tolerance has imporved!{
 (set: $maxPlayerTolerance to $maxPlayerTolerance + 50)
@@ -356,8 +356,6 @@ Your tolerance has imporved!{
 (set: $druidsBeat to true)}
 
 Player Tolerance: $playerTolerance/$maxPlayerTolerance
-
-(display: &quot;Druids Defeaten&quot;)
 
 [[You finally ascend into Drinklympus.|Arrive in Drinklympus]]</tw-passagedata><tw-passagedata pid="17" name="Battle Lost" tags="" position="3189,1499" size="100,100">{(set: $deaths to $deaths + 1)
 (set: $playerTolerance to $maxPlayerTolerance)}
@@ -390,6 +388,8 @@ Your tolerance has imporved! When you next see Guinness he rewards you with a pa
 Player Tolerance: $playerTolerance/$maxPlayerTolerance
 
 [[You decide to return to Drinklympus.|Drinklympus]]</tw-passagedata><tw-passagedata pid="19" name="After Galahad" tags="" position="2869,1330" size="100,100">Congratulations! You have defeated Galahad.
+
+&lt;img src =&quot;https://raw.githubusercontent.com/vincent-kiely/CS4067_Project/dev/assets/images/galahad.PNG?token=AI4S665R2HTA5E6STTGDFBTAR2GLW&quot;&gt;
 
 Your tolerance has imporved! When you next see Guinness he rewards you with a packet of Taytos, to celebrate your victory.{
 (set: $maxPlayerTolerance to $maxPlayerTolerance + 100)
@@ -543,7 +543,8 @@ The doors swing open and you enter to see a drunken green-haired man with a pear
 	[[Drink Off!|Player Battle Menu]]
 	
 (group: &#39;playing&#39;, &#39;stop&#39;)
-(track: &#39;battle-theme&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="37" name="Galahad Battle" tags="galahad-bg" position="2396.3333333333335,701" size="100,100">You approach the Beer Gardens, preparing yourself, to challenge your old friend Galahad. To your surprise you are greeted by the sound of music. Perhaps if there is anyone still parting, it will be Galahad. As you step out into the beer gardens, the realisation is immediate. It is Galahad but, it’s just Galahad. He is reclining on a large chair, Warm can in one hand and chicken roll in the other. He is lazily watching Godflix with a speaker blaring in the background, possibly asleep. Not a far fall for him but still strange to see him alone.
+(track: &#39;battle-theme&#39;, &#39;play&#39;)</tw-passagedata><tw-passagedata pid="37" name="Galahad Battle" tags="galahad-bg" position="2396.3333333333335,701" size="100,100">&lt;img src =&quot;https://raw.githubusercontent.com/vincent-kiely/CS4067_Project/dev/assets/images/galahad.PNG?token=AI4S665R2HTA5E6STTGDFBTAR2GLW&quot;&gt;
+You approach the Beer Gardens, preparing yourself, to challenge your old friend Galahad. To your surprise you are greeted by the sound of music. Perhaps if there is anyone still parting, it will be Galahad. As you step out into the beer gardens, the realisation is immediate. It is Galahad but, it’s just Galahad. He is reclining on a large chair, Warm can in one hand and chicken roll in the other. He is lazily watching Godflix with a speaker blaring in the background, possibly asleep. Not a far fall for him but still strange to see him alone.
 
 [(link-reveal: &quot;“Galahad, What’s the craic man“&quot;)[(replace: ?c1_o2)[]
 
